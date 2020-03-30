@@ -1,0 +1,123 @@
+/*
+    작성자 : 정선희 
+    작성일 : 2020. 02. 18 ~ 2020. 02. 19
+*/
+
+/* 배너 이미지 */
+
+/* 베지밀 일반 */
+.top-banner-plain {
+    width: 100%;
+    height: 350px;
+    background: url("../img/sub-product/00-product-vegemil-plain.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* 베지밀 블랙 */
+.top-banner-black {
+    width: 100%;
+    height: 350px;
+    background: url("../img/sub-product/00-product-vegemil-black.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* 그 외 제품 */
+.top-banner-other {
+    width: 100%;
+    height: 350px;
+    background: url("../img/sub-product/00-product-vegemil-other.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* contents */
+
+.sub-container {
+    width: 100%;
+}
+
+/* 제품 */
+
+.product-bgm {
+    width: 80%;
+    margin: 0 auto;
+}
+.product-bgm::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.product-bgm article {
+    width: 22%;
+    margin-right: 2%;
+    float: left;
+}
+.product-bgm article:nth-of-type(4n) {
+    margin-right: 0;
+}
+.product-bgm article:nth-of-type(1),
+.product-bgm article:nth-of-type(2),
+.product-bgm article:nth-of-type(3),
+.product-bgm article:nth-of-type(4) {
+    margin-top: 50px;
+}
+.product-bgm article figure {
+    width: 100%;
+}
+.product-bgm article figure > a {
+    display: inline-block;
+    transition: box-shadow .5s linear;
+                /*transform .3s ease-in-out;*/
+    font-size: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.product-bgm article:nth-of-type(1) figure > a:hover {
+    box-shadow: 0 0 0 0;
+}
+.product-bgm article figure > a:hover {
+    box-shadow: 10px 10px 25px -10px rgba(125, 125, 125, 0.8);
+    /*transform: translateY(-10px);*/
+}
+.product-bgm article figure a img {
+    width: 100%;
+    transition: all .5s ease-out;
+    overflow: hidden;
+}
+.product-bgm article figure a:hover img {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.product-bgm article:nth-of-type(1) figure a:hover img {
+    transform: scale3d(1, 1, 1);
+}
+
+.product-bgm article figure figcaption {
+    margin: 10px 0 50px 10px;
+}
+.product-bgm article figure figcaption span {
+    display: block;
+    font-size: 1.05em;
+    font-weight: 300;
+}
+.product-bgm article figure figcaption a {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #333;
+    transition: all .8s ease-in;
+}
+.product-bgm article figure figcaption a:hover {
+    color: #063;
+}
+.product-bgm article:nth-of-type(1) figure figcaption a:hover {
+    color: #333;
+}
+

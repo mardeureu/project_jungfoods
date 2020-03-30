@@ -1,0 +1,202 @@
+/* 배너 이미지 */
+.top-banner-cpnews {
+    width: 100%;
+    height: 350px;
+    background: url("../img/sub-fair-trade/00-fair-trade-cp.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* CP란? */
+.explain-cp {
+    width: 100%;
+    padding: 50px 0;
+    background-image: linear-gradient(125deg, rgba(194, 46, 208, .9) 20%, rgba(95, 250, 224, .95));
+}
+.explain-cp .about-cp {
+    width: 50%;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.explain-cp .about-cp .box-cp {
+}
+.explain-cp .about-cp .box-cp span {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.65em;
+    border: 5px solid #fff;
+    padding: 80px 50px;
+    transition: all .3s ease-in;
+    box-shadow: 10px 10px 30px -20px #777;
+}
+.explain-cp .about-cp .box-cp:hover span {
+    transform: translateY(-3px);
+    transition: .5s ease-out;
+}
+.explain-cp .about-cp .text-cp {
+    padding-left: 30px;
+}
+.explain-cp .about-cp .text-cp h4 {
+    color: #333;
+    font-size: 1.25em;
+}
+
+.explain-cp .about-cp .text-cp p {
+    color: #fff;
+    white-space: pre-line;
+}
+
+/* cp-article */
+.cp-article {
+    width: 80%;
+    margin: 0 auto;
+}
+/* 링크 */
+.cp-article .cp-article-link {
+    width: 100%;
+    text-align: center;
+}
+.cp-article .cp-article-link a {
+    display:inline-block;
+    margin: 100px auto 50px;
+}
+.cp-article .cp-article-link a span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30% 10% 50% 5%;
+    background: rgba(95, 250, 224, .5);
+    transform: translateX(2.5em) translateY(-1em);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+.cp-article .cp-article-link a.cp-Statement {
+    margin-right: 30px;
+}
+.cp-article .cp-article-link a.cp-msg {}
+.cp-article .cp-article-link a:hover {
+    text-decoration: underline;
+}
+.cp-article .cp-article-link a:hover span{
+    opacity: 1;
+    transition: all .5s ease-out;
+}
+/*
+.cp-article .cp-article-link a:hover::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: rgba(194, 46, 208, .5);
+    transform: translateY(10px);
+}
+
+/* article 공통 */
+.cp-article article {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.cp-article article figure {
+    width: 49%;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+.cp-article article figure img {
+    height: 100%;
+}
+.cp-article article div {
+    width: 48%;
+}
+.cp-article article > span {}
+.cp-article article h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 50px;
+}
+.cp-article article p {
+    white-space: pre-line;
+}
+.cp-article article p span {
+    display: block;
+    margin-top: 30px;
+}
+
+/* cp선언문 */
+.cp-article #cp-Statement {
+    margin-bottom: 50px;
+}
+.cp-article #cp-Statement figure {
+    background-image: url("../img/sub-fair-trade/01-cp-article.jpg");
+    background-size: cover;
+    background-position: 100% 70%;
+}
+
+.cp-article #cp-Statement .cp-Statemen-p {}
+.cp-article #cp-Statement .cp-Statemen-p > span {}
+.cp-article #cp-Statement .cp-Statemen-p h4 {}
+.cp-article #cp-Statement .cp-Statemen-p p {}
+.cp-article #cp-Statement .cp-Statemen-p p span {
+    
+}
+
+/* 8주년 기념 메세지 */
+.cp-article #cp-msg {}
+.cp-article #cp-msg figure {
+    background-image: url("../img/sub-fair-trade/02-cp-article.jpg");
+    background-size: cover;
+    background-position: 60% 50%;
+}
+
+.cp-article #cp-msg .cp-msg-p {}
+.cp-article #cp-msg .cp-msg-p > span {}
+.cp-article #cp-msg.cp-msg-p  h4 {}
+.cp-article #cp-msg .cp-msg-p p {}
+.cp-article #cp-msg .cp-msg-p p span {}
+
+/* news-briefing */
+
+.news-briefing {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news-briefing h3 {
+    font-size: 1.85em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.85em;
+}
+
+.news-briefing ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.news-briefing ul li {
+    width: 20%;
+    padding: 30px;
+    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
+    
+}
+.news-briefing ul li span:nth-of-type(1){
+    color: rgba(255, 255, 255, .9);
+    font-size: 3em;
+}
+.news-briefing ul li time{
+    color: #fff;
+    display: block;
+    line-height: 50px;
+    font-size: .9em;
+}
+.news-briefing ul li span:nth-of-type(2){
+    color: #fff;
+    font-size: 1.15em;
+}

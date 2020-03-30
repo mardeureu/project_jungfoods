@@ -1,0 +1,364 @@
+/* 배너 이미지 */
+.top-banner-cp-institution {
+    width: 100%;
+    height: 350px;
+    background: url("../img/sub-fair-trade/00-fair-trade-cp.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ 
+/* 자율준수 프로그램이란? */
+.cp-introduce {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 50px;
+    background-color: #333;
+    position: relative;
+}
+.cp-introduce div {
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.cp-introduce div h4 {
+    color: #fff;
+    margin-bottom: 1em;
+}
+.cp-introduce div p {
+    color: #fff;
+    font-size: 1.05em;
+    font-weight: 400;
+
+}
+
+/* 관련법규 */
+.cp-laws {
+    width: 80%;
+    margin: 0 auto;
+}
+.cp-laws h4 {
+    color: #333;
+    margin: 0 auto;
+}
+.cp-laws p {
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: 3em;
+}
+.cp-laws div {
+    margin: 0 auto;
+}
+.cp-laws div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cp-laws ul {
+    width: 50%;
+}
+.cp-laws ul li {
+    width: 100%;
+    font-size: 1.15em;
+    color: #333;
+    margin: 40px 0;
+}
+.cp-laws ul li:nth-of-type(4) {
+    margin-bottom: 0;
+}
+.cp-laws ul li::before {
+    content: "";
+    display: inline-block;
+    width: .6em;
+    height: .6em;
+    margin-right: .5em;
+    vertical-align: .05em;
+    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
+}
+
+.cp-laws ul:nth-of-type(1) {
+    float: left;
+}
+.cp-laws ul:nth-of-type(2) {
+    float: left;
+}
+.cp-laws ul:nth-of-type(1) li {}
+.cp-laws ul:nth-of-type(2) li {}
+
+/* 도입의 필요성 */
+.necessity-of-cp {
+    width: 80%;
+    margin: 0 auto;
+}
+.necessity-of-cp h3 {
+    margin-bottom: 1.85em;
+}
+.necessity-of-cp ul {
+    display: flex;
+    justify-content: space-between;
+}
+.necessity-of-cp ul li {
+    width: 23%;
+    padding: 50px 30px;
+    text-align: center;
+    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
+}
+/* 상단 내용 */
+.necessity-of-cp ul li > span:nth-of-type(1) {
+    color: #fff;
+    font-size: 1.15em;
+}
+
+/* 쉐브론 */
+.necessity-of-cp ul li > span:nth-of-type(2) {
+    display: table;
+    margin: 30px auto;
+    position: relative;
+}
+
+.necessity-of-cp ul li > span:nth-of-type(2) span {
+    display: inline-block;
+    width: 1em;
+    height: 2px;
+    background-color: #fff;
+}
+.necessity-of-cp ul li > span:nth-of-type(2) span:nth-of-type(1) {
+    transform: rotateZ(40deg);
+    transform-origin: right bottom;
+}
+.necessity-of-cp ul li > span:nth-of-type(2) span:nth-of-type(2) {
+    transform: rotateZ(-40deg);
+    transform-origin: left bottom;
+}
+
+/* 하단 내용 */
+.necessity-of-cp ul li > span:nth-of-type(3) {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #333;
+}
+
+
+/* 운영 핵심 7대 요소 */
+
+.seven-core {
+    width: 80%;
+    margin: 0 auto;
+}
+.seven-core h3 {
+    margin-bottom: 1.85em;
+}
+.seven-core div {}
+
+.seven-core div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.seven-core div dl {
+    width: 48%;
+}
+.seven-core div dl dt {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #333;
+    margin: 35px 0 5px;
+}
+.seven-core div dl dt::before {
+    content: "";
+    display: inline-block;
+    width: .6em;
+    height: .6em;
+    margin-right: .5em;
+    vertical-align: .05em;
+    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
+    border-radius: 50%;
+
+}
+.seven-core div dl dd {
+    line-height: 2em;
+}
+
+.seven-core div dl:nth-of-type(1) {
+    float: right;
+}
+
+.seven-core div dl:nth-of-type(2) {
+    float: left;
+}
+
+
+/* Benefits of Compliance Program */
+
+.cp-benefit {
+    width: 80%;
+    margin: 0 auto;
+}
+.cp-benefit h3 {}
+.cp-benefit > div {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+
+/* 원 라인 */
+.cp-benefit .benefit-circle-line {
+    width: 40vh;
+    height: 40vh;
+    border: 5px solid rgba(65, 233, 117, .8);
+    border-top-color: rgba(41, 153, 173, 1);
+    border-bottom-color: rgba(41, 153, 173, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* 점 */
+/*
+.cp-benefit > div .dot > div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(145deg, rgba(65, 233, 117, .8), rgba(41, 153, 173, 1));
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.cp-benefit > div .dot > div:nth-of-type(1) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.cp-benefit > div .dot > div:nth-of-type(2) {
+    top: 30%;
+    left: 0;
+    transform: translateX(-50%) translateY(50%);;
+}
+.cp-benefit > div .dot > div:nth-of-type(3) {
+    top: 30%;
+    left: 100%;
+    transform: translateX(-50%) translateY(50%);
+}
+.cp-benefit > div .dot > div:nth-of-type(4) {
+    top: 80%;
+    left: 10%;
+    transform: translateX(-40%) translateY(50%);
+}
+.cp-benefit > div .dot > div:nth-of-type(5) {
+    top: 80%;
+    left: 90%;
+    transform: translateX(-40%) translateY(50%);
+}*/
+
+/* 텍스트 */
+
+.cp-benefit .benefit-circle-text {
+}
+.cp-benefit .benefit-circle-text {
+    position: relative;
+    width: 50vw;
+    height: 40vh;
+    margin: 0 auto;
+}
+.cp-benefit .benefit-circle-text span {
+    font-size: 1.15em;
+    color: #333;
+    position: absolute;
+    z-index: 1;
+}
+.cp-benefit .benefit-circle-text span:nth-of-type(1) {
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cp-benefit .benefit-circle-text span:nth-of-type(2) {
+    top: 30%;
+    left: 68%;
+}
+.cp-benefit .benefit-circle-text span:nth-of-type(3) {
+    top: 30%;
+    left: 5%;
+}
+.cp-benefit .benefit-circle-text span:nth-of-type(4) {
+    top: 80%;
+    left: 0;
+}
+.cp-benefit .benefit-circle-text span:nth-of-type(5) {
+    top: 80%;
+    right: 20%;
+}
+
+
+/* 원 */
+.cp-benefit .benefit-circle-tit {
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.cp-benefit .benefit-circle-tit span {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    white-space: pre-line;
+    font-size: 1.35em;
+
+}
+
+/**/
+.cp-benefit > span {
+}
+
+.cp-benefit > span:nth-of-type(1) {}
+.cp-benefit > span:nth-of-type(2) {}
+.cp-benefit > span:nth-of-type(3) {}
+.cp-benefit > span:nth-of-type(4) {}
+.cp-benefit > span:nth-of-type(5) {}
+
+
+/* 과징금 경감 */
+
+.cp-penalty-reduction {
+    width: 80%;
+    margin: 0 auto;
+}
+.cp-penalty-reduction h3 {}
+.cp-penalty-reduction > span {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 1.05em;
+}
+.cp-penalty-reduction p {
+    font-size: 1.05em;
+    color: #333;
+}
+.cp-penalty-reduction p span {
+    font-size: 1.05em;
+    font-weight: 700;
+    color: #063;
+}
+.cp-penalty-reduction p span::before {
+    content: "";
+    display: inline-block;
+    border: 5px solid #063;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    vertical-align: 0.065em;
+    margin-left: 7px;
+}

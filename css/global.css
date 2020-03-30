@@ -1,0 +1,434 @@
+@import url("common.css");
+/*header*/
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+header .menu {
+    width: 80%;
+    margin: 0 auto;
+}
+header .menu::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+header .menu .j-logo {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 70px;
+    line-height: 70px;
+    background: url("../img/logo.png") no-repeat center;
+    background-size: contain;
+}
+
+/*sub-menu*/
+
+header .menu nav .sub-menu {
+    height: 0;
+}
+header .menu nav .sub-menu li {
+    text-align: left;
+}
+header .menu nav ul li:nth-of-type(1) ul li:nth-of-type(5) {
+    margin-bottom: 0px;
+}
+header .menu nav > ul > li:hover .sub-menu {
+    height: auto;
+    overflow: visible;
+}
+
+/* burger-menu */
+header .menu .burger-menu {
+    display: block;
+}
+header .menu #menu-button:checked ~ nav {
+    display: block;
+}
+header .menu nav .sub-menu li:hover a {
+    color: #333;
+    background: rgba(0, 102, 51, .2);
+}
+
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 100%;
+    background: #555;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* SNS */
+
+footer .sns {
+    margin: 20px auto;
+}
+footer .sns a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin-right: 30px;
+}
+footer .sns a:nth-of-type(1) {
+    background: url("../img/icon/f_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer .sns a:nth-of-type(2) {
+    background: url("../img/icon/i_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer .sns a:nth-of-type(3) {
+    background: url("../img/icon/y_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer .sns a:nth-of-type(4) {
+    background: url("../img/icon/b_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0;
+}
+
+/* family-site */
+
+footer .family-site {}
+footer .family-site div {}
+
+
+/* 하단정보 */
+
+footer ul {
+    margin: 20px auto;
+    font-size: 0;
+}
+footer ul li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+footer ul li::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 1rem;
+    background: #fff;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+footer ul li:last-of-type::after {
+    display: none;
+}
+footer ul li:last-of-type {
+    margin-right: 0;
+}
+footer ul li a {
+    color: #fff;
+    font-size: .8em;
+}
+
+/* 회사정보 */
+footer .company-info {
+    margin: 20px auto;
+}
+footer .company-info dl {}
+footer .company-info dl::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer .company-info dl dt {
+    color: #fff;
+    font-size: .9em;
+    display: inline-block;
+}
+
+footer .company-info dl:nth-of-type(1) dt:nth-of-type(1) {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+footer .company-info dl dd {
+    color: #fff;
+    font-size: .85em;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 5px;
+    font-weight: 200;
+}
+footer .company-info dl dd:last-child {
+    margin-right: 0;
+}
+footer p {
+    margin: 20px auto;
+    color: #fff;
+    font-size: .8em;
+    margin-top: 10px;
+}
+
+
+/* 인증기관 */
+
+.Rel {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.Rel ul {
+    display: flex;
+    justify-content: space-around;
+}
+.Rel ul li {
+    color: #fff;
+    font-size: .8em;
+    width: 70px;
+    height: 50px;
+}
+.Rel ul li a {
+    color: #fff;
+    font-size: .8em;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.Rel ul li:nth-of-type(1) a {
+    background: url("../img/rel-logo/01-Rel_koreaheart_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Rel ul li:nth-of-type(2) a {
+    background: url("../img/rel-logo/02-Rel_goodmeighbors_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Rel ul li:nth-of-type(3) a {
+    background: url("../img/rel-logo/03-Rel_haccp_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Rel ul li:nth-of-type(4) a {
+    background: url("../img/rel-logo/04-Rel_kolas_logo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Rel ul li:nth-of-type(5) a {
+    background: url("../img/rel-logo/05-Rel_fssc_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Rel ul li:nth-of-type(6) a {
+    background: url("../img/rel-logo/06-Rel_epd.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Rel ul li:nth-of-type(7) a {
+    background: url("../img/rel-logo/07-Rel_ccm_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Rel ul li:nth-of-type(8) a {
+    background: url("../img/rel-logo/08-Rel_gajok_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Rel ul li:nth-of-type(9) a {
+    background: url("../img/rel-logo/09-soybean_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*
+                    ----- media -----
+*/
+
+/* 1024px 이하 */
+@media (max-width: 1024px) {
+    header .menu {
+        width: 80%;
+    }
+    header .menu .j-logo {
+        height: 50px;
+    }
+    header .menu nav {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    header .menu nav > ul {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+    header .menu nav > ul > li {
+        float: none;
+    }
+    header .menu nav > ul > li > a {
+        font-weight: 700;
+        padding: 0;
+        line-height: 50px;
+    }
+    header .menu nav > ul > li > a:hover::before {
+        transform: scaleX(0);
+    }
+    header .menu nav > ul > li > a {
+        transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    header .menu nav > ul > li > a:hover {
+        color: #fff;
+        background: rgba(0, 102, 51, .8);
+    }
+    
+    /*sub-menu*/
+    
+    header .menu nav .sub-menu {
+        height: 0;
+    }
+    header .menu nav .sub-menu li {
+        text-align: left;
+    }
+    header .menu nav ul li:nth-of-type(1) ul li:nth-of-type(5) {
+        margin-bottom: 0px;
+    }
+    header .menu nav > ul > li:hover .sub-menu {
+        height: auto;
+        overflow: visible;
+    }
+    /* burger-menu */
+    header .menu .burger-menu {
+        display: block;
+    }
+    header .menu #menu-button:checked ~ nav {
+        display: block;
+    }
+    header .menu nav .sub-menu li:hover a {
+        color: #333;
+        background: rgba(0, 102, 51, .2);
+    }
+    
+
+}
+@media (max-width: 768px) {
+    header .menu .j-logo {
+        height: 30px;
+    }
+    header .menu nav {
+        top: 30px;
+    }
+    /* main visual */
+    .main-visual {
+        transform: translateY(30px);
+    }
+
+    /* Event */
+    
+    .container .event .event-content {
+        display: block;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .container .event .event-content .event-title {
+        width: 100%;
+        height: auto;
+        padding: 50px 0 40px;
+    }
+
+
+    .container .event-content .event-con {
+        width: 100%;
+    }
+    .container .event .event-content .event-con figure img {
+        width: 50%;
+        box-shadow: 5px 5px 10px -2px #bbb;
+    }
+    .container .event .event-content .event-con figure img:nth-of-type(1) {
+        transform: translateX(0%) translateY(0%);
+    }
+    .container .event .event-content .event-con figure img:nth-of-type(2) {
+        transform: translateX(0%);
+    }
+    .container .event .event-content .event-con figure:hover {
+        animation: event-ani .3s ease-in-out infinite both;
+    }
+    @keyframes event-ani {
+        0% {transform: translateY(5%);}
+        50% {transform: translateY(10%);}
+        100% {transform: translateY(5%);}
+    }
+    
+    .container .event .event-con p {
+        font-size: 1rem;
+        padding: 30px 0;
+        white-space: pre-line;
+    }
+    .container .event .event-con p span {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #063;
+    }
+    .container .event .event-con p span::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #063;
+    }
+
+}
+@media (max-width: 480px) {
+    
+    main video {
+        margin: 0 auto;
+        width: 100vw;
+    }
+    .container .product figure a img {
+        height: 200px;
+    }
+    .container .product .control,
+    .container .product figure a:nth-of-type(4),
+    .container .product figure a:nth-of-type(5),
+    .container .product .product-title a:nth-of-type(4),
+    .container .product .product-title a:nth-of-type(5)     {
+        display: none;
+    }
+
+
+
+    /* Event */
+    .container .event {
+        min-height: ;
+    }
+}
