@@ -21,7 +21,7 @@
                         <span></span>
                         <span></span>
                     </button>
-                    <nav>
+                    <nav id="globalNav">
                         <ul class="main-menu">
                             <li>
                                 <a href="#">기업소개</a>
@@ -73,7 +73,7 @@
             
             <!-- main visual -->
             <section class="main-visual">
-                <video src="video/drjung_history.mp4" poster="video/main_visual.gif" autoplay playsinline muted loop type="video/mp4">
+                <video src="video/drjung_history.mp4" poster="video/main_visual.gif" autoplay playsinline muted loop type="video/mp4" alt="베지밀 2018 tv 광고">
                 </video>
                 <a href=""></a>
                 <a href=""></a>
@@ -164,60 +164,74 @@
                 -->
                 
                 <!-- 정식품 웹진 -->
-                <section class="wz">
+                <section class="webzine">
                     <h2>정식품 웹진</h2>
-                    
-                    <article class="wz-con wz-lg-content wz-content-01">
+                    <!-- 웹진 메인 컨텐츠 -->
+                    <article class="webzine_main wz_contents01">
                         <figure>
-                        <div></div>
-                            <!--<img src="img/webzine-content-01.jpg" alt="베지밀 곡물 라인 제품 사진">-->
+                            <img src="img/webzine-content-01.jpg" alt="베지밀 검은콩 두유 사진">
                         </figure>
-                        <div class="b-con">
-                        <span>special nut begemil</span>
-                        <h4><a href="">베지밀 곡물/견과두유 라인 파헤치기</a></h4>
-                        <div><a href="http://www.vegemil.co.kr/Main/webzine/Q2_2016/contentsdetail.aspx?contentsno=Q2_2016_sub06.html" target="_blank">바로가기</a></div>
+                        <div class="wz_txt_main">
+                            <span>special nut begemil</span>
+                            <h4>
+                                <a href="">베지밀 곡물/견과두유 라인 파헤치기</a>
+                            </h4>
+                            <a href="http://www.vegemil.co.kr/Main/webzine/Q2_2016/contentsdetail.aspx?contentsno=Q2_2016_sub06.html" target="_blank">
+                                바로가기
+                            </a>
                         </div>
                     </article>
-                    
-                    <article class="wz-con wz-lg-content wz-content-02">
+                    <article class="webzine_main wz_contents02">
                         <figure>
-                            <div></div>
+                            <img src="img/webzine-content-02.jpg" alt="베지밀 CF 광고 사진">
                         </figure>
-                        <div class="b-con">
-                        <span>for family</span>
-                        <h4><a href="">온 가족이 함께 즐기는 베지밀</a></h4>
-                        <div><a href="http://www.vegemil.co.kr/Main/webzine/Q2_2019/sub07.aspx" target="_blank">바로가기</a></div>
+                        <div class="wz_txt_main">
+                            <span>for family</span>
+                            <h4>
+                                <a href="">온 가족이 함께 즐기는 베지밀</a>
+                            </h4>
+                            <a href="http://www.vegemil.co.kr/Main/webzine/Q2_2019/sub07.aspx" target="_blank">
+                                바로가기
+                            </a>
                         </div>
-                        
                     </article>
-                    <div class="wz-con wz-s-content">
-                        <article class="wz-content-03">
-                            <figure>
-                                <div class="s-bg"><a href="http://www.vegemil.co.kr/Main/webzine/Q3_2018/sub06.aspx" target="_blank"></a></div>
-                                <div class="s-con">
-                                    <span>recipe</span>
-                                    <h4><a href="">국산콩 진한 콩국 레시피</a></h4>
-                                    <!--<a href="http://www.vegemil.co.kr/Main/webzine/Q3_2018/sub06.aspx" target="_blank">바로가기</a>-->
-                                </div>
-                            </figure>
-                        </article>
-                        
-                        <article class="wz-content-04">
-                            <figure>
-                                <div class="s-bg"><a href="http://www.vegemil.co.kr/Main/webzine/Q4_2019/sub07.aspx?time=2019&newsCode=sub07" target="_blank"></a></div>
-                                <div class="s-con">
-                                    <span>About health</span>
-                                    <h4><a href="">하루가 가벼워지는 두유</a></h4>
-                                    <!--<a href="http://www.vegemil.co.kr/Main/webzine/Q4_2019/sub07.aspx?time=2019&newsCode=sub07" target="_blank">바로가기</a>-->
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
+                    <!-- 웹진 일반 컨텐츠 -->
+                    <article class="webzine_content wz_contents03">
+                        <figure>
+                                <img src="img/webzine-content-03.jpg" alt="베지밀로 만든 콩국수 사진">
+                        </figure>
+                        <div class="wz_txt">
+                            <span>recipe</span>
+                            <h4>
+                                <a href="">국산콩 진한 콩국 레시피</a>
+                            </h4>
+                            <a href="http://www.vegemil.co.kr/Main/webzine/Q3_2018/sub06.aspx" target="_blank">
+                                바로가기
+                            </a>
+                        </div>
+                    </article>
+                    <article class="webzine_content wz-contents04">
+                        <figure>
+                            <img src="img/webzine-content-04.jpg" alt="국산콩 베지밀 두유 사진">
+                        </figure>
+                        <div class="wz_txt">
+                            <span>About health</span>
+                            <h4>
+                                <a href="">하루가 가벼워지는 두유</a>
+                            </h4>
+                            <a href="http://www.vegemil.co.kr/Main/webzine/Q4_2019/sub07.aspx?time=2019&newsCode=sub07" target="_blank">
+                                바로가기
+                            </a>
+                        </div>
+                    </article>
                 </section>
                 
-                <!-- TV CF -->
+                <!-- SNS -->
                 <section class="tvcf">
-                    <h2>TV CF</h2>
+                    <h2>SNS</h2>
+
+
+                    <!-- TV CF 부분
                     <figure>
                         <video src="" poster="" type="video/mp4" controls>
                         </video>
@@ -232,7 +246,7 @@
                                 <span></span>
                             </a>
                         </div>
-                    
+                    -->
                 </section>
                 
                 <!-- 새소식 & 보도자료 -->

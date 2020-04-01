@@ -18,17 +18,11 @@ header .menu {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-}
-header .menu::after {
-    content: "";
-    display: table;
-    clear: both;
+    align-items: top;
+    position: relative;
 }
 header .menu .j-logo {
     display: block;
-    float: left;
     width: 80px;
     height: 70px;
     line-height: 70px;
@@ -38,7 +32,12 @@ header .menu .j-logo {
 
 /* main menu */
 header .menu nav {
-    float: right;
+}
+/* 버거메뉴 클릭이벤트 */
+header .menu nav.menuVisible {
+    min-height: 0;
+    height: 100vh;
+    transition: height .3s cubic-bezier(0.14, 0.12, 0.38, 1.22);
 }
 header .menu nav > ul {
     text-align: center;
@@ -70,7 +69,7 @@ header .menu nav > ul > li > a::before {
     width: 100%;
     height: 1px;
     background: #063;
-    transition: transform .3s linear;
+    transition: transform .4s linear;
     transform: scaleX(0);
     position: absolute;
     top: 0;
@@ -123,14 +122,17 @@ header .menu button {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 50px;
     height: 50px;
+    outline: none;
 }
 header .menu button span {
     display: block;
     width: 26px;
-    height: 1.25px;
+    height: 1px;
     background: #333;
     position: absolute;
     top: 50%;
@@ -401,173 +403,162 @@ header .menu button span:nth-of-type(2) {
     font-family: 'Noto Serif', 'Noto Serif KR', serif;
 }
 
-/* 웹진 */
-.container .wz {
+
+/*                                 정식품 웹진                                  */
+.container .webzine {
     width: 80%;
     margin: 0 auto;
 }
-.container .wz .wz-con {
-    margin: 20px auto;
-}
-.container .wz h2 {}
-.container .wz .wz-lg-content {}
-
-
-/* big - content */
-.container .wz .b-con {
-    width: 40%;
-    height: 400px;
-    padding: 100px 50px;
-    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    float: left;
-}
-/*
-정식품 웹진
-img
-.container .wz {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.container .wz article,
-.container .wz article {
-    width: 49%;
-    height: 400px;
-}
-title
-.container .wz .b-con {
-    overflow: hidden;
-    transform: translateY(-100%)
-}
-*/
-
-.container .wz .b-con span,
-.container .wz .b-con h4,
-.container .wz .b-con a {
-    color: #fff;
-}
-.container .wz .b-con span {
-    font-weight: 100;
-}
-.container .wz .b-con h4 {
-    
-}
-.container .wz .b-con h4:hover a {
-    font-size: 1.6em;
-}
-.container .wz .b-con h4 a {
-    font-size: 1.5em;
-    font-weight: 400;
-    transition: .9s;
-}
-.container .wz .b-con div {
-    border: 1px solid #fff;
-    width: 6em;
-    padding: 10px;
-    transition: .5s;
-}
-.container .wz .b-con div a {
-    font-size: .9em;
-    transition: .5s;
-    margin: 0 auto;
-}
-
-.container .wz .b-con div:hover a {
-    color: rgba(41, 153, 173, 1);
-    transition: all .2s;
-}
-.container .wz .b-con div:hover {
-    border: 1px solid rgba(41, 153, 173, 1);
-    transition: all .2s;
-}
-
-.container .wz .wz-content-01::after ,
-.container .wz .wz-content-02::after {
+.container .webzine::after {
     content: "";
     display: table;
     clear: both;
 }
-.container .wz article figure {}
-.container .wz .wz-content-01 figure {
-    float: right;
+/* 웹진 전체 공통 적용 */
+.container .webzine article {}
+.container .webzine article figure {}
+.container .webzine article figure img {}
+.container .webzine article div {}
+.container .webzine article div span {
+    color: #fff;
+    font-size: .85em;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
-.container .wz .wz-content-02 figure {
-    float: left;
+.container .webzine article div h4 {
+    color: #fff;
+    padding: 10px 0 25px;
+}
+.container .webzine article div h4 a {
+    color: inherit;
+    font-size: 1.25em;
+    font-weight: 400;
+    transition: .9s;
+}
+.container .webzine article div > a{
+    color: #fff;
+    font-size: .85em;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: all .3s cubic-bezier(0.03, 0.24, 0, 0.78);
+}
+.container .webzine article div > a:hover {
+    letter-spacing: 2px;
+    border: 1px solid rgba(41, 153, 173, 1);
 }
 
-/* content 01 */
-
-.container .wz .wz-content-01 {
-    box-shadow: 10px 10px 30px -10px #aaa;
-}
-.container .wz .wz-content-01 figure {
-    width: 60%;
-    height: 400px;
+/* 웹진 메인 공통 적용 */
+.container .webzine .webzine_main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(125deg,  rgba(41, 153, 173, 1) 60%, rgba(65, 233, 117, .8));
+    opacity: .98;
     overflow: hidden;
 }
-.container .wz .wz-content-01 figure div {
-    width: 100%;
-    height: 100%;
-    background: url("../img/webzine-content-01.jpg") no-repeat;
-    background-position: 50% 70%;
-    background-size: cover;
-    transform: scaleX(1) scaleY(1);
-    transition: transform .5s;
-}
-.container .wz .wz-content-01 figure div:hover {
-    transform: scaleX(1.05) scaleY(1.05);
-}
-.container .wz .wz-content-01 div {}
-.container .wz .wz-content-01 span {}
-.container .wz .wz-content-01 h4 {}
-.container .wz .wz-content-01 a {}
-
-.container .wz .wz-content-01 figure {
+.container .webzine .webzine_main figure {
     width: 60%;
-    height: 400px;
-}
-.container .wz .wz-content-01 figure div {
     
-    background: url("../img/webzine-content-01.jpg") no-repeat;
-    background-position: 50% 70%;
-    background-size: cover;
-    transform: scaleX(1) scaleY(1);
-    transition: transform .5s;
 }
-.container .wz .wz-content-01 figure div:hover {
-    transform: scaleX(1.08) scaleY(1.08);
-}
-
-/* content 02 */
-
-.container .wz .wz-content-02 {
-    box-shadow: 10px 10px 30px -10px #aaa;
-}
-.container .wz .wz-content-02 figure {
-    width: 60%;
-    height: 400px;
+.container .webzine .webzine_main figure:hover {
     overflow: hidden;
 }
-.container .wz .wz-content-02 figure div {
+.container .webzine .webzine_main figure img {
     width: 100%;
-    height: 100%;
-    background: url("../img/webzine-content-02.jpg") no-repeat;
-    background-position: 50% 0%;
-    background-size: cover;
     transform: scaleX(1) scaleY(1);
+    transition: all .5s ease-in-out;
+}
+.container .webzine .webzine_main figure img:hover {
+    transform: scaleX(1.125) scaleY(1.125);
+}
+.container .webzine .webzine_main .wz_txt_main {
+    width: 40%;
+    padding: 0 20px;
+}
+.container .webzine .webzine_main .wz_txt_main span {}
+.container .webzine .webzine_main .wz_txt_main h4 {}
+.container .webzine .webzine_main .wz_txt_main h4 a {
+}
+.container .webzine .webzine_main .wz_txt_main h4 a:hover {
+    animation: font-animations 2s 1.5s infinite both;
+}
+.container .webzine .webzine_main .wz_txt_main > a{}
+
+@keyframes font-animations {
+    0%{
+        color: rgba(41, 153, 173, 1);
+    }
+    100%{
+        color: rgba(255, 255, 255, .9);
+    }
+}
+/* 웹진 메인 개별 적용 */
+
+/* 웹진 서브 컨텐츠 공통 적용 */
+.container .webzine article {}
+.container .webzine article figure {}
+.container .webzine article figure img {}
+.container .webzine article div {}
+.container .webzine article div span {
+    color: #fff;
+    font-size: .85em;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.container .webzine article div h4 {
+    color: #fff;
+    padding: 10px 0 25px;
+}
+.container .webzine article div h4 a {
+    color: inherit;
+    font-size: 1.25em;
+    font-weight: 400;
+    transition: .9s;
+}
+.container .webzine article div > a{
+    color: #fff;
+    font-size: .85em;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: all .3s cubic-bezier(0.03, 0.24, 0, 0.78);
+}
+.container .webzine article div > a:hover {
+    letter-spacing: 2px;
+    border: 1px solid rgba(41, 153, 173, 1);
+}
+
+/* 웹진 메인 공통 적용 */
+.container .webzine .webzine_content {
+    width: 50%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.container .webzine .webzine_content figure {}
+.container .webzine .webzine_content figure:hover {}
+.container .webzine .webzine_content figure img {}
+.container .webzine .webzine_content figure img:hover {}
+.container .webzine .webzine_content .wz_txt {
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    background: linear-gradient(125deg,  rgba(41, 153, 173, 1) 60%, rgba(65, 233, 117, .8));
     transition: transform .5s;
 }
-.container .wz .wz-content-02 figure div:hover {
-    transform: scaleX(1.08) scaleY(1.08);
+.container .webzine .webzine_content:hover .wz_txt{
+    bottom: 0;
+    transform: translateX(-50%);
 }
-.container .wz .wz-content-02 div {}
-.container .wz .wz-content-02 span {}
-.container .wz .wz-content-02 h4 {}
-.container .wz .wz-content-02 a {}
+.container .webzine .webzine_content .wz_txt span {}
+.container .webzine .webzine_content .wz_txt h4 {}
+.container .webzine .webzine_content .wz_txt h4 a {}
+.container .webzine .webzine_content .wz_txt h4 a:hover {}
+.container .webzine .webzine_content .wz_txt > a{}
+
+/* 웹진 서브 컨텐츠 개별 적용 */
 
 
 /* small - content */
@@ -668,6 +659,8 @@ title
     margin: 0 auto;
     text-align: center;
 }
+/*
+TV CF 부분
 .container .tvcf figure {
 
 }
@@ -724,7 +717,8 @@ title
     transform: translateX(-50%);
     transform: rotateZ(-45deg);
 }
-
+TV CF 끝
+*/
 /* 새소식 & 보도자료 */
 .container .news-press {
     width: 80%;
@@ -1102,11 +1096,13 @@ footer p {
     }
     header .menu nav {
         width: 100%;
-        display: none;
-        position: absolute;
+        height: 0;
+        position: fixed;
         top: 50px;
         right: 0;
         background: rgba(255, 255, 255, 0.9);
+        overflow: hidden;
+        transition: height .1s cubic-bezier(0.14, 0.12, 0.38, 1.22);
     }
     header .menu nav > ul {
         width: 80%;
@@ -1183,6 +1179,12 @@ footer p {
     /* main visual */
     .main-visual {
         transform: translateY(30px);
+    }
+
+    /* burger menu */
+    header .menu button {
+        width: 30px;
+        height: 30px;
     }
 
 

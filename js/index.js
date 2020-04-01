@@ -1,5 +1,14 @@
 window.addEventListener('click',function(){
-    var idx = 0;
+    var burgerMenuBtn = document.getElementById('menu-button');
+    var globalNav = document.getElementById('globalNav');
+    burgerMenuBtn.onclick = function(){btnClick()}
+    function btnClick(){
+        if (globalNav.className == "menuVisible") {
+            globalNav.className = ""
+        } else {
+            globalNav.className = "menuVisible"
+        }
+    }
     
 });
 
