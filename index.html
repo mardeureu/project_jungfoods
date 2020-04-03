@@ -17,11 +17,11 @@
             <header role="banner">
                 <div class="menu">
                     <a href="index.html" rel="home" class="j-logo"></a>
-                    <button id="menu-button">
+                    <button id="burgerMenuBtn">
                         <span></span>
                         <span></span>
                     </button>
-                    <nav id="globalNav">
+                    <nav role="navigation" aria-label="gnb" id="globalNav">
                         <ul class="main-menu">
                             <li>
                                 <a href="#">기업소개</a>
@@ -49,24 +49,20 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">커뮤니티</a>
-                                <ul class="sub-menu">
-                                    <li><a href="">이벤트</a></li>
-                                    <li><a href="">베지밀이야기</a></li>
-                                </ul>
-                            </li>
-                            <li>
                                 <a href="#">고객지원</a>
                                 <ul class="sub-menu">
                                     <li><a href="">FAQ</a></li>
                                     <li><a href="">1:1 문의</a></li>
                                 </ul>
                             </li>
+                            <li>
+                                <a href="#">로그인</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">로그인</a></li>
+                                    <li><a href="">회원가입</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                        <div class="login">
-                            <a href="">Login</a>
-                            <a href="">Join us</a>
-                        </div>
                     </nav>
                 </div>
             </header>
@@ -82,48 +78,53 @@
             
             <section class="container">
                 <!-- 제품 -->
-                <section class="product">
-                    <section class="product_Vegemil">
-                        <div class="product_vgm_pln">
-                            <figure>
-                                <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
-                                <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                                <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
-                                <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
-                                <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-                            </figure>
-                        </div>
+                <section id="mainProd" class="prod">
+                    <section class="prod_Vegemil">
+                        <!-- 베지밀 두유 플레인 -->
+                        <figure id="vgmPlain">
+                            <a href=""><img src="img/begemil-a.png" alt="베지밀 에이" title="베지밀 에이"></a>
+                            <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
+                            <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
+                            <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
+                            <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
+                        </figure>
                         <!--
-                        <div class="product_vgm_bk">
-                            <figure>
-                                <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
-                                <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                                <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
-                                <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
-                                <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-                            </figure>
-                        </div>
-                        <div class="product-oth">
-                            <figure>
-                                <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
-                                <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                                <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
-                                <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
-                                <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-                            </figure>
-                        </div>
+                         베지밀 두유 블랙 
+                        <figure id="vgmBk">
+                            <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
+                            <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
+                            <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
+                            <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
+                            <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
+                        </figure>
+                         베지밀 그 외 제품 
+                        <figure id="vgmOther">
+                            <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
+                            <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
+                            <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
+                            <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
+                            <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
+                        </figure>
                         -->
                     </section>
+                    <!-- 인디게이터 -->
                     <div class="control">
                         <div class="indicator">
                             <span></span>
                             <span></span>
                         </div>
                     </div>
-                    <div class="product-title">
-                        <a href="">베지밀 두유</a>
-                        <a href="">베지밀 블랙</a>
-                        <a href="">그 외 제품</a>
+                    <!-- 상품 탭 -->
+                    <div class="prod-title">
+                        <button type="button" name="vgmPlainbtn" id="vgmPlainbtn">
+                            베지밀 두유
+                        </button>
+                        <button type="button" name="vgmBkbtn" id="vgmBkbtn">
+                            베지밀 블랙
+                        </button>
+                        <button type="button" name="vgmOtherBtn" id="vgmOtherBtn">
+                            그 외 제품
+                        </button>
                     </div>
                 </section>
                 
@@ -227,26 +228,62 @@
                 </section>
                 
                 <!-- SNS -->
-                <section class="tvcf">
+                <section class="main_sns">
                     <h2>SNS</h2>
-
-
-                    <!-- TV CF 부분
-                    <figure>
-                        <video src="" poster="" type="video/mp4" controls>
-                        </video>
-                        <figcaption>
-                            Dr. Chung's Food Begemil TV CF
-                            <span>배우 강석우 가족의 배지밀 이야기</span>
-                        </figcaption>
-                    </figure>
-                        <div class="plus">
-                            <a href="">
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                    -->
+                    <article>
+                        <span></span>
+                        <figure>
+                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <span></span>
+                        <figure>
+                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <span></span>
+                        <figure>
+                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        
+                        <figure>
+                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <span></span>
+                        <figure>
+                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <span></span>
+                        <figure>
+                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <span></span>
+                        <figure>
+                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <span></span>
+                        <figure>
+                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <span></span>
+                        <figure>
+                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
+                        </figure>
+                    </article>
                 </section>
                 
                 <!-- 새소식 & 보도자료 -->
@@ -299,7 +336,7 @@
             
             <!-- footer -->
             
-            <footer>
+            <footer role="contentinfo">
                 <!-- sns -->
                 <section class="sns">
                     <a href="https://www.facebook.com/vegemilgood"></a>

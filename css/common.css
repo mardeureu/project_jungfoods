@@ -89,6 +89,11 @@ figcaption {
 ::-ms-clear {
     display: none;
 }
+button {
+    background: transparent;
+    border: 0;
+    outline: none;
+}
 button::-moz-focus-inner,
 input::-moz-focus-ineer {
     padding: 0;
