@@ -1,15 +1,13 @@
+/* 버거메뉴 */
+function burgerMenuBtn() {
+    if (globalNav.className == "menuVisible") {
+        globalNav.className = ""
+    } else {
+        globalNav.className = "menuVisible"
+    }
+}
 window.onload = function(){
-    
-    /* 버거메뉴 */
-    var globalNav = document.getElementById('globalNav');
-    var burgerMenuBtn = document.getElementById('burgerMenuBtn');
-    burgerMenuBtn.onclick = function () {
-        if (globalNav.className == "menuVisible") {
-            globalNav.className = ""
-        } else {
-            globalNav.className = "menuVisible"
-        }
-    }//burgerMenuBtn function END 
+    //burgerMenuBtn function END 
 
     /* 제품 소개  다시다시!!*/
     var mainProd = document.getElementById('mainProd');
@@ -43,13 +41,6 @@ window.onload = function(){
             vgmOther.className = "";
         }
     }//vgmBkbtn Event END
-
-    
-
-
-
-
-
 
 
 //window.load END 
