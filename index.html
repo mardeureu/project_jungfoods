@@ -14,386 +14,330 @@
         <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body>
-            <header role="banner">
-                <div class="menu">
-                    <a href="index.html" rel="home" class="j-logo"></a>
-                    <button id="burgerMenuBtn" onclick="burgerMenuBtn()">
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <nav role="navigation" aria-label="gnb" id="globalNav">
-                        <ul class="main-menu">
-                            <li>
-                                <a href="#">기업소개</a>
-                                <ul class="sub-menu">
-                                    <li><a href="">CEO 인사말</a></li>
-                                    <li><a href="">기업정보</a></li>
-                                    <li><a href="">사회공헌</a></li>
-                                    <li><a href="">중앙연구소</a></li>
-                                    <li><a href="">식품안전인증현황</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="product/product-begemil.html">제품소개</a>
-                                <ul class="sub-menu">
-                                    <li><a href="product/product-begemil.html">베지밀</a></li>
-                                    <li><a href="product/product-begemil-black.html">베지밀 블랙</a></li>
-                                    <li><a href="product/product-begemil-other.html">그 외 제품</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="cp/cp-news.html">공정거래</a>
-                                <ul class="sub-menu">
-                                    <li><a href="cp/cp-news.html">CP도입</a></li>
-                                    <li><a href="cp/cp-institution.html">자율준수 프로그램</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">고객지원</a>
-                                <ul class="sub-menu">
-                                    <li><a href="">FAQ</a></li>
-                                    <li><a href="">1:1 문의</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">로그인</a>
-                                <ul class="sub-menu">
-                                    <li><a href="">로그인</a></li>
-                                    <li><a href="">회원가입</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            
-            <!-- main visual -->
-            <section class="main-visual">
-                <video src="video/drjung_history.mp4" poster="video/main_visual.gif" autoplay playsinline muted loop type="video/mp4" alt="베지밀 2018 tv 광고">
-                </video>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </section>
-            
-            <section class="container">
-                <!-- 제품 -->
-                <section id="mainProd" class="prod">
-                    <section class="prod_Vegemil">
-                        <!-- 베지밀 두유 플레인 -->
-                        <figure id="vgmPlain">
-                            <a href=""><img src="img/begemil-a.png" alt="베지밀 에이" title="베지밀 에이"></a>
-                            <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                            <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
-                            <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
-                            <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-                        </figure>
-                        <!--
-                         베지밀 두유 블랙 
-                        <figure id="vgmBk">
-                            <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
-                            <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                            <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
-                            <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
-                            <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-                        </figure>
-                         베지밀 그 외 제품 
-                        <figure id="vgmOther">
-                            <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
-                            <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                            <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
-                            <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
-                            <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-                        </figure>
-                        -->
-                    </section>
-                    <!-- 인디게이터 -->
-                    <div class="control">
-                        <div class="indicator">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <!-- 상품 탭 -->
-                    <div class="prod-title">
-                        <button type="button" name="vgmPlainbtn" id="vgmPlainbtn">
-                            베지밀 두유
-                        </button>
-                        <button type="button" name="vgmBkbtn" id="vgmBkbtn">
-                            베지밀 블랙
-                        </button>
-                        <button type="button" name="vgmOtherBtn" id="vgmOtherBtn">
-                            그 외 제품
-                        </button>
-                    </div>
-                </section>
-                
-                <!-- 이벤트 -->
-                <section class="event">
-                    <div class="event-background"></div>
-                        <div class="event-content">
-                            <div class="event-title">
-                                <span>Begemil</span>
-                                <h3>SNS EVENT</h3>
-                                <p><time datetime="2020-01-01">2020. 1. 1</time> ~ <time datetime="2020-12-31">2020. 12. 31</time></p>
-                                <a href="">바로가기</a>
-                            </div>
-                            <div class="event-con">
-                                <figure>
-                                    <img src="img/event-gift-card.jpg" alt="상품권">
-                                    <img src="img/event-gift-card.jpg" alt="상품권">
-                                </figure>
-                                <p>
-                                    녹차베지밀 영상 중에 가장 재미있었던 코너를 공유하세요!
-                                    SNS에 공유한 URL을 남겨주시면 추첨을 통해 상품권을 최대 <span>100만원</span> 드립니다!
-                                </p>
-                            </div>
-                        </div>
-                </section>
-                
-                <!--
-                정식품 히스토리
-                <section class="history">
-                    <figure>
-                        <video>
-                            
-                        </video>
-                        <figcaption>Dr. Chung's Food History</figcaption>
-                        <span>정식품 창업주 정재원 명예회장의 베지밀 탄생 히스토리</span>
+        <header role="banner">
+            <div class="menu">
+                <a href="index.html" rel="home" class="logo"></a>
+                <button id="burgerMenuBtn" onclick="burgerMenuBtn()">
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav role="navigation" aria-label="gnb" id="globalNav">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#">기업소개</a>
+                            <ul class="sub-menu">
+                                <li><a href="">CEO 인사말</a></li>
+                                <li><a href="">기업정보</a></li>
+                                <li><a href="">사회공헌</a></li>
+                                <li><a href="">중앙연구소</a></li>
+                                <li><a href="">식품안전인증현황</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product/product-begemil.html">제품소개</a>
+                            <ul class="sub-menu">
+                                <li><a href="product/product-begemil.html">베지밀</a></li>
+                                <li><a href="product/product-begemil-black.html">베지밀 블랙</a></li>
+                                <li><a href="product/product-begemil-other.html">그 외 제품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="cp/cp-news.html">공정거래</a>
+                            <ul class="sub-menu">
+                                <li><a href="cp/cp-news.html">CP도입</a></li>
+                                <li><a href="cp/cp-institution.html">자율준수 프로그램</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객지원</a>
+                            <ul class="sub-menu">
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">1:1 문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">로그인</a>
+                            <ul class="sub-menu">
+                                <li><a href="">로그인</a></li>
+                                <li><a href="">회원가입</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- main visual -->
+        <section class="main-visual">
+            <video src="video/main_drjung_history.mp4" poster="video/main_visual.gif" autoplay playsinline muted loop type="video/mp4" alt="베지밀 2018 tv 광고">
+            </video>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </section>
+        
+        <section class="container">
+            <!-- 제품 -->
+            <section id="mainProd" class="prod">
+                <section class="prod_Vegemil">
+                    <!-- 베지밀 두유 플레인 -->
+                    <figure id="vgmPlain">
+                        <a href=""><img src="img/begemil-a.png" alt="베지밀 에이" title="베지밀 에이"></a>
+                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
+                        <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
+                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
+                        <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
                     </figure>
+                    <!--
+                        베지밀 두유 블랙 
+                    <figure id="vgmBk">
+                        <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
+                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
+                        <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
+                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
+                        <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
+                    </figure>
+                        베지밀 그 외 제품 
+                    <figure id="vgmOther">
+                        <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
+                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
+                        <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
+                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
+                        <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
+                    </figure>
+                    -->
                 </section>
-                -->
-                
-                <!-- 정식품 웹진 -->
-                <section class="webzine">
-                    <h2>정식품 웹진</h2>
-                    <!-- 웹진 메인 컨텐츠 -->
-                    <article class="webzine_main wz_contents01">
-                        <figure>
-                            <img src="img/webzine-content-01.jpg" alt="베지밀 검은콩 두유 사진">
-                        </figure>
-                        <div class="wz_txt_main">
-                            <span>special nut begemil</span>
-                            <h4>
-                                <a href="">베지밀 곡물/견과두유 라인 파헤치기</a>
-                            </h4>
-                            <a href="http://www.vegemil.co.kr/Main/webzine/Q2_2016/contentsdetail.aspx?contentsno=Q2_2016_sub06.html" target="_blank">
-                                바로가기
-                            </a>
-                        </div>
-                    </article>
-                    <article class="webzine_main wz_contents02">
-                        <figure>
-                            <img src="img/webzine-content-02.jpg" alt="베지밀 CF 광고 사진">
-                        </figure>
-                        <div class="wz_txt_main">
-                            <span>for family</span>
-                            <h4>
-                                <a href="">온 가족이 함께 즐기는 베지밀</a>
-                            </h4>
-                            <a href="http://www.vegemil.co.kr/Main/webzine/Q2_2019/sub07.aspx" target="_blank">
-                                바로가기
-                            </a>
-                        </div>
-                    </article>
-                    <!-- 웹진 일반 컨텐츠 -->
-                    <article class="webzine_content wz_contents03">
-                        <figure>
-                                <img src="img/webzine-content-03.jpg" alt="베지밀로 만든 콩국수 사진">
-                        </figure>
-                        <div class="wz_txt">
-                            <span>recipe</span>
-                            <h4>
-                                <a href="">국산콩 진한 콩국 레시피</a>
-                            </h4>
-                            <a href="http://www.vegemil.co.kr/Main/webzine/Q3_2018/sub06.aspx" target="_blank">
-                                바로가기
-                            </a>
-                        </div>
-                    </article>
-                    <article class="webzine_content wz-contents04">
-                        <figure>
-                            <img src="img/webzine-content-04.jpg" alt="국산콩 베지밀 두유 사진">
-                        </figure>
-                        <div class="wz_txt">
-                            <span>About health</span>
-                            <h4>
-                                <a href="">하루가 가벼워지는 두유</a>
-                            </h4>
-                            <a href="http://www.vegemil.co.kr/Main/webzine/Q4_2019/sub07.aspx?time=2019&newsCode=sub07" target="_blank">
-                                바로가기
-                            </a>
-                        </div>
-                    </article>
-                </section>
-                
-                <!-- SNS -->
-                <section class="main_sns">
-                    <h2>SNS</h2>
-                    <article>
+                <!-- 인디게이터 -->
+                <div class="control">
+                    <div class="indicator">
                         <span></span>
-                        <figure>
-                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
-                        </figure>
-                    </article>
-                    <article>
                         <span></span>
-                        <figure>
-                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
-                        </figure>
-                    </article>
-                    <article>
-                        <span></span>
-                        <figure>
-                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
-                        </figure>
-                    </article>
-                    <article>
-                        
-                        <figure>
-                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
-                        </figure>
-                    </article>
-                    <article>
-                        <span></span>
-                        <figure>
-                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
-                        </figure>
-                    </article>
-                    <article>
-                        <span></span>
-                        <figure>
-                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
-                        </figure>
-                    </article>
-                    <article>
-                        <span></span>
-                        <figure>
-                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
-                        </figure>
-                    </article>
-                    <article>
-                        <span></span>
-                        <figure>
-                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
-                        </figure>
-                    </article>
-                    <article>
-                        <span></span>
-                        <figure>
-                            <a href=""><video src="" poster="" type="video/mp4" playsinline muted></video></a>
-                        </figure>
-                    </article>
-                </section>
-                
-                <!-- 새소식 & 보도자료 -->
-                <section class="news-press">
-                    <!-- 새소식 -->
-                    <section class="news">
-                        <div class="box-n">
-                            <dl>
-                                <dt>새소식</dt>
-                                <dd>
-                                    <span>
-                                        <a href="http://www.vegemil.co.kr/Main/webzine/Q2_2019/sub02.aspx" target="_blank">건강, 영양, 뷰티를 한손에, ‘리얼월넛’ 출시</a>
-                                        <a href="http://www.vegemil.co.kr/Main/webzine/Q1_2020/sub02.aspx" target="_blank">베지밀 '요거트맛 두유, 복숭아맛 두유' 출시</a>
-                                        <a href="http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02" target="_blank">새‘그린비아 키즈 &#38; 키즈 초코맛’ 출시</a>
-                                        <a href="http://www.vegemil.co.kr/Main/webzine/Q1_2018/sub03.aspx" target="_blank">47가지 국내산 100% ‘자연담은 한끼생식’ 출시</a>
-                                    </span>
-                                </dd>
-                            </dl>
-                            <a href="">
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                    </section>
-
-                    <!-- 보도자료 -->
-                    <section class="press">
-                        <div class="box-p">
-                            <dl>
-                                <dt>보도자료</dt>
-                                <dd>
-                                    <span>
-                                        <a href="http://www.mbn.co.kr/news/economy/4037670">정식품 사랑의 베지밀 온도계 성료, 소외이웃에 두유 2500개 전달</a>
-                                        <a href="https://news.joins.com/article/23684158">정식품, 온 가족 위한 1만 원대 ＇베지밀 설 선물세트＇ 출시</a>
-                                        <a href="http://www.sportsseoul.com/news/read/869271">정식품, 브랜드 서포터즈 ‘V컨슈머피아’ 9기 모집</a>
-                                        <a href="https://www.hankyung.com/economy/article/201912091856g">정식품, 2020년 신입, 경력 사원 공채 실시</a>
-                                    </span>
-                                </dd>
-                            </dl>
-                            <a href="">
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                    </section>
-                </section>
-            </section>
-            <!-- container end -->
-            
-            
-            <!-- footer -->
-            
-            <footer role="contentinfo">
-                <!-- sns -->
-                <section class="sns">
-                    <a href="https://www.facebook.com/vegemilgood"></a>
-                    <a href="https://www.instagram.com/vegemil.official/"></a>
-                    <a href="https://www.youtube.com/user/vegemilgood"></a>
-                    <a href="https://blog.naver.com/vegemilstory"></a>
-                </section>
-                
-                <!-- family-site -->
-                <section class="family-site">
-                    <div></div>
-                </section>
-                <ul>
-                    <li><a href="https://www.vegemil.co.kr:10001/main/member/login.aspx?r=http://www.vegemil.co.kr/main/community/agencyNotify.aspx">대리점장 게시판</a></li>
-                    <li><a href="http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02">사이트 맵</a></li>
-                    <li><a href="http://www.vegemil.co.kr/main/member/privacy.aspx">개인정보처리방침</a></li>
-                    <li><a href="http://www.vegemil.co.kr/main/member/terms.aspx">이용약관</a></li>
-                </ul>
-                <div class="company-info">
-                    <dl>
-                        <dt>주소</dt>
-                        <dd>(주)정식품 충청북도 청주시 흥덕구 산단로 124 (우)28446</dd>
-                        
-                    </dl>
-                    <dl>
-                        <dt>사업자등록번호</dt>
-                        <dd>315-81-19977</dd>
-                        <dt>업태</dt>
-                        <dd>제조(기타 비알콜성 음료)</dd>
-                        <dt>대표이사</dt>
-                        <dd>이순구</dd>
-                    </dl>
-                    <dl>
-                        <dt>대표전화</dt>
-                        <dd>02-3484-9300</dd>
-                        <dt>고객상담</dt>
-                        <dd>080-930-8888</dd>
-                        <dt>상담메일</dt>
-                        <dd>cs@vegemil.co.kr</dd>
-                    </dl>
+                    </div>
                 </div>
-                <p>Copyright(c)2008 Dr.CHUNG'S FOOD Co., Ltd. All Right Reserved.</p>
-            </footer>
-            <section class="Rel">
-                <ul>
-                    <li><a href="http://www.heart.or.kr/"></a></li>
-                    <li><a href="http://www.goodneighbors.kr/"></a></li>
-                    <li><a href="https://www.haccp.or.kr/"></a></li>
-                    <li><a href="https://www.knab.go.kr/"></a></li>
-                    <li><a href="https://www.fssc22000.com/"></a></li>
-                    <li><a href="http://www.epd.or.kr/"></a></li>
-                    <li><a href="https://www.kca.go.kr/ccm/"></a></li>
-                    <li><a href="https://www.ffsb.kr/"></a></li>
-                    <li><a href="http://www.soyworld.or.kr/"></a></li>
-                </ul>
+                <!-- 상품 탭 -->
+                <div class="prod-title">
+                    <button type="button" name="vgmPlainbtn" id="vgmPlainbtn">
+                        베지밀 두유
+                    </button>
+                    <button type="button" name="vgmBkbtn" id="vgmBkbtn">
+                        베지밀 블랙
+                    </button>
+                    <button type="button" name="vgmOtherBtn" id="vgmOtherBtn">
+                        그 외 제품
+                    </button>
+                </div>
             </section>
-        </body>
+            
+            <!-- 이벤트 -->
+            <section class="event">
+                <div class="event-background"></div>
+                    <div class="event-content">
+                        <div class="event-title">
+                            <span>Begemil</span>
+                            <h3>SNS EVENT</h3>
+                            <p><time datetime="2020-01-01">2020. 1. 1</time> ~ <time datetime="2020-12-31">2020. 12. 31</time></p>
+                            <a href="">바로가기</a>
+                        </div>
+                        <div class="event-con">
+                            <figure>
+                                <img src="img/event-gift-card.jpg" alt="상품권">
+                                <img src="img/event-gift-card.jpg" alt="상품권">
+                            </figure>
+                            <p>
+                                녹차베지밀 영상 중에 가장 재미있었던 코너를 공유하세요!
+                                SNS에 공유한 URL을 남겨주시면 추첨을 통해 상품권을 최대 <span>100만원</span> 드립니다!
+                            </p>
+                        </div>
+                    </div>
+            </section>
+            
+            <!-- 정식품 웹진 -->
+            <section class="webzine">
+                <h2>정식품 웹진</h2>
+                <!-- 웹진 메인 컨텐츠 -->
+                <article class="webzine_main wz_contents01">
+                    <figure>
+                        <img src="img/webzine-content-01.jpg" alt="베지밀 검은콩 두유 사진">
+                    </figure>
+                    <div class="wz_txt_main">
+                        <span>special nut begemil</span>
+                        <h4>
+                            <a href="">베지밀 곡물/견과두유 라인 파헤치기</a>
+                        </h4>
+                        <a href="http://www.vegemil.co.kr/Main/webzine/Q2_2016/contentsdetail.aspx?contentsno=Q2_2016_sub06.html" target="_blank">
+                            바로가기
+                        </a>
+                    </div>
+                </article>
+                <article class="webzine_main wz_contents02">
+                    <figure>
+                        <img src="img/webzine-content-02.jpg" alt="베지밀 CF 광고 사진">
+                    </figure>
+                    <div class="wz_txt_main">
+                        <span>for family</span>
+                        <h4>
+                            <a href="">온 가족이 함께 즐기는 베지밀</a>
+                        </h4>
+                        <a href="http://www.vegemil.co.kr/Main/webzine/Q2_2019/sub07.aspx" target="_blank">
+                            바로가기
+                        </a>
+                    </div>
+                </article>
+                <!-- 웹진 일반 컨텐츠 -->
+                <article class="webzine_content wz_contents03">
+                    <figure>
+                            <img src="img/webzine-content-03.jpg" alt="베지밀로 만든 콩국수 사진">
+                    </figure>
+                    <div class="wz_txt">
+                        <span>recipe</span>
+                        <h4>
+                            <a href="">국산콩 진한 콩국 레시피</a>
+                        </h4>
+                        <a href="http://www.vegemil.co.kr/Main/webzine/Q3_2018/sub06.aspx" target="_blank">
+                            바로가기
+                        </a>
+                    </div>
+                </article>
+                <article class="webzine_content wz-contents04">
+                    <figure>
+                        <img src="img/webzine-content-04.jpg" alt="국산콩 베지밀 두유 사진">
+                    </figure>
+                    <div class="wz_txt">
+                        <span>About health</span>
+                        <h4>
+                            <a href="">하루가 가벼워지는 두유</a>
+                        </h4>
+                        <a href="http://www.vegemil.co.kr/Main/webzine/Q4_2019/sub07.aspx?time=2019&newsCode=sub07" target="_blank">
+                            바로가기
+                        </a>
+                    </div>
+                </article>
+            </section>
+            
+            <!-- SNS -->
+            <section class="main_sns">
+                <h2>SNS</h2>
+                <div class="gridrwrapper">
+                    <article>
+                        <a href=""></a>
+                        <figure>
+                            <a href=""><img src="img/main_vgm_sns_07.jpg" alt="메인 인스타그램 초록우산 어린이재단 기부사진" title="메인 인스타그램 초록우산 어린이재단 기부사진"></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <a href=""></a>
+                        <figure>
+                            <a href=""><img src="img/main_vgm_sns_08.jpg" alt="베지밀과 토스트가 올려진 테이블 사진" title="베지밀과 토스트가 올려진 테이블 사진"></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <a href=""></a>
+                        <figure>
+                            <a href=""><img src="img/main_vgm_sns_09.jpg" alt="베지밀로 만든 오트밀" title="베지밀로 만든 오트밀"></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <a href=""></a>
+                        <figure>
+                            <a href=""><video src="video/main_vgm_sns_01.mp4" poster="" type="video/mp4" controls playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <a href=""></a>
+                        <figure>
+                            <a href=""><img src="img/main_vgm_sns_10.jpg" alt="귀리 두유 베지밀" title="귀리 두유 베지밀"></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <a href=""></a>
+                        <figure>
+                            <a href=""><video src="video/main_vgm_sns_03.mp4" poster="" type="video/mp4" controls playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <a href=""></a>
+                        <figure>
+                            <a href=""><video src="video/main_vgm_sns_04.mp4" poster="" type="video/mp4" controls playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <a href=""></a>
+                        <figure>
+                            <a href=""><video src="video/main_vgm_sns_02.mp4" poster="" type="video/mp4" controls playsinline muted></video></a>
+                        </figure>
+                    </article>
+                    <article>
+                        <a href=""></a>
+                        <figure>
+                            <a href=""><video src="video/main_vgm_sns_06.mp4" poster="" type="video/mp4" controls playsinline muted></video></a>
+                        </figure>
+                    </article>
+                </div>
+            </section>
+        </section>
+        <!-- container end -->
+        
+        
+        <!-- footer -->
+        
+        <footer role="contentinfo">
+            <!-- sns -->
+            <section class="sns">
+                <a href="https://www.facebook.com/vegemilgood"></a>
+                <a href="https://www.instagram.com/vegemil.official/"></a>
+                <a href="https://www.youtube.com/user/vegemilgood"></a>
+                <a href="https://blog.naver.com/vegemilstory"></a>
+            </section>
+            
+            <!-- family-site -->
+            <section class="family-site">
+                <div></div>
+            </section>
+            <ul>
+                <li><a href="https://www.vegemil.co.kr:10001/main/member/login.aspx?r=http://www.vegemil.co.kr/main/community/agencyNotify.aspx">대리점장 게시판</a></li>
+                <li><a href="http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02">사이트 맵</a></li>
+                <li><a href="http://www.vegemil.co.kr/main/member/privacy.aspx">개인정보처리방침</a></li>
+                <li><a href="http://www.vegemil.co.kr/main/member/terms.aspx">이용약관</a></li>
+            </ul>
+            <div class="company-info">
+                <dl>
+                    <dt>주소</dt>
+                    <dd>(주)정식품 충청북도 청주시 흥덕구 산단로 124 (우)28446</dd>
+                    
+                </dl>
+                <dl>
+                    <dt>사업자등록번호</dt>
+                    <dd>315-81-19977</dd>
+                    <dt>업태</dt>
+                    <dd>제조(기타 비알콜성 음료)</dd>
+                    <dt>대표이사</dt>
+                    <dd>이순구</dd>
+                </dl>
+                <dl>
+                    <dt>대표전화</dt>
+                    <dd>02-3484-9300</dd>
+                    <dt>고객상담</dt>
+                    <dd>080-930-8888</dd>
+                    <dt>상담메일</dt>
+                    <dd>cs@vegemil.co.kr</dd>
+                </dl>
+            </div>
+            <p>Copyright(c)2008 Dr.CHUNG'S FOOD Co., Ltd. All Right Reserved.</p>
+        </footer>
+        <section class="Rel">
+            <ul>
+                <li><a href="http://www.heart.or.kr/"></a></li>
+                <li><a href="http://www.goodneighbors.kr/"></a></li>
+                <li><a href="https://www.haccp.or.kr/"></a></li>
+                <li><a href="https://www.knab.go.kr/"></a></li>
+                <li><a href="https://www.fssc22000.com/"></a></li>
+                <li><a href="http://www.epd.or.kr/"></a></li>
+                <li><a href="https://www.kca.go.kr/ccm/"></a></li>
+                <li><a href="https://www.ffsb.kr/"></a></li>
+                <li><a href="http://www.soyworld.or.kr/"></a></li>
+            </ul>
+        </section>
+    </body>
 </html>
 
 
