@@ -10,7 +10,7 @@ header {
     position: fixed;
     top: 0; left: 0;
     background: rgba(255, 255, 255, 0.9);
-    z-index: 1;
+    z-index: 2;
 }
 header .menu {
     width: 80%;
@@ -268,6 +268,7 @@ header .menu button span:nth-of-type(2) {
 }
 .container .event .event-content {
     width: 80%;
+    height: 200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -287,7 +288,7 @@ header .menu button span:nth-of-type(2) {
     width: 400px;
     height: 400px;
     border-radius: 50% 50%;
-    background-image: url("../img/circle_o.svg");
+    background-image: url("../img/circle_g.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -298,8 +299,24 @@ header .menu button span:nth-of-type(2) {
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: 1;
     transform: translateX(-50%);
+}
+.container .event .event-content .event-title::after {
+    content: "";
+    display: inline-block;
+    min-width: 200px;
+    min-height: 200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50%;
+    background-image: url("../img/circle_o.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    z-index: 2;
 }
 .container .event .event-content .event-title span {
     color: #fff;
@@ -307,9 +324,10 @@ header .menu button span:nth-of-type(2) {
     letter-spacing: 1.5px
 }
 .container .event .event-content .event-title h3 {
-    color: #063;
+    color: #fff;
     font-size: 3em;
     font-weight: 600;
+    animation: main-event-font-animations 2s 1s infinite both alternate;
 }
 .container .event .event-content .event-title p {
     margin: 10px 0;
@@ -321,10 +339,11 @@ header .menu button span:nth-of-type(2) {
     font-weight: 200;
 }
 .container .event .event-content .event-title a {
-    font-size: .9em;
+    font-size: 1.15em;
     transition: .5s;
     color: #fff;
     text-decoration: underline;
+    margin-top: 30px;
 }
 .container .event .event-content .event-title a:hover {
     color: #063;
@@ -340,23 +359,19 @@ header .menu button span:nth-of-type(2) {
 .container .event .event-content figure img {
     width: 30%;
     position: absolute;
-    left: 50%;
-    /*transform: translateX(-50%);*/
-}
-/*
-.container .event .event-content figure img:nth-of-type(1) {
-    top: 20%;
-    transform: rotateZ(-5deg);
-}
-.container .event .event-content figure img:nth-of-type(2) {
     top: 40%;
-    transform: translateY(20%) rotateZ(15deg);
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%) rotateZ(50deg);
 }
 */
 @keyframes event-ani {
     0% {transform: translateY(5%);}
     50% {transform: translateY(10%);}
     100% {transform: translateY(5%);}
+}
+.container .event p {
+
 }
 .container .event p span {
     font-size: 1rem;
@@ -370,7 +385,14 @@ header .menu button span:nth-of-type(2) {
     height: 2px;
     background: #063;
 }
-
+@keyframes main-event-font-animations {
+    0%{
+        color: rgba(217, 114, 52, 95);
+    }
+    100%{
+        color: rgba(255, 255, 255, .85);
+    }
+}
 /*----------정식품 웹진----------*/
 .container .webzine {
     width: 80%;
