@@ -2,7 +2,6 @@
 body {
     width: 100%;
 }
-
 /*header*/
 
 header {
@@ -109,13 +108,6 @@ header .menu nav .sub-menu li a {
 header .menu nav ul li:nth-of-type(1) ul li:nth-of-type(5) {
     margin-bottom: 20px;
 }
-/* 웹접근성을 위한 input 요소 숨기기 */
-    /*
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    */
-
 
 /* burger menu */
 header .menu button {
@@ -144,7 +136,6 @@ header .menu button span:nth-of-type(2) {
 }
 
 /* main-visual */
-
 .main-visual {
     width: 100%;
     max-width: 100%;
@@ -155,7 +146,6 @@ header .menu button span:nth-of-type(2) {
     width: 100%;
 }
 .main-visual a {}
-
 @keyframes nav-font-animations {
     0%{
         color: rgba(217, 114, 52, 1);
@@ -282,10 +272,6 @@ header .menu button span:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    /*transform: translateX(0) translateY(-30%);*/
-    position: absolute;
-    top: 200px; left: 50%;
-    transform: translateX(-50%);
 }
 .container .event .event-background {
     width: 100%;
@@ -295,36 +281,35 @@ header .menu button span:nth-of-type(2) {
     background-size: cover;
     background-attachment: fixed;
 }
-
 .container .event .event-content .event-title {
-    width: 40%;
+    min-width: 350px;
+    min-height: 350px;
+    width: 400px;
     height: 400px;
-    padding: 120px 0;
-    background-image: linear-gradient(to right bottom, #574bcd , #41e975 80%);
-    opacity: .95;
+    border-radius: 50% 50%;
+    background-image: url("../img/circle_o.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    box-shadow: 10px 10px 30px -10px #aaa;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
 }
-/*
-.container .event .event-content .event-title:hover {
-    animation: event-ani 2s ease-in infinite;
-}
-*/
 .container .event .event-content .event-title span {
     color: #fff;
     font-size: 1.2em;
+    letter-spacing: 1.5px
 }
 .container .event .event-content .event-title h3 {
-    color: #fff;
-    letter-spacing: 2px;
-    font-size: 2.25em;
-    font-weight: 700;
-}
-.container .event .event-content .event-title h3:hover {
-    animation: font-animations 2s .5s infinite both;
+    color: #063;
+    font-size: 3em;
+    font-weight: 600;
 }
 .container .event .event-content .event-title p {
     margin: 10px 0;
@@ -338,66 +323,52 @@ header .menu button span:nth-of-type(2) {
 .container .event .event-content .event-title a {
     font-size: .9em;
     transition: .5s;
-    margin: 20px auto 0;
-    padding: 7px 20px;
     color: #fff;
-    border: 1px solid #fff;
+    text-decoration: underline;
 }
 .container .event .event-content .event-title a:hover {
-    color: rgba(41, 153, 173, 1);
-    border: 1px solid rgba(41, 153, 173, 1);
-    letter-spacing: 2px;
+    color: #063;
+    letter-spacing: 3px;
     transition: all .2s;
 }
-.container .event-content .event-con {
+.container .event-content {
     width: 55%;
 }
-.container .event .event-content .event-con figure img {
+.container .event .event-content figure {
+    width: 100%;
+}
+.container .event .event-content figure img {
     width: 30%;
-    box-shadow: 5px 5px 10px -2px #bbb;
+    position: absolute;
+    left: 50%;
+    /*transform: translateX(-50%);*/
 }
-.container .event .event-content .event-con figure img:nth-of-type(1) {
-    transform: translateX(10%) translateY(-30%);
+/*
+.container .event .event-content figure img:nth-of-type(1) {
+    top: 20%;
+    transform: rotateZ(-5deg);
 }
-.container .event .event-content .event-con figure img:nth-of-type(2) {
-    transform: translateX(-100%);
+.container .event .event-content figure img:nth-of-type(2) {
+    top: 40%;
+    transform: translateY(20%) rotateZ(15deg);
 }
-.container .event .event-content .event-con figure:hover {
-    animation: event-ani .3s ease-in-out infinite both;
-}
+*/
 @keyframes event-ani {
     0% {transform: translateY(5%);}
     50% {transform: translateY(10%);}
     100% {transform: translateY(5%);}
 }
-
-.container .event .event-con p {
-    font-size: 1rem;
-    padding: 30px 0;
-    white-space: pre-line;
-}
-.container .event .event-con p span {
+.container .event p span {
     font-size: 1rem;
     font-weight: 700;
     color: #063;
 }
-.container .event .event-con p span::after {
+.container .event p span::after {
     content: "";
     display: block;
     width: 100%;
     height: 2px;
     background: #063;
-}
-
-/* 제목 */
-.container .wz h2,
-.container .tvcf h2 {
-    font-size: 1.75em;
-    font-weight: 500;
-    text-align: center;
-    color: #333;
-    margin: 80px 0 50px;
-    font-family: 'Noto Serif', 'Noto Serif KR', serif;
 }
 
 /*----------정식품 웹진----------*/
@@ -422,6 +393,22 @@ header .menu button span:nth-of-type(2) {
 .container .webzine article div {
     box-shadow: 0 1px 10px 2px rgba(51, 51, 51, .2);
 }
+.container .webzine article div {
+    position: relative;
+}
+.container .webzine article div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #d97234;
+    border-radius: 50%;
+    transition: 1s linear;
+}
+.container .webzine article div:hover::before {
+    opacity: 0;
+}
 .container .webzine article div span {
     color: #063;
     font-size: .95em;
@@ -443,16 +430,16 @@ header .menu button span:nth-of-type(2) {
     animation: font-animations 2s .5s infinite both alternate;
 }
 .container .webzine article div > a{
-    color: #333;
+    color: #063;
     font-size: 1.05em;
     padding: 5px 20px;
-    border: 1px solid #333;
+    border: 1px solid #063;
     transition: all .3s cubic-bezier(0.03, 0.24, 0, 0.78);
 }
 .container .webzine article div > a:hover {
     color: #063;
     letter-spacing: 2px;
-    border: 1px solid rgba(0, 102, 51, 1);
+    border: 1px solid #063;
 }
 
 /* 웹진 메인 공통 */
@@ -495,6 +482,12 @@ header .menu button span:nth-of-type(2) {
     transition: transform .6s cubic-bezier(0.03, 0.24, 0, 0.78);
     /*animation: webzine_main_ani .6s 1s infinite linear alternate;*/
 }
+.container .webzine .webzine_main .wz_txt_main::before {
+    top: 50%;
+    left: 0;
+    transform: translateX(-100%) translateY(-50%);
+    animation: arrow-ani-main .35s .2s linear infinite alternate both;
+}
 .container .webzine .webzine_main:nth-of-type(2) .wz_txt_main {
     transform: translateX(60%);
 }
@@ -514,8 +507,15 @@ header .menu button span:nth-of-type(2) {
         transform: translateX(30%);
     }
 }
-
-/* 웹진 서브 컨텐츠 */
+@keyframes arrow-ani-main {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}
+/* 웹진 일반 컨텐츠 */
 .container .webzine .webzine_content {
     width: calc(50% - 2.5px);
     position: relative;
@@ -545,6 +545,12 @@ header .menu button span:nth-of-type(2) {
     background-image: linear-gradient(125deg, rgba(255, 221, 148, 1), rgba(208, 230, 165, 1) 55%);
     transition: transform .5s;
 }
+.container .webzine .webzine_content .wz_txt::before{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    animation: arrow-ani .35s .2s linear infinite alternate both;
+}
 .container .webzine .webzine_content:hover .wz_txt{
     bottom: 0;
     transform: translateX(-50%);
@@ -552,6 +558,14 @@ header .menu button span:nth-of-type(2) {
 .container .webzine .webzine_content .wz_txt h4 a {}
 .container .webzine .webzine_content .wz_txt > a{}
 
+@keyframes arrow-ani {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-180%);
+    }
+}
 
 /*---------- SNS ----------*/
 .container .main_sns {
@@ -573,15 +587,15 @@ header .menu button span:nth-of-type(2) {
     position: absolute;
     top: 5%;
     left: 5%;
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/icon/instagram.svg");
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/logo/instagram.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 .container .main_sns .gridrwrapper article:nth-of-type(1) > a {
-    background-image: url("../img/icon/facebook-f.svg");
+    background-image: url("../img/logo/facebook-f.svg");
 }
 .container .main_sns .gridrwrapper article figure {}
 .container .main_sns .gridrwrapper article figure a {
@@ -590,121 +604,6 @@ header .menu button span:nth-of-type(2) {
 .container .main_sns .gridrwrapper article a video {
     width: 100%;
 }
-
-/* 새소식 & 보도자료 */
-.container .news-press {
-    width: 80%;
-    margin: 0 auto;
-}
-.container .news-press::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.container .news,
-.container .press {
-    width: 50%;
-}
-
-.container .news .box-n,
-.container .press .box-p {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-.container .news .box-n::after,
-.container .press .box-p::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.container .news dl,
-.container .press dl {
-    width: 95%;
-    line-height: 50px;
-}
-.container .news .box-n dl dt,
-.container .press .box-p dl dt {
-    width: 30%;
-    color: #fff;
-    font-size: 1.15em;
-    font-weight: 600;
-    float: left;
-}
-.container .news .box-n dl dd,
-.container .press .box-p dl dd {
-    width: 65%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.container .news .box-n dl dd span,
-.container .press .box-p dl dd span {
-    width: 100%;
-}
-.container .news .box-n dl dd a,
-.container .press .box-p dl dd a{
-    color: #fff;
-    width: 100%;
-    display: block;
-}
-.container .news .box-n dl dd a:nth-of-type(2),
-.container .news .box-n dl dd a:nth-of-type(3),
-.container .news .box-n dl dd a:nth-of-type(4),
-.container .press .box-p dl dd a:nth-of-type(2),
-.container .press .box-p dl dd a:nth-of-type(3),
-.container .press .box-p dl dd a:nth-of-type(4) {
-    display: none;
-}
-
-.container .news .box-n > a,
-.container .press .box-p > a {
-    width: 4.5%;
-    color: #fff;
-    float: right;
-    position: relative;
-}
-.container .news .box-n > a span,
-.container .press .box-p > a span {
-    display: inline-block;
-    width: 1em;
-    height: 1.5px;
-    background: #fff;
-    position: absolute;
-    transition: .5s;
-}
-.container .news .box-n > a span:nth-of-type(1),
-.container .press .box-p > a span:nth-of-type(1) {
-    top: 0; left: 50%;
-    transform: translateX(50%);
-    transform: rotateZ(90deg);
-}
-.container .news .box-n > a span:nth-of-type(2),
-.container .press .box-p > a span:nth-of-type(2) {
-    top: 0; left: 50%;
-    transform: translateX(50%);
-    transform: rotateZ(0deg);
-}
-
-
-
-/* 새소식 */
-.container .news {
-    background-image: linear-gradient(135deg, transparent 4%, #555 4%, #555 100%);
-    float: left;
-}
-/* 보도자료 */
-.container .press {
-    background-image: linear-gradient(135deg, transparent 4%, #aaa 4%, #aaa 100%);
-    float: right;
-}
-.container .press:hover {
-    background-image: linear-gradient(135deg, transparent 4%, #555 4%, #555 100%);
-}
-
 
 /* footer */
 footer {
@@ -723,31 +622,25 @@ footer .sns {
 }
 footer .sns a {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background-color: #063;
     margin-right: 30px;
 }
 footer .sns a:nth-of-type(1) {
-    background: url("../img/icon/f_icon.png");
+    background: url("../img/logo/instagram.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 footer .sns a:nth-of-type(2) {
-    background: url("../img/icon/i_icon.png");
+    background: url("../img/logo/facebook-f.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 footer .sns a:nth-of-type(3) {
-    background: url("../img/icon/y_icon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-footer .sns a:nth-of-type(4) {
-    background: url("../img/icon/b_icon.png");
+    background: url("../img/logo/youtube.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -925,9 +818,6 @@ footer p {
     header .menu button {
         display: none;
     }
-    .container .event .event-content .event-title a {
-        display: none;
-    }
 }
 
 /* 1024px 이하 */
@@ -993,22 +883,18 @@ footer p {
     }
     .container .event .event-content {
         display: block;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
     }
     .container .event .event-content .event-title {
-        width: 80%;
         margin: 0 auto;
         height: auto;
-        padding: 50px 0 40px;
     }
     .container .event .event-content .event-title p {
         margin: 5px 0;
     }
-    .container .event-content .event-con {
+    .container .event-content > p {
         display: none;
     }
+
     /* 웹진 */
 
 }
@@ -1057,37 +943,3 @@ footer p {
         min-height: ;
     }
 }
-
-
-/*
-하단 컨텐츠
-
-.container .wz .wz-s-content .wz-content-03,
-.container .wz .wz-s-content .wz-content-04 {
-    width: 49%;
-    height: 400px;
-    overflow: hidden;
-    box-shadow: 10px 10px 30px -10px #aaa;
-}
-
-
-.container .wz .wz-s-content {
-    display: flex;
-    justify-content: space-between;
-}
-제목 오버플로우
-.container .wz .wz-s-content .wz-content-03,
-.container .wz .wz-s-content .wz-content-04 {
-    width: 49%;
-    height: 400px;
-    overflow: hidden;
-    box-shadow: 10px 10px 30px -10px #aaa;
-}
-
-
-*/
-
-
-
-
-
