@@ -10,7 +10,7 @@ header {
     position: fixed;
     top: 0; left: 0;
     background: rgba(255, 255, 255, 0.9);
-    z-index: 2;
+    z-index: 3;
 }
 header .menu {
     width: 80%;
@@ -175,12 +175,20 @@ header .menu button span:nth-of-type(2) {
 
 /*---------- 메인 제품 ----------*/
 .container .prod {
-    width: 80%;
+    width: 100%;
     margin: 100px auto;
 }
-.container .prod figure {
+.container .prod-background {
     width: 100%;
-    
+    height: 300px;
+    margin: 0 auto;
+    background: url("../img/prod_background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .prod figure {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -264,29 +272,50 @@ header .menu button span:nth-of-type(2) {
 /*---------- 이벤트 ----------*/
 .container .event {
     position: relative;
-    height: 600px;
+    width: 100%;
 }
 .container .event .event-content {
-    width: 80%;
-    height: 200px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 }
-.container .event .event-background {
-    width: 100%;
-    height: 300px;
-    margin: 0 auto;
-    background: url("../img/event-background.jpg") no-repeat center;
+/* 행성 event
+.container .event .event-content .event-title::after {
+    content: "";
+    display: inline-block;
+    min-width: 100px;
+    min-height: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% 50%;
+    background-image: url("../img/circle_o.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    position: absolute;
+    top: 60%;
+    right: -10%;
+    z-index: -1;
+}
+.container .event .event-content .event-title::before {
+    content: "";
+    display: inline-block;
+    min-width: 550px;
+    min-height: 150px;
+    border: 10px solid #d97234;
+    border-top: 10px rgba(217, 114, 52, .0) solid;
+    border-radius: 50% 50%;
+    opacity: .8;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .container .event .event-content .event-title {
-    min-width: 350px;
-    min-height: 350px;
-    width: 400px;
-    height: 400px;
+    min-width: 450px;
+    min-height: 450px;
+    width: 450px;
+    height: 450px;
     border-radius: 50% 50%;
     background-image: url("../img/circle_g.svg");
     background-repeat: no-repeat;
@@ -299,91 +328,69 @@ header .menu button span:nth-of-type(2) {
     position: absolute;
     top: 0;
     left: 50%;
+    z-index: 2;
     transform: translateX(-50%);
 }
-.container .event .event-content .event-title::after {
-    content: "";
-    display: inline-block;
-    min-width: 200px;
-    min-height: 200px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50% 50%;
-    background-image: url("../img/circle_o.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 50%;
-    right: 40%;
-    z-index: 2;
+ */
+.container .event .event-content .main-event-lft-bg {
+    width: 61.764%;
+    height: 250px;
+    background-color: rgba(134, 227, 206, 1);
 }
-.container .event .event-content .event-title span {
+.container .event .event-content .main-event-rgt-bg {
+    width: 38.235%;
+    height: 250px;
+    background-color: rgba(217, 114, 52, 1);
+}
+.container .event .event-content .main-event-lft-bg::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container .event .event-content .main-event-lft-bg .main-event-sub-bg {
+    width: 89%;
+    height: 100%;
+    float: right;
+    background-color: rgba(0, 102, 51, .9);
+    border-bottom-left-radius: 55% 65%;
+    text-align: right;
+}
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg span {
     color: #fff;
     font-size: 1.2em;
     letter-spacing: 1.5px
 }
-.container .event .event-content .event-title h3 {
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg h3 {
     color: #fff;
     font-size: 3em;
     font-weight: 600;
     animation: main-event-font-animations 2s 1s infinite both alternate;
 }
-.container .event .event-content .event-title p {
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p {
     margin: 10px 0;
 }
-.container .event .event-content .event-title p,
-.container .event .event-content .event-title p time {
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p,
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p time {
     color: #fff;
     font-size: 1em;
     font-weight: 200;
 }
-.container .event .event-content .event-title a {
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg a {
     font-size: 1.15em;
     transition: .5s;
     color: #fff;
     text-decoration: underline;
     margin-top: 30px;
 }
-.container .event .event-content .event-title a:hover {
-    color: #063;
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg a:hover {
+    color: #fff;
     letter-spacing: 3px;
     transition: all .2s;
 }
-.container .event-content {
-    width: 55%;
-}
-.container .event .event-content figure {
-    width: 100%;
-}
-.container .event .event-content figure img {
-    width: 30%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50%) rotateZ(50deg);
-}
-*/
 @keyframes event-ani {
     0% {transform: translateY(5%);}
     50% {transform: translateY(10%);}
     100% {transform: translateY(5%);}
-}
-.container .event p {
-
-}
-.container .event p span {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #063;
-}
-.container .event p span::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #063;
 }
 @keyframes main-event-font-animations {
     0%{
@@ -899,23 +906,6 @@ footer p {
         overflow: visible;
     }
     /* Event */
-    .container .event {
-        position: relative;
-        height: auto;
-    }
-    .container .event .event-content {
-        display: block;
-    }
-    .container .event .event-content .event-title {
-        margin: 0 auto;
-        height: auto;
-    }
-    .container .event .event-content .event-title p {
-        margin: 5px 0;
-    }
-    .container .event-content > p {
-        display: none;
-    }
 
     /* 웹진 */
 
@@ -956,12 +946,5 @@ footer p {
     .container .prod .prod-title a:nth-of-type(4),
     .container .prod .prod-title a:nth-of-type(5)     {
         display: none;
-    }
-
-
-
-    /* Event */
-    .container .event {
-        min-height: ;
     }
 }
