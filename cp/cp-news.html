@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="우리나라 두유의 첫 장을 연 베지밀을 만든 정식품">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         
         <title>정식품 | 공정거래 CP 도입</title>
         <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
@@ -12,24 +12,20 @@
         <!-- CSS -->
         <link rel="stylesheet" href="../css/index.css">
         <link rel="stylesheet" href="../css/sub.css">
-        <link rel="stylesheet" href="../css/cp.css">
         <link rel="stylesheet" href="../css/cp-news.css">
+        <!-- Javascript -->
+        <script type="text/javascript" src="../js/index.js"></script>
     </head>
     <body>
-        
         <!-- 헤더 시작 -->
-        <header>
+        <header role="banner">
             <div class="menu">
-                <h1><a href="../index.html" rel="home" class="j-logo"></a></h1>
-                <div class="burger-menu">
-                    <label for="menu-button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                </div>
-                <input type="checkbox" id="menu-button">
-                <nav>
+                <a href="../index.html" rel="home" class="logo"></a>
+                <button id="burgerMenuBtn" onclick="burgerMenuBtn()">
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav role="navigation" aria-label="gnb" id="globalNav">
                     <ul class="main-menu">
                         <li>
                             <a href="#">기업소개</a>
@@ -57,35 +53,28 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">커뮤니티</a>
-                            <ul class="sub-menu">
-                                <li><a href="">이벤트</a></li>
-                                <li><a href="">베지밀이야기</a></li>
-                            </ul>
-                        </li>
-                        <li>
                             <a href="#">고객지원</a>
                             <ul class="sub-menu">
                                 <li><a href="">FAQ</a></li>
                                 <li><a href="">1:1 문의</a></li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="#">Login</a>
+                            <ul class="sub-menu">
+                                <li><a href="">login</a></li>
+                                <li><a href="">join us</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <div class="login">
-                        <a href="">Login</a>
-                        <a href="">Join us</a>
-                    </div>
                 </nav>
             </div>
-        </header>
-        <!-- 헤더 끝 -->
+        </header><!-- 헤더 끝 -->
 
         <!-- 배너 이미지  -->
-
         <div class="top-banner-cpnews"></div>
 
-        <!-- 현재 메뉴 탭 -->
-
+        <!-- 탭 메뉴 -->
         <nav class="local-nav">
             <ul>
                 <li><a href="">HOME</a></li>
@@ -194,15 +183,13 @@
         </section>
 
         <!-- 풋터 시작 -->
-        <footer>
+        <footer role="contentinfo">
             <!-- sns -->
             <section class="sns">
                 <a href="https://www.facebook.com/vegemilgood"></a>
                 <a href="https://www.instagram.com/vegemil.official/"></a>
                 <a href="https://www.youtube.com/user/vegemilgood"></a>
-                <a href="https://blog.naver.com/vegemilstory"></a>
             </section>
-            
             <!-- family-site -->
             <section class="family-site">
                 <div></div>

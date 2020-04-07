@@ -280,7 +280,7 @@ header .menu button span:nth-of-type(2) {
     margin: 0 auto;
     display: flex;
 }
-/* 행성 event
+ /*행성 event
 .container .event .event-content .event-title::after {
     content: "";
     display: inline-block;
@@ -331,17 +331,11 @@ header .menu button span:nth-of-type(2) {
     left: 50%;
     z-index: 2;
     transform: translateX(-50%);
-}
- */
+}*/
 .container .event .event-content .main-event-lft-bg {
     width: 61.764%;
-    height: 250px;
+    height: 200px;
     background-color: rgba(134, 227, 206, 1);
-}
-.container .event .event-content .main-event-rgt-bg {
-    width: 38.235%;
-    height: 250px;
-    background-color: rgba(217, 114, 52, 1);
 }
 .container .event .event-content .main-event-lft-bg::after {
     content: "";
@@ -355,39 +349,65 @@ header .menu button span:nth-of-type(2) {
     background-color: rgba(0, 102, 51, .9);
     border-bottom-left-radius: 55% 65%;
     text-align: right;
+    position: relative;
+    overflow: hidden;
 }
 .container .event .event-content  .main-event-lft-bg .main-event-sub-bg span {
     color: #fff;
-    font-size: 1.2em;
-    letter-spacing: 1.5px
+    font-size: 1.05em;
+    letter-spacing: 5px;
+    padding-right: 10px;
 }
 .container .event .event-content  .main-event-lft-bg .main-event-sub-bg h3 {
     color: #fff;
-    font-size: 3em;
-    font-weight: 600;
+    font-size: 2.65em;
+    font-weight: 300;
+    letter-spacing: 10px;
     animation: main-event-font-animations 2s 1s infinite both alternate;
 }
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p {
-    margin: 10px 0;
-}
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p {}
 .container .event .event-content  .main-event-lft-bg .main-event-sub-bg p,
 .container .event .event-content  .main-event-lft-bg .main-event-sub-bg p time {
     color: #fff;
-    font-size: 1em;
-    font-weight: 200;
+    font-size: .94em;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p time {
+    padding-right: 10px;
 }
 .container .event .event-content  .main-event-lft-bg .main-event-sub-bg a {
-    font-size: 1.15em;
-    transition: .5s;
     color: #fff;
-    text-decoration: underline;
-    margin-top: 30px;
-}
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg a:hover {
-    color: #fff;
-    letter-spacing: 3px;
+    font-size: 1.05em;
+    letter-spacing: 5px;
+    padding-right: 10px;
     transition: all .2s;
 }
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg a::after {
+    content: "";
+    display: block;
+    width: 300%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .8);
+    transform: translateX(0);
+    transition: transform .5s linear;
+}
+.container .event .event-content  .main-event-lft-bg .main-event-sub-bg a:hover::after {
+    transform: translateX(-50%);
+    background-color: rgba(134, 227, 206, 1);
+}
+.container .event .event-content .main-event-rgt-bg {
+    width: 38.235%;
+    height: 200px;
+    background-color: rgba(217, 114, 52, 1);
+    position: relative;
+}
+.container .event .event-content .main-event-rgt-bg figure {}
+.container .event .event-content .main-event-rgt-bg figure img {
+    
+    
+}
+
 @keyframes event-ani {
     0% {transform: translateY(5%);}
     50% {transform: translateY(10%);}
@@ -395,7 +415,7 @@ header .menu button span:nth-of-type(2) {
 }
 @keyframes main-event-font-animations {
     0%{
-        color: rgba(217, 114, 52, 95);
+        color: rgba(217, 114, 52, .95);
     }
     100%{
         color: rgba(255, 255, 255, .85);
