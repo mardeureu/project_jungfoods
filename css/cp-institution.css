@@ -17,7 +17,7 @@
 .fair-trade .cp-introduce {
     width: 100%;
     padding: 80px 50px;
-    background-color: #063;
+    background-color: rgba(0, 102, 51, .65);
 }
 .fair-trade .cp-introduce .co-txt {
     width: 80%;
@@ -75,6 +75,7 @@
     height: .6em;
     margin-right: .5em;
     vertical-align: .05em;
+    background-color: rgba(0, 102, 51, .65);
     background-image: linear-gradient(-110deg,  rgba(208, 230, 165, .95) 20%, rgba(255, 221, 148, .8));
 }
 
@@ -122,7 +123,7 @@
     display: inline-block;
     width: 1em;
     height: 2px;
-    background-color: #fff;
+    background-color: rgba(0, 102, 51, 1);
 }
 .necessity-of-cp ul li > span:nth-of-type(2) span:nth-of-type(1) {
     transform: rotateZ(40deg);
@@ -173,28 +174,26 @@
     height: .6em;
     margin-right: .5em;
     vertical-align: .05em;
+    background-color: rgba(0, 102, 51, .65);
     background-image: linear-gradient(-110deg,  rgba(208, 230, 165, .95) 20%, rgba(255, 221, 148, .8));
     border-radius: 50%;
-
 }
 .seven-core div dl dd {
     line-height: 2em;
 }
-
 .seven-core div dl:nth-of-type(1) {
     float: right;
 }
-
 .seven-core div dl:nth-of-type(2) {
     float: left;
 }
 
 
 /* Benefits of Compliance Program */
-
 .cp-benefit {
     width: 80%;
     margin: 0 auto;
+
 }
 .cp-benefit h3 {}
 .cp-benefit > div {
@@ -204,58 +203,56 @@
 }
 
 /* 원 라인 */
-.cp-benefit .benefit-circle-line {
-    width: 40vh;
-    height: 40vh;
-    border: 5px solid rgba(217, 114, 52, .95);
-    border-top-color: rgba(0, 102, 51, 1);
-    border-bottom-color: rgba(0, 102, 51, 1);
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-
-/* 텍스트 */
-
-.cp-benefit .benefit-circle-text {
-}
-.cp-benefit .benefit-circle-text {
+.cp-benefit .benefit-circle-line{
     position: relative;
-    width: 50vw;
+    width: 40vh;
     height: 40vh;
     margin: 0 auto;
 }
-.cp-benefit .benefit-circle-text span {
-    font-size: 1.15em;
-    color: #333;
+.cp-benefit .benefit-circle-line::after {
+    content: "";
+    display: block;
+    width: 40vh;
+    height: 40vh;
+    border: 5px solid rgba(217, 114, 52, .75);
+    border-top-color: rgba(0, 102, 51, .85);
+    border-bottom-color: rgba(0, 102, 51, 75);
+    border-radius: 50%;
     position: absolute;
+    top: calc(50% - 20vh);
+    left: calc(50% - 20vh);
+    box-sizing: border-box;
+    animation: circle-running-rounds 6s infinite both linear;
+}
+/* 텍스트 */
+.cp-benefit .benefit-circle-line {
+    position: relative;
+    width: 80%;
+    height: 40vh;
+    margin: 0 auto;
+}
+.cp-benefit .benefit-circle-line span {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: #333;
+    position: relative;
     z-index: 1;
 }
-.cp-benefit .benefit-circle-text span:nth-of-type(1) {
-    top: -10%;
-    left: 50%;
-    transform: translateX(-50%);
+.cp-benefit .benefit-circle-line span:nth-of-type(1) {
+    transform:translateX(70px) translateY(50px);
 }
-.cp-benefit .benefit-circle-text span:nth-of-type(2) {
-    top: 30%;
-    left: 68%;
+.cp-benefit .benefit-circle-line span:nth-of-type(2) {
+    transform: translateX(280px) translateY(50px)
 }
-.cp-benefit .benefit-circle-text span:nth-of-type(3) {
-    top: 30%;
-    left: 5%;
+.cp-benefit .benefit-circle-line span:nth-of-type(3) {
+    transform: translateX(200px) translateY(300px);
 }
-.cp-benefit .benefit-circle-text span:nth-of-type(4) {
-    top: 80%;
-    left: 0;
+.cp-benefit .benefit-circle-line span:nth-of-type(4) {
+    transform: translateX(200px) translateY(100px);
 }
-.cp-benefit .benefit-circle-text span:nth-of-type(5) {
-    top: 80%;
-    right: 20%;
+.cp-benefit .benefit-circle-line span:nth-of-type(5) {
+    transform: translateX(200px) translateY(200px);
 }
-
 
 /* 원 */
 .cp-benefit .benefit-circle-tit {
@@ -274,10 +271,11 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: #fff;
+    color: #063;
     white-space: pre-line;
     font-size: 1.35em;
-
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
 /**/
@@ -321,4 +319,15 @@
     border-bottom-color: transparent;
     vertical-align: 0.065em;
     margin-left: 7px;
+}
+/* keyframes */
+@keyframes circle-running-rounds {
+    0%{
+        transform: rotateZ(0deg);
+        transform-origin: center;
+    }
+    100%{
+        transform: rotateZ(360deg);
+        transform-origin: center;
+    }
 }
