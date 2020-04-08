@@ -8,31 +8,30 @@
     background-size: cover;
     background-attachment: fixed;
 }
-/* 자율준수 프로그램이란? */
-.cp-introduce {
+/* 컨테이너 */
+.fair-trade {
     width: 100%;
-    margin: 0 auto;
-    padding: 80px 50px;
-    background-color: #333;
-    position: relative;
 }
-.cp-introduce div {
+
+/* 자율준수 프로그램이란? */
+.fair-trade .cp-introduce {
+    width: 100%;
+    padding: 80px 50px;
+    background-color: #063;
+}
+.fair-trade .cp-introduce .co-txt {
     width: 80%;
     margin: 0 auto;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translateX(-50%) translateY(-50%);
 }
-
-.cp-introduce div h4 {
+.fair-trade .cp-introduce .co-txt h4 {
     color: #fff;
-    margin-bottom: 1em;
+    font-size: 1.25em;
+    margin-bottom: 1.5em;
 }
-.cp-introduce div p {
+.fair-trade .cp-introduce .co-txt p {
     color: #fff;
     font-size: 1.05em;
-    font-weight: 400;
-
+    font-weight: 300;
 }
 
 /* 관련법규 */
@@ -76,7 +75,7 @@
     height: .6em;
     margin-right: .5em;
     vertical-align: .05em;
-    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
+    background-image: linear-gradient(-110deg,  rgba(208, 230, 165, .95) 20%, rgba(255, 221, 148, .8));
 }
 
 .cp-laws ul:nth-of-type(1) {
@@ -104,11 +103,11 @@
     width: 23%;
     padding: 50px 30px;
     text-align: center;
-    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
+    background-image: linear-gradient(170deg, rgba(134, 227, 206, 1) 10%, rgba(208, 230, 165, 1) 65%, rgba(255, 221, 148, .8));
 }
 /* 상단 내용 */
 .necessity-of-cp ul li > span:nth-of-type(1) {
-    color: #fff;
+    color: #333;
     font-size: 1.15em;
 }
 
@@ -174,7 +173,7 @@
     height: .6em;
     margin-right: .5em;
     vertical-align: .05em;
-    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
+    background-image: linear-gradient(-110deg,  rgba(208, 230, 165, .95) 20%, rgba(255, 221, 148, .8));
     border-radius: 50%;
 
 }
@@ -208,9 +207,9 @@
 .cp-benefit .benefit-circle-line {
     width: 40vh;
     height: 40vh;
-    border: 5px solid rgba(65, 233, 117, .8);
-    border-top-color: rgba(41, 153, 173, 1);
-    border-bottom-color: rgba(41, 153, 173, 1);
+    border: 5px solid rgba(217, 114, 52, .95);
+    border-top-color: rgba(0, 102, 51, 1);
+    border-bottom-color: rgba(0, 102, 51, 1);
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -218,44 +217,6 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
-/* 점 */
-/*
-.cp-benefit > div .dot > div {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: linear-gradient(145deg, rgba(65, 233, 117, .8), rgba(41, 153, 173, 1));
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-.cp-benefit > div .dot > div:nth-of-type(1) {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-.cp-benefit > div .dot > div:nth-of-type(2) {
-    top: 30%;
-    left: 0;
-    transform: translateX(-50%) translateY(50%);;
-}
-.cp-benefit > div .dot > div:nth-of-type(3) {
-    top: 30%;
-    left: 100%;
-    transform: translateX(-50%) translateY(50%);
-}
-.cp-benefit > div .dot > div:nth-of-type(4) {
-    top: 80%;
-    left: 10%;
-    transform: translateX(-40%) translateY(50%);
-}
-.cp-benefit > div .dot > div:nth-of-type(5) {
-    top: 80%;
-    left: 90%;
-    transform: translateX(-40%) translateY(50%);
-}*/
 
 /* 텍스트 */
 
@@ -301,7 +262,7 @@
     width: 35vh;
     height: 35vh;
     border-radius: 50%;
-    background-image: linear-gradient(145deg,  rgba(41, 153, 173, 1) 20%, rgba(65, 233, 117, .8));
+    background-image: linear-gradient(-10deg,  rgba(208, 230, 165, .95) , rgba(255, 221, 148, .8));
     position: absolute;
     top: 50%;
     left: 50%;

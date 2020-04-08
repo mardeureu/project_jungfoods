@@ -71,9 +71,11 @@
 /* heading h3 ~ h6*/
 .sub-container h3 {
     font-size: 1.8em;
-    font-weight: 500;
+    font-weight: 700;
     color: #333;
     text-align: center;
+    margin: 5em 0 3em;
+    letter-spacing: 1.05px;
 }
 .sub-page h4 {}
 .sub-page h5 {}

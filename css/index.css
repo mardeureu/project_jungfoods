@@ -146,14 +146,6 @@ header .menu button span:nth-of-type(2) {
     width: 100%;
 }
 .main-visual a {}
-@keyframes nav-font-animations {
-    0%{
-        color: rgba(217, 114, 52, 1);
-    }
-    100%{
-        color: rgba(0, 102, 51, .9);
-    }
-}
 
 /* container */
 
@@ -209,11 +201,7 @@ header .menu button span:nth-of-type(2) {
 .container .prod figure a:hover {
     animation: prod-ani .4s cubic-bezier(0.77, 0.31, 0.49, 0.95) infinite alternate both;
 }
-@keyframes prod-ani {
-    0% {transform: rotate(15deg);}
-    50% {transform: rotate(-15deg);}
-    100% {transform: rotate(0deg);}
-}
+
 .container .prod .control {
     width: 100%;
     margin: 50px auto;
@@ -408,19 +396,6 @@ header .menu button span:nth-of-type(2) {
     
 }
 
-@keyframes event-ani {
-    0% {transform: translateY(5%);}
-    50% {transform: translateY(10%);}
-    100% {transform: translateY(5%);}
-}
-@keyframes main-event-font-animations {
-    0%{
-        color: rgba(217, 114, 52, .95);
-    }
-    100%{
-        color: rgba(255, 255, 255, .85);
-    }
-}
 /*----------정식품 웹진----------*/
 .container .webzine {
     width: 80%;
@@ -504,15 +479,6 @@ header .menu button span:nth-of-type(2) {
 .container .webzine .webzine_main figure {
     width: 100%;
 }
-
-@keyframes font-animations {
-    0%{
-        color: rgba(0, 102, 51, 1);
-    }
-    100%{
-        color: rgba(217, 114, 52, .95);
-    }
-}
 .container .webzine .webzine_main figure:hover {}
 .container .webzine .webzine_main figure img {}
 .container .webzine .webzine_main figure img:hover {}
@@ -549,22 +515,7 @@ header .menu button span:nth-of-type(2) {
 .container .webzine .webzine_main .wz_txt_main h4 {}
 .container .webzine .webzine_main .wz_txt_main h4 a {}
 .container .webzine .webzine_main .wz_txt_main > a{}
-@keyframes webzine_main_ani {
-    0% {
-        transform: translateX(25%);
-    }
-    100% {
-        transform: translateX(30%);
-    }
-}
-@keyframes arrow-ani-main {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(-150%);
-    }
-}
+
 /* 웹진 일반 컨텐츠 */
 .container .webzine .webzine_content {
     width: calc(50% - 2.5px);
@@ -607,15 +558,6 @@ header .menu button span:nth-of-type(2) {
 }
 .container .webzine .webzine_content .wz_txt h4 a {}
 .container .webzine .webzine_content .wz_txt > a{}
-
-@keyframes arrow-ani {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(-180%);
-    }
-}
 
 /*---------- SNS ----------*/
 .container .main_sns {
@@ -662,6 +604,7 @@ footer {
     background: linear-gradient(115deg, rgba(255, 221, 148, 1), rgba(208, 230, 165, 1) 55%);;
     text-align: center;
     padding: 20px 0;
+    margin-top: 300px;
 }
 
 
@@ -853,9 +796,66 @@ footer p {
     background-repeat: no-repeat;
     background-position: center;
 }
-/*
-                    ----- keyframes -----
-*/
+/*                    ----- keyframes -----                 */
+@keyframes nav-font-animations {
+    0%{
+        color: rgba(217, 114, 52, 1);
+    }
+    100%{
+        color: rgba(0, 102, 51, .9);
+    }
+}
+@keyframes prod-ani {
+    0% {transform: rotate(15deg);}
+    50% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}
+@keyframes event-ani {
+    0% {transform: translateY(5%);}
+    50% {transform: translateY(10%);}
+    100% {transform: translateY(5%);}
+}
+@keyframes main-event-font-animations {
+    0%{
+        color: rgba(217, 114, 52, .95);
+    }
+    100%{
+        color: rgba(255, 255, 255, .85);
+    }
+}
+@keyframes font-animations {
+    0%{
+        color: rgba(0, 102, 51, 1);
+    }
+    100%{
+        color: rgba(217, 114, 52, .95);
+    }
+}
+@keyframes webzine_main_ani {
+    0% {
+        transform: translateX(25%);
+    }
+    100% {
+        transform: translateX(30%);
+    }
+}
+@keyframes arrow-ani-main {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}
+@keyframes arrow-ani {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-180%);
+    }
+}
+
 
 
 /*

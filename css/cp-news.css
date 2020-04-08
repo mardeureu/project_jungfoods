@@ -10,7 +10,7 @@
 }
 
 
-/* CP란? */
+/* CP(Compliance Program)란? */
 .explain-cp {
     width: 100%;
     padding: 50px 0;
@@ -26,32 +26,29 @@
     justify-content:space-around;
     align-items:center;
 }
-.explain-cp .about-cp .box-cp {
-}
+.explain-cp .about-cp .box-cp {}
 .explain-cp .about-cp .box-cp span {
     display: inline-block;
     color: #fff;
-    font-size: 1.65em;
-    border: 5px solid #fff;
+    font-size: 1.95em;
+    font-weight: 700;
+    border: 3px solid #fff;
     padding: 80px 50px;
-    transition: all .3s ease-in;
-    box-shadow: 10px 10px 30px -20px #777;
-}
-.explain-cp .about-cp .box-cp:hover span {
-    transform: translateY(-3px);
-    transition: .5s ease-out;
+    animation: cp-tit-animations 2s 1s infinite both alternate;
+    box-shadow: 10px 10px 30px -15px #777;
 }
 .explain-cp .about-cp .text-cp {
     padding-left: 30px;
 }
 .explain-cp .about-cp .text-cp h4 {
-    color: #333;
+    color: #fff;
     font-size: 1.25em;
 }
-
 .explain-cp .about-cp .text-cp p {
     color: #fff;
+    font-weight: 200;
     white-space: pre-line;
+    letter-spacing: 1.15px;
 }
 
 /* cp-article */
@@ -62,19 +59,19 @@
 /* 링크 */
 .cp-article .cp-article-link {
     width: 100%;
+    margin: 60px auto 30px;
     text-align: center;
 }
 .cp-article .cp-article-link a {
     display:inline-block;
-    margin: 100px auto 50px;
 }
 .cp-article .cp-article-link a span {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 30% 10% 50% 5%;
-    background: rgba(95, 250, 224, .5);
-    transform: translateX(2.5em) translateY(-1em);
+    width: 20px;
+    height: 20px;
+    border-radius: 35% 15% 55% 5%;
+    background: linear-gradient(-200deg,  rgba(208, 230, 165, .95), rgba(255, 221, 148, .8));
+    transform: translateX(1.5em) translateY(-1em);
     opacity: 0;
     transition: all .3s ease-in;
 }
@@ -89,45 +86,47 @@
     opacity: 1;
     transition: all .5s ease-out;
 }
-/*
-.cp-article .cp-article-link a:hover::before {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    background: rgba(194, 46, 208, .5);
-    transform: translateY(10px);
-}
 
 /* article 공통 */
 .cp-article article {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+    width: 100%;
+    font-family: 'Noto Serif', 'Noto Serif KR', serif;
 }
 .cp-article article figure {
-    width: 49%;
-    height: 700px;
-    background-repeat: no-repeat;
+    width: 100%;
 }
 .cp-article article figure img {
-    height: 100%;
+    width: 100%;
 }
-.cp-article article div {
-    width: 48%;
+.cp-article article h4 span {
+    width: 100%;
+    border-bottom: 1px solid #777;
+    display: block;
+    color: #063;
+    margin: 30px 0 5px;
+    font-family: inherit;
+    letter-spacing: 1.5px;
 }
-.cp-article article > span {}
 .cp-article article h4 {
+    color: #333;
     font-size: 1.5em;
-    font-weight: 400;
-    line-height: 50px;
+    font-weight: 300;
+    font-family: inherit;
 }
+
 .cp-article article p {
-    white-space: pre-line;
+    color: #333;
+    font-family: inherit;
 }
 .cp-article article p span {
+    color: inherit;
     display: block;
-    margin-top: 30px;
+    margin-top: 25px;
+    font-family: inherit;
+}
+.cp-article article p span:nth-of-type(2) {
+    font-weight: 700;
+    text-align: right;
 }
 
 /* cp선언문 */
@@ -137,7 +136,7 @@
 .cp-article #cp-Statement figure {
     background-image: url("../img/sub-fair-trade/01-cp-article.jpg");
     background-size: cover;
-    background-position: 100% 70%;
+    background-position: 50% 50%;
 }
 
 .cp-article #cp-Statement .cp-Statemen-p {}
@@ -150,12 +149,23 @@
 
 /* 8주년 기념 메세지 */
 .cp-article #cp-msg {}
+.cp-article #cp-msg figure {}
+
 .cp-article #cp-msg figure {
     background-image: url("../img/sub-fair-trade/02-cp-article.jpg");
     background-size: cover;
-    background-position: 60% 50%;
+    background-position: 80% 50%;
+}*/
+.cp-article #cp-msg figure img {}
+.cp-article #cp-msg .cp-msg-p::before {
+    content: "";
+    display: block;
+    background-image: url("../img/sub-fair-trade/02-cp-article.jpg");
+    background-size: cover;
+    background-position: 80% 50%;
+    width: ;
+    height: ;
 }
-
 .cp-article #cp-msg .cp-msg-p {}
 .cp-article #cp-msg .cp-msg-p > span {}
 .cp-article #cp-msg.cp-msg-p  h4 {}
@@ -169,27 +179,19 @@
     margin: 0 auto;
 }
 
-.news-briefing h3 {
-    font-size: 1.85em;
-    font-weight: 700;
-    color: #333;
-    text-align: center;
-    margin-bottom: 1.85em;
-}
-
 .news-briefing ul {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .news-briefing ul li::after {
     content: "";
     display: inline-block;
     width: 100%;
     height: 100%;
-    border: 2px solid rgba(0, 102, 51, 1);
+    border: 2px solid #d97234;
     position: absolute;
-    top: -3%;
+    top: -7%;
     left: -5%;
     z-index: -1;
 }
@@ -198,18 +200,34 @@
     padding: 30px;
     background-color: rgba(0, 102, 51, .95);
     position: relative;
+    max-height: 400px;
 }
 .news-briefing ul li span:nth-of-type(1){
-    color: rgba(255, 255, 255, .9);
+    font-family: 'Noto Serif', 'Noto Serif KR', serif;
+    color: #fff;
     font-size: 3em;
 }
 .news-briefing ul li time{
     color: #fff;
     display: block;
-    line-height: 50px;
-    font-size: .9em;
+    font-size: 1.05em;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    margin: 15px 0;
 }
 .news-briefing ul li span:nth-of-type(2){
     color: #fff;
     font-size: 1.15em;
+}
+/* keyframes */
+@keyframes cp-tit-animations {
+    0%{
+        color: rgba(255, 221, 148, .8);
+    }
+    50%{
+        color: rgba(134, 227, 206, 1);
+    }
+    100%{
+        color: rgba(255, 255, 255, .6);
+    }
 }
