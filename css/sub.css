@@ -7,9 +7,7 @@
 하 : 180px
 */
 
-
 /* 탭 메뉴 */
-
 .local-nav {
     width: 100%;
     background-image: linear-gradient(125deg, rgba(134, 227, 206, 1) 10%, rgba(208, 230, 165, 1) 65%, rgba(255, 221, 148, .8));
