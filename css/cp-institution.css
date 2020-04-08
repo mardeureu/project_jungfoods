@@ -217,6 +217,7 @@
     border: 5px solid rgba(217, 114, 52, .75);
     border-top-color: rgba(0, 102, 51, .85);
     border-bottom-color: rgba(0, 102, 51, 75);
+    border-left: 5px solid transparent;
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 20vh);
@@ -225,35 +226,59 @@
     animation: circle-running-rounds 6s infinite both linear;
 }
 /* 텍스트 */
-.cp-benefit .benefit-circle-line {
-    position: relative;
-    width: 80%;
-    height: 40vh;
+.cp-benefit .cp-benefit-container ul {
+    width: 100%;
+    text-align: center;
     margin: 0 auto;
+    position: relative;
 }
-.cp-benefit .benefit-circle-line span {
-    font-size: 1.15em;
-    font-weight: 500;
+.cp-benefit .cp-benefit-container ul li {
+    width: 150px;
+    line-height: 150px;
+    text-align: center;;
     color: #333;
     position: relative;
-    z-index: 1;
+    display: inline-block;
+    margin-right: -20px;
 }
-.cp-benefit .benefit-circle-line span:nth-of-type(1) {
-    transform:translateX(70px) translateY(50px);
+.cp-benefit .cp-benefit-container ul li::before {
+    content: "";
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    z-index: -1;
 }
-.cp-benefit .benefit-circle-line span:nth-of-type(2) {
-    transform: translateX(280px) translateY(50px)
+.cp-benefit .cp-benefit-container ul li:nth-of-type(5) {
+    margin-right: 0;
 }
-.cp-benefit .benefit-circle-line span:nth-of-type(3) {
-    transform: translateX(200px) translateY(300px);
+.cp-benefit .cp-benefit-container ul li:nth-child(even)::before {
+    background-color: rgba(208, 230, 165, 0.75);
 }
-.cp-benefit .benefit-circle-line span:nth-of-type(4) {
-    transform: translateX(200px) translateY(100px);
+.cp-benefit .cp-benefit-container ul li:nth-child(odd)::before {
+    background-color: rgba(255, 221, 148, .6);
 }
-.cp-benefit .benefit-circle-line span:nth-of-type(5) {
-    transform: translateX(200px) translateY(200px);
+/*
+.cp-benefit .cp-benefit-container ul li:nth-of-type(1) {
+    left: 0;
 }
-
+.cp-benefit .cp-benefit-container ul li:nth-of-type(2) {
+    left: 17%;
+}
+.cp-benefit .cp-benefit-container ul li:nth-of-type(3) {
+    left: calc(50% - 75px);
+}
+.cp-benefit .cp-benefit-container ul li:nth-of-type(4) {
+    right: 17%;
+}
+.cp-benefit .cp-benefit-container ul li:nth-of-type(5) {
+    right: 0;
+}
+*/
 /* 원 */
 .cp-benefit .benefit-circle-tit {
     width: 35vh;
