@@ -37,7 +37,6 @@
 }
 
 /* contents */
-
 .sub-container {
     width: 100%;
 }
@@ -47,13 +46,11 @@
     text-align: center;
     padding: 70px 0 65px;
 }
-
 .sub-container .sub-heading h2 {
     font-size: 2.25em;
     font-weight: 700;
     color: #333;
 }
-
 .sub-container .sub-heading h2::after {
     content: "";
     display: block;

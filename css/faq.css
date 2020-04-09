@@ -1,0 +1,39 @@
+/* 배너 이미지 */
+.faq-banner {
+    width: 100%;
+    height: 350px;
+    background: url("../img/sub-fair-trade/00-fair-trade-cp.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* table */
+.faq .faq-table {
+    margin: 0 auto;
+    width: 80%;
+}
+.faq .faq-table caption {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin: 5em 0 3em;
+    letter-spacing: 1.05px;
+}
+.faq .faq-table .faq_col_1 {}
+.faq .faq-table .faq_col_2 {}
+.faq .faq-table thead {}
+.faq .faq-table thead tr {}
+.faq .faq-table thead tr th {
+    
+}
+.faq .faq-table tbody tr td {}
+
+/* 버튼 */
+.faq > button .prev {}
+.faq > button .next {}
+
+.faq ol {}
+.faq ol li {}
+.faq ol li button {}
