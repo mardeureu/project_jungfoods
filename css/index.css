@@ -68,12 +68,14 @@ header .menu nav > ul > li > a::before {
     height: 1px;
     background: #063;
     transition: transform .4s linear;
+    -ms-transform: scaleX(0);
     transform: scaleX(0);
     position: absolute;
     top: 0;
     left: 0;
 }
 header .menu nav > ul > li > a:hover::before {
+    -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 header .menu nav .login {
@@ -196,6 +198,7 @@ header .menu button span:nth-of-type(2) {
     transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1) both;
 }
 .container .prod figure a:hover img {
+    -ms-transform: scale3d(1.15, 1.15, 1);
     transform: scale3d(1.15, 1.15, 1);
 }
 .container .prod figure a:hover {
@@ -212,6 +215,7 @@ header .menu button span:nth-of-type(2) {
     width: 50%;
     position: relative;
     top: 0; left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
 .container .prod .control .indicator span {
@@ -231,6 +235,7 @@ header .menu button span:nth-of-type(2) {
     transition: .5s;
 }
 .container .prod .control:hover .indicator span:nth-of-type(2) {
+    -ms-transform: translateX(100px);
     transform: translateX(100px);
 }
 .container .prod .prod-title {
@@ -377,10 +382,12 @@ header .menu button span:nth-of-type(2) {
     width: 300%;
     height: 1px;
     background-color: rgba(255, 255, 255, .8);
+    -ms-transform: translateX(0);
     transform: translateX(0);
     transition: transform .5s linear;
 }
 .container .event .event-content  .main-event-lft-bg .main-event-sub-bg a:hover::after {
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: rgba(134, 227, 206, 1);
 }
@@ -409,10 +416,12 @@ header .menu button span:nth-of-type(2) {
 }
 .container .webzine article figure img {
     width: 100%;
+    -ms-transform: scaleX(1) scaleY(1);
     transform: scaleX(1) scaleY(1);
     transition: all .3s ease-in-out;
 }
 .container .webzine article figure img:hover {
+    -ms-transform: scaleX(1.125) scaleY(1.125);
     transform: scaleX(1.125) scaleY(1.125);
 }
 .container .webzine article div {
@@ -494,6 +503,7 @@ header .menu button span:nth-of-type(2) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    -ms-transform: translateX(30%);
     transform: translateX(30%);
     transition: transform .6s cubic-bezier(0.03, 0.24, 0, 0.78);
     /*animation: webzine_main_ani .6s 1s infinite linear alternate;*/
@@ -501,13 +511,16 @@ header .menu button span:nth-of-type(2) {
 .container .webzine .webzine_main .wz_txt_main::before {
     top: 50%;
     left: 0;
+    -ms-transform: translateX(-100%) translateY(-50%);
     transform: translateX(-100%) translateY(-50%);
     animation: arrow-ani-main .35s .2s linear infinite alternate both;
 }
 .container .webzine .webzine_main:nth-of-type(2) .wz_txt_main {
+    -ms-transform: translateX(60%);
     transform: translateX(60%);
 }
 .container .webzine .webzine_main:hover .wz_txt_main {
+    -ms-transform: translateX(0);
     transform: translateX(0);
     transition: transform .4s cubic-bezier(0.03, 0.24, 0, 0.78);
 }
@@ -542,6 +555,7 @@ header .menu button span:nth-of-type(2) {
     position: absolute;
     bottom: 0;
     left: 50%;
+    -ms-transform: translateX(-50%) translateY(85%);
     transform: translateX(-50%) translateY(85%);
     background-image: linear-gradient(125deg, rgba(255, 221, 148, 1), rgba(208, 230, 165, 1) 55%);
     transition: transform .5s;
@@ -549,11 +563,13 @@ header .menu button span:nth-of-type(2) {
 .container .webzine .webzine_content .wz_txt::before{
     top: 0;
     left: 50%;
+    -ms-transform: translateX(-50%) translateY(-100%);
     transform: translateX(-50%) translateY(-100%);
     animation: arrow-ani .35s .2s linear infinite alternate both;
 }
 .container .webzine .webzine_content:hover .wz_txt{
     bottom: 0;
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 .container .webzine .webzine_content .wz_txt h4 a {}
@@ -885,6 +901,7 @@ footer p {
         right: 0;
         background: rgba(255, 255, 255, 0.9);
         overflow: hidden;
+        -ms-transition: height .1s cubic-bezier(0.14, 0.12, 0.38, 1.22);
         transition: height .1s cubic-bezier(0.14, 0.12, 0.38, 1.22);
     }
     header .menu nav > ul {

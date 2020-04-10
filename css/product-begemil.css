@@ -75,6 +75,7 @@
 }
 .product-bgm article figure > a {
     display: inline-block;
+    -ms-transition: box-shadow .5s linear;
     transition: box-shadow .5s linear;
     font-size: 0;
     border-radius: 10px;
@@ -88,14 +89,17 @@
 }
 .product-bgm article figure a img {
     width: 100%;
+    -ms-transition: all .5s ease-out;
     transition: all .5s ease-out;
     overflow: hidden;
 }
 .product-bgm article figure a:hover img {
+    -ms-transform: scale3d(1.1, 1.1, 1);
     transform: scale3d(1.1, 1.1, 1);
 }
 
 .product-bgm article:nth-of-type(1) figure a:hover img {
+    -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
 }
 
@@ -113,6 +117,7 @@
     font-size: .95em;
     font-weight: 500;
     color: #333;
+    -ms-transition: all .5s linear;
     transition: all .5s linear;
 }
 .product-bgm article figure figcaption:hover a {
