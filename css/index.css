@@ -256,7 +256,7 @@ header .menu button span:nth-of-type(2) {
 
 .background {
     width: 100%;
-    height: 300px;
+    height: 200px;
     margin: 100px auto 0;
     background: url("../img/prod_background.jpg") no-repeat center;
     background-size: cover;
@@ -265,142 +265,100 @@ header .menu button span:nth-of-type(2) {
 
 /*---------- 이벤트 ----------*/
 .container .event {
-    position: relative;
-    width: 100%;
-}
-.container .event .event-content {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
+    position: relative;
     display: flex;
+    justify-content: space-around;
+    background-color: #d97234;
+    background-image: url("../img/event-gift-card.png");
+    background-position: 60% 20%;
+    background-repeat: repeat-y;
+    background-size: 20%;
+    background-attachment: fixed;
 }
- /*행성 event
-.container .event .event-content .event-title::after {
-    content: "";
-    display: inline-block;
-    min-width: 100px;
-    min-height: 100px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50% 50%;
-    background-image: url("../img/circle_o.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    top: 60%;
-    right: -10%;
-    z-index: -1;
-}
-.container .event .event-content .event-title::before {
-    content: "";
-    display: inline-block;
-    min-width: 550px;
-    min-height: 150px;
-    border: 10px solid #d97234;
-    border-top: 10px rgba(217, 114, 52, .0) solid;
-    border-radius: 50% 50%;
-    opacity: .8;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.container .event .event-content .event-title {
-    min-width: 450px;
-    min-height: 450px;
-    width: 450px;
-    height: 450px;
-    border-radius: 50% 50%;
-    background-image: url("../img/circle_g.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
+/* text */
+.container .event .main-event-txt {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.container .event .main-event-txt span {
+    letter-spacing: 1px;
+    color: #fff;
+}
+.container .event .main-event-txt h3 {
+    font-size: 3em;
+    font-weight: 700;
+    animation: main-event-font-animations 2s .5s infinite both alternate;
+}
+.container .event .main-event-txt p {
+    text-align: center;
+    background: rgba(255, 255, 255, .6);
+    margin-top: .5em;
+}
+.container .event .main-event-txt time {
+    font-size: 1.15em;
+    letter-spacing: 1px;
+    color: #d97234;
+}
+
+/* event link */
+.container .event .main-event-link {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background-color: #063;
+    width: 230px;
+    height: 230px;
+    min-width: 230px;
+    min-height: 230px;
+    border-radius: 50% 50%;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.container .event .main-event-link::after {
+    content: "";
+    width: 160px;
+    height: 160px;
+    min-width: 160px;
+    max-height: 160px;
+    display: inline-block;
+    background-color: #d97234;
+    border-radius: 50% 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.container .event .main-event-link a {
+    display: block;
+    width: 230px;
+    line-height: 230px;
     position: absolute;
     top: 0;
-    left: 50%;
-    z-index: 2;
-    transform: translateX(-50%);
-}*/
-.container .event .event-content .main-event-lft-bg {
-    width: 61.764%;
-    height: 200px;
-    background-color: rgba(134, 227, 206, 1);
+    left: 0;
+    z-index: 1;
+    font-size: 1.25em;
 }
-.container .event .event-content .main-event-lft-bg::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.container .event .event-content .main-event-lft-bg .main-event-sub-bg {
-    width: 89%;
-    height: 100%;
-    float: right;
-    background-color: rgba(0, 102, 51, .9);
-    border-bottom-left-radius: 55% 65%;
-    text-align: right;
-    position: relative;
-    overflow: hidden;
-}
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg span {
-    color: #fff;
-    font-size: 1.05em;
-    letter-spacing: 5px;
-    padding-right: 10px;
-}
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg h3 {
-    color: #fff;
-    font-size: 2.65em;
-    font-weight: 300;
-    letter-spacing: 10px;
-    animation: main-event-font-animations 2s 1s infinite both alternate;
-}
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p {}
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p,
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p time {
-    color: #fff;
-    font-size: .94em;
-    font-weight: 100;
-    letter-spacing: 5px;
-}
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg p time {
-    padding-right: 10px;
-}
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg a {
-    color: #fff;
-    font-size: 1.05em;
-    letter-spacing: 5px;
-    padding-right: 10px;
-    transition: all .2s;
-}
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg a::after {
-    content: "";
+.container .event .main-event-link a:hover::after {
+    content: "바로가기";
+    color: #063;
+    font-size: inherit;
     display: block;
-    width: 300%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, .8);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    transition: transform .5s linear;
-}
-.container .event .event-content  .main-event-lft-bg .main-event-sub-bg a:hover::after {
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background-color: rgba(134, 227, 206, 1);
-}
-.container .event .event-content .main-event-rgt-bg {
-    width: 38.235%;
-    height: 200px;
-    background-color: rgba(217, 114, 52, 1);
-    position: relative;
-}
-.container .event .event-content .main-event-rgt-bg figure {}
-.container .event .event-content .main-event-rgt-bg figure img {
-    
-    
+    width: 160px;
+    height: 160px;
+    min-width: 160px;
+    max-height: 160px;
+    line-height: 160px;
+    background-color: rgb(208, 230, 165);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 50% 50%;
+    box-sizing: border-box;
 }
 
 /*----------정식품 웹진----------*/
@@ -620,10 +578,7 @@ footer {
     background: linear-gradient(115deg, rgba(255, 221, 148, 1), rgba(208, 230, 165, 1) 55%);;
     text-align: center;
     padding: 20px 0;
-    margin-top: 300px;
 }
-
-
 /* SNS */
 footer .sns {
     margin: 20px auto;
@@ -833,10 +788,10 @@ footer p {
 }
 @keyframes main-event-font-animations {
     0%{
-        color: rgba(217, 114, 52, .95);
+        color: #eeee00;
     }
     100%{
-        color: rgba(255, 255, 255, .85);
+        color: #063;
     }
 }
 @keyframes font-animations {
