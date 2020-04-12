@@ -1,142 +1,21 @@
-@import url("common.css");
-body {
-    width: 100%;
-}
-/*header*/
-
-header {
+/*
+    작성자 : 정선희
+*/
+/* container */
+.container {
     width: 100%;
     margin: 0 auto;
-    position: fixed;
-    top: 0; left: 0;
-    background: rgba(255, 255, 255, 0.9);
-    z-index: 3;
 }
-header .menu {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
-    position: relative;
-}
-header .menu .logo {
-    display: block;
-    width: 80px;
-    height: 70px;
-    line-height: 70px;
-    background: url("../img/logo.png") no-repeat center;
-    background-size: contain;
-}
+/* 메인 공통 */
 
-/* main menu */
-header .menu nav {}
-/* 버거메뉴 클릭이벤트 */
-header .menu nav.menuVisible {
-    min-height: 0;
-    height: 100vh;
-    transition: height .5s cubic-bezier(0.14, 0.12, 0.38, 1.22);
-}
-header .menu nav > ul {
+.container h2 {
     text-align: center;
-}
-header .menu nav > ul::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-header .menu nav > ul > li {
-    float: left;
-    vertical-align: top;
-}
-/* sub-menu hover */
-header .menu nav > ul:hover > li .sub-menu {
-    height: auto;
-    overflow: visible;
-}
-header .menu nav > ul > li > a {
-    width: 100%;
-    line-height: 70px;
-    padding: 0 40px;
-    font-size: 1.12em;
+    font-size: 1.75em;
+    margin: 100px 0 60px;
+    font-weight: 400;
     color: #333;
-    position: relative;
+    font-family: 'Noto Serif', 'Noto Serif KR', serif;
 }
-header .menu nav > ul > li > a::before {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #063;
-    transition: transform .4s linear;
-    -ms-transform: scaleX(0);
-    transform: scaleX(0);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-header .menu nav > ul > li > a:hover::before {
-    -ms-transform: scaleX(1);
-    transform: scaleX(1);
-}
-header .menu nav .login {
-    display: none;
-    text-align: right;
-}
-header .menu nav .login a {
-    font-size: .85em;
-    color: #444;
-}
-
-/* sub menu */
-header .menu nav .sub-menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-}
-header .menu nav .sub-menu li {
-    width: 100%;
-    line-height: 40px;
-    text-align: center;
-}
-header .menu nav .sub-menu li:hover a {
-    width: 100%;
-    color: #063;
-    animation: nav-font-animations 2s .5s infinite both alternate;
-}
-header .menu nav .sub-menu li a {
-    width: 100%;
-    font-size: 1em;
-}
-header .menu nav ul li:nth-of-type(1) ul li:nth-of-type(5) {
-    margin-bottom: 20px;
-}
-
-/* burger menu */
-header .menu button {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-}
-header .menu button span {
-    display: block;
-    width: 26px;
-    height: 1px;
-    background: #333;
-    position: absolute;
-    top: 50%;
-    left: calc(50% - 13px);
-}
-header .menu button span:nth-of-type(1) {
-    top: calc(50% - 5px);
-}
-header .menu button span:nth-of-type(2) {
-    top: calc(50% + 5px);
-}
-
 /* main-visual */
 .main-visual {
     width: 100%;
@@ -147,27 +26,7 @@ header .menu button span:nth-of-type(2) {
 .main-visual video {
     width: 100%;
 }
-.main-visual a {}
-
-/* container */
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-/* 메인 공통 적용 */
-
-.container h2 {
-    text-align: center;
-    font-size: 1.75em;
-    margin: 100px 0 60px;
-    font-weight: 400;
-    color: #333;
-    font-family: 'Noto Serif', 'Noto Serif KR', serif;
-}
-
-/*---------- 메인 제품 ----------*/
+/*---------- main product ----------*/
 .container .prod {
     width: 100%;
     margin: 100px auto;
@@ -210,7 +69,7 @@ header .menu button span:nth-of-type(2) {
     margin: 50px auto;
     position: relative;
 }
-/* 모바일용 인디케이터 */
+/* indicator */
 .container .prod .control .indicator {
     width: 50%;
     position: relative;
@@ -253,29 +112,20 @@ header .menu button span:nth-of-type(2) {
     text-decoration: underline;
     color: #063;
 }
-
-.background {
-    width: 100%;
-    height: 200px;
-    margin: 100px auto 0;
-    background: url("../img/prod_background.jpg") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-/*---------- 이벤트 ----------*/
+/*---------- main event ----------*/
 .container .event {
     width: 80%;
     margin: 0 auto;
     position: relative;
     display: flex;
     justify-content: space-around;
-    background-color: #d97234;
+    background-color: rgba(0, 102, 51, 9);
     background-image: url("../img/event-gift-card.png");
     background-position: 60% 20%;
     background-repeat: repeat-y;
     background-size: 20%;
     background-attachment: fixed;
+    padding: 20px 0;
 }
 /* text */
 .container .event .main-event-txt {
@@ -296,77 +146,53 @@ header .menu button span:nth-of-type(2) {
     text-align: center;
     background: rgba(255, 255, 255, .6);
     margin-top: .5em;
+    color: rgba(0, 102, 51, 9);
 }
 .container .event .main-event-txt time {
     font-size: 1.15em;
     letter-spacing: 1px;
-    color: #d97234;
+    color: rgba(0, 102, 51, 9);
 }
-
 /* event link */
 .container .event .main-event-link {
-    margin-top: .5em;
-    margin-bottom: .5em;
-    background-color: #063;
-    width: 230px;
-    height: 230px;
-    min-width: 230px;
-    min-height: 230px;
-    border-radius: 50% 50%;
-    position: relative;
-    color: #fff;
-    text-align: center;
-}
-.container .event .main-event-link::after {
-    content: "";
-    width: 160px;
-    height: 160px;
-    min-width: 160px;
-    max-height: 160px;
-    display: inline-block;
-    background-color: #d97234;
-    border-radius: 50% 50%;
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    overflow: hidden;
 }
 .container .event .main-event-link a {
-    display: block;
-    width: 230px;
-    line-height: 230px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    font-size: 1.25em;
+    font-size: 1.2em;
+    color: #fff;
+    transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.container .event .main-event-link a:hover::after {
-    content: "바로가기";
-    color: #063;
+.container .event .main-event-link a::before {
+    content: "";
     font-size: inherit;
     display: block;
-    width: 160px;
-    height: 160px;
-    min-width: 160px;
-    max-height: 160px;
-    line-height: 160px;
+    margin-top: 1em;
+    width: 12px;
+    height: 12px;
     background-color: rgb(208, 230, 165);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    border-radius: 50% 50%;
+    background-image: linear-gradient(125deg, rgba(255, 221, 148, .8) 10%, rgba(208, 230, 165, 1) 65%, rgba(134, 227, 206, 1) );
+    border-radius: 50%;
     box-sizing: border-box;
 }
-
-/*----------정식품 웹진----------*/
+.container .event .main-event-link a::after {
+    content: "";
+    font-size: inherit;
+    display: block;
+    width: 2px;
+    height: 60px;
+    background-color: rgb(208, 230, 165);
+    background-image: linear-gradient(125deg, rgba(134, 227, 206, 1) 10%, rgba(208, 230, 165, 1) 65%, rgba(255, 221, 148, .8));
+    box-sizing: border-box;
+}
+.container .event .main-event-link a:hover{
+    transform: translateY(20%);
+}
+/*----------main webzine----------*/
 .container .webzine {
     width: 80%;
     margin: 0 auto;
 }
-/* 웹진 전체 */
+/* 공통 */
 .container .webzine article {}
 .container .webzine article figure {
     width: 100%;
@@ -433,8 +259,7 @@ header .menu button span:nth-of-type(2) {
     letter-spacing: 2px;
     border: 1px solid #063;
 }
-
-/* 웹진 메인 공통 */
+/* 웹진 풀사이즈 영역 */
 .container .webzine .webzine_main {
     width: 100%;
     background-image: linear-gradient(125deg, rgba(134, 227, 206, 1) 10%, rgba(208, 230, 165, 1) 65%, rgba(255, 221, 148, .8));
@@ -487,7 +312,7 @@ header .menu button span:nth-of-type(2) {
 .container .webzine .webzine_main .wz_txt_main h4 a {}
 .container .webzine .webzine_main .wz_txt_main > a{}
 
-/* 웹진 일반 컨텐츠 */
+/* 웹진 분할 영역 */
 .container .webzine .webzine_content {
     width: calc(50% - 2.5px);
     position: relative;
@@ -533,7 +358,7 @@ header .menu button span:nth-of-type(2) {
 .container .webzine .webzine_content .wz_txt h4 a {}
 .container .webzine .webzine_content .wz_txt > a{}
 
-/*---------- SNS ----------*/
+/*---------- main SNS ----------*/
 .container .main_sns {
     width: 80%;
     margin: 0 auto;
@@ -570,127 +395,7 @@ header .menu button span:nth-of-type(2) {
 .container .main_sns .gridrwrapper article a video {
     width: 100%;
 }
-
-/* footer */
-footer {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(115deg, rgba(255, 221, 148, 1), rgba(208, 230, 165, 1) 55%);;
-    text-align: center;
-    padding: 20px 0;
-}
-/* SNS */
-footer .sns {
-    margin: 20px auto;
-}
-footer .sns a {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: #063;
-    margin-right: 30px;
-}
-footer .sns a:nth-of-type(1) {
-    background: url("../img/logo/instagram.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-footer .sns a:nth-of-type(2) {
-    background: url("../img/logo/facebook-f.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-footer .sns a:nth-of-type(3) {
-    background: url("../img/logo/youtube.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 0;
-}
-
-/* family-site */
-footer .family-site {}
-footer .family-site div {}
-
-
-/* 하단정보 */
-footer ul {
-    margin: 20px auto;
-    font-size: 0;
-}
-footer ul li {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 1rem;
-}
-footer ul li::after {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 1rem;
-    background: #333;
-    vertical-align: middle;
-    margin: 0 15px;
-}
-footer ul li:last-of-type::after {
-    display: none;
-}
-footer ul li:last-of-type {
-    margin-right: 0;
-}
-footer ul li a {
-    color: #333;
-    font-size: .8em;
-}
-
-/* 회사정보 */
-footer .company-info {
-    margin: 20px auto;
-}
-footer .company-info dl {}
-footer .company-info dl::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-footer .company-info dl dt {
-    color: #333;
-    font-size: .9em;
-    display: inline-block;
-}
-
-footer .company-info dl:nth-of-type(1) dt:nth-of-type(1) {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-}
-
-footer .company-info dl dd {
-    color: #333;
-    font-size: .85em;
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 5px;
-    font-weight: 200;
-}
-footer .company-info dl dd:last-child {
-    margin-right: 0;
-}
-footer p {
-    margin: 20px auto;
-    color: #333;
-    font-size: .8em;
-    margin-top: 10px;
-}
-
-
-/* 인증기관 */
-
+/* cooperative company */
 .Rel {
     width: 80%;
     margin: 0 auto;
@@ -767,7 +472,15 @@ footer p {
     background-repeat: no-repeat;
     background-position: center;
 }
-/*                    ----- keyframes -----                 */
+.background {
+    width: 100%;
+    height: 200px;
+    margin: 100px auto 0;
+    background: url("../img/prod_background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*---------- keyframes ----------*/
 @keyframes nav-font-animations {
     0%{
         color: rgba(217, 114, 52, 1);
@@ -791,7 +504,7 @@ footer p {
         color: #eeee00;
     }
     100%{
-        color: #063;
+        color: rgba(217, 114, 52, 9);
     }
 }
 @keyframes font-animations {
@@ -824,119 +537,5 @@ footer p {
     }
     100% {
         transform: translateY(-180%);
-    }
-}
-
-
-
-/*
-                    ----- media -----
-*/
-/* 1024px 이상 */
-@media (min-width: 1024px) {
-    /*burger menu*/
-    header .menu button {
-        display: none;
-    }
-}
-
-/* 1024px 이하 */
-@media (max-width: 1024px) {
-    header .menu {
-        width: 80%;
-    }
-    header .menu .logo {
-        height: 50px;
-    }
-    header .menu nav {
-        width: 100%;
-        height: 0;
-        position: fixed;
-        top: 50px;
-        right: 0;
-        background: rgba(255, 255, 255, 0.9);
-        overflow: hidden;
-        -ms-transition: height .1s cubic-bezier(0.14, 0.12, 0.38, 1.22);
-        transition: height .1s cubic-bezier(0.14, 0.12, 0.38, 1.22);
-    }
-    header .menu nav > ul {
-        width: 80%;
-        margin: auto;
-        text-align: left;
-    }
-    header .menu nav > ul > li {
-        float: none;
-    }
-    header .menu nav > ul > li > a {
-        font-weight: 700;
-        padding: 0;
-        line-height: 50px;
-    }
-    header .menu nav > ul > li > a:hover::before {
-        transform: scaleX(0);
-    }
-    header .menu nav > ul > li > a {
-        transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    }
-    header .menu nav > ul > li > a:hover {
-        color: #d97234;
-    }
-    
-    /*sub-menu*/
-    
-    header .menu nav .sub-menu {
-        height: 0;
-    }
-    header .menu nav .sub-menu li {
-        text-align: left;
-    }
-    header .menu nav ul li:nth-of-type(1) ul li:nth-of-type(5) {
-        margin-bottom: 0px;
-    }
-    header .menu nav > ul > li:hover .sub-menu {
-        height: auto;
-        overflow: visible;
-    }
-    /* Event */
-
-    /* 웹진 */
-
-}
-@media (max-width: 768px) {
-    header .menu .logo {
-        height: 30px;
-    }
-    header .menu nav {
-        top: 30px;
-    }
-    /* main visual */
-    .main-visual {
-        transform: translateY(30px);
-    }
-
-    /* burger menu */
-    header .menu button {
-        width: 30px;
-        height: 30px;
-    }
-
-
-
-}
-@media (max-width: 480px) {
-    
-    main video {
-        margin: 0 auto;
-        width: 100vw;
-    }
-    .container .prod figure a img {
-        height: 200px;
-    }
-    .container .prod .control,
-    .container .prod figure a:nth-of-type(4),
-    .container .prod figure a:nth-of-type(5),
-    .container .prod .prod-title a:nth-of-type(4),
-    .container .prod .prod-title a:nth-of-type(5)     {
-        display: none;
     }
 }

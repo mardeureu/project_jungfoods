@@ -1,0 +1,68 @@
+/* 배너 이미지 */
+.join-banner {
+    width: 100%;
+    height: 350px;
+    background: url("../img/prod_background.jpg");
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* form */
+#join_form {
+    width: 100%;
+}
+#join_form fieldset {
+    width: 80%;
+    margin: 0 auto;
+    border: 0px;
+    text-align: center;
+}
+#join_form fieldset legend {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #333;
+    padding: 70px 0 65px;
+}
+
+#join_form fieldset legend::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #058e36;
+    margin: 15px auto;
+}
+#join_form fieldset label {
+    display: table;
+    font-size: 1.15em;
+    padding: 10px 0 5px;
+    color: #063;
+}
+#join_form fieldset input {
+    width: 100%;
+    padding: 7px 5px;
+}
+#join_form fieldset [for="member_name"] {
+    margin-top: 15px;
+}
+#join_form fieldset [type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+#join_form fieldset [for="agree"] {
+    display: inline-block;
+    vertical-align: .1em;
+}
+#join_form fieldset button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.15em;
+    color: #063;
+    margin-top: 30px;
+    padding: 5px 50px;
+    border: 1px solid #063;
+}
+#join_form fieldset button:hover {
+    border: 1px solid #d97234;
+}

@@ -40,15 +40,16 @@
 /* contents */
 .sub-container {
     width: 100%;
+    margin-bottom: 200px;
 }
 
-/* gloabal menu heading */
+/* gloabal menu heading h2 ~ h6*/
 .sub-container .sub-heading {
     text-align: center;
     padding: 70px 0 65px;
 }
 .sub-container .sub-heading h2 {
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: 700;
     color: #333;
 }
@@ -62,17 +63,15 @@
 }
 .sub-container .sub-heading span {
     color: #999;
-    font-size: 1em;
+    font-size: 1rem;
     letter-spacing: 1px;
 }
-
-/* heading h3 ~ h6*/
 .sub-container h3 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #333;
     text-align: center;
-    margin: 5em 0 3em;
+    margin: 5rem 0 3rem;
     letter-spacing: 1.05px;
 }
 .sub-page h4 {}

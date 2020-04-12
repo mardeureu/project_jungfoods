@@ -4,6 +4,12 @@
 font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
 font-family: 'Noto Serif', 'Noto Serif KR', serif;
 */
+/* color
+#d97234;
+rgba(217, 114, 52, 9);
+#063;
+rgba(0, 102, 51, 9);
+*/
 
 *{
     font-size:14px;
@@ -23,7 +29,7 @@ body {
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
     margin:0px;
-    min-width: 320px; /* 아이폰 5 최소사이즈에서 스크롤 생성 방지 */
+    min-width: 320px;
     direction: ltr;
     text-align: left;
 }
@@ -86,7 +92,6 @@ figure {
 figcaption {
     font-size: 1rem;
 }
-/*  */
 ::-ms-clear {
     display: none;
 }

@@ -118,7 +118,10 @@
 }
 
 .cp-article article p {
+    width: 90%;
+    margin: 0 auto;
     color: #333;
+    line-height: 25px;
     font-family: inherit;
 }
 .cp-article article p span {

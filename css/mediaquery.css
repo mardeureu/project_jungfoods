@@ -1,0 +1,230 @@
+
+/*---------- media query ----------*/
+/* 1024px 이상 */
+@media (min-width: 1024px) {
+    /*burger menu*/
+    header .menu button {
+        display: none;
+    }
+}
+/* 1024px 이하 */
+@media (max-width: 1024px) {
+    header .menu {
+        width: 80%;
+    }
+    header .menu .logo {
+        height: 50px;
+    }
+    header .menu nav {
+        width: 100%;
+        height: 0;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.9);
+        overflow: hidden;
+        -ms-transition: height .1s cubic-bezier(0.14, 0.12, 0.38, 1.22);
+        transition: height .1s cubic-bezier(0.14, 0.12, 0.38, 1.22);
+    }
+    header .menu nav > ul {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+    header .menu nav > ul > li {
+        float: none;
+    }
+    header .menu nav > ul > li > a {
+        font-weight: 700;
+        padding: 0;
+        line-height: 50px;
+    }
+    header .menu nav > ul > li > a:hover::before {
+        transform: scaleX(0);
+    }
+    header .menu nav > ul > li > a {
+        transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    header .menu nav > ul > li > a:hover {
+        color: #d97234;
+    }
+    
+    /*sub-menu*/
+    
+    header .menu nav .sub-menu {
+        height: 0;
+    }
+    header .menu nav .sub-menu li {
+        text-align: left;
+    }
+    header .menu nav ul li:nth-of-type(1) ul li:nth-of-type(5) {
+        margin-bottom: 0px;
+    }
+    header .menu nav > ul > li:hover .sub-menu {
+        height: auto;
+        overflow: visible;
+    }
+    /* Event */
+
+    /* 웹진 */
+
+/* 1024px END */
+}
+@media (max-width: 768px) {
+    header .menu .logo {
+        height: 30px;
+    }
+    header .menu nav {
+        top: 30px;
+    }
+    /* main visual */
+    .main-visual {
+        transform: translateY(30px);
+    }
+
+    /* burger menu */
+    header .menu button {
+        width: 30px;
+        height: 30px;
+    }
+    /* event */
+    .container .event {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url();
+        background-position: 50%;
+        background-size: 30%;
+        padding: 20px 0;
+    }
+    .container .event .main-event-txt span {
+        font-size: .85em;
+        color: #fff;
+    }
+    .container .event .main-event-txt h3 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .container .event .main-event-txt p {
+        color: rgba(0, 102, 51, .9);
+        font-size: .85em;
+    }
+    .container .event .main-event-txt time {
+        font-size: inherit;
+    }
+    .container .event .main-event-link {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        min-height: 0;
+        border-radius: 0;
+        position: static;
+        color: #fff;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .container .event .main-event-link a {
+        display: inline-block;
+        width: 100px;
+        line-height: 0;
+        position: static;
+        font-size: .75em;
+        color: inherit;
+        border: 1px solid #fff;
+        padding: 10px 10px;
+    }
+    .container .event .main-event-link a:hover{
+        transform: translateY(0);
+    }
+    /* dispaly: none; */
+    .container .event .main-event-link::after,
+    .container .event .main-event-link a:hover::after,
+    .container .event .main-event-link a::before,
+    .container .event .main-event-link a::after {
+        display: none;
+    }
+
+    /* webzine */
+    .container .webzine article div {
+        box-shadow: 0 0;
+    }
+    /* display: none; */
+    .container .webzine article div::before,
+    .container .webzine article div span,
+    .container .webzine article div > a {
+        display: none;
+    }
+    .container .webzine article div h4 {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .container .webzine article div h4 a {
+        font-size: 1em;
+        font-weight: 400;
+        color: #333;
+    }
+    /* 웹진 풀사이즈 영역 */
+    .container .webzine .webzine_main {
+        background-image: linear-gradient(transparent, transparent);
+    }
+    .container .webzine .webzine_main {
+        position: static;
+    }
+    .container .webzine .webzine_main .wz_txt_main {
+        position: static;
+        padding: 0;
+        width: 100%;
+        display: block;
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .container .webzine .webzine_main:nth-of-type(2) .wz_txt_main {
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    /* 웹진 분할 영역 */
+    .container .webzine .webzine_content .wz_txt {
+        position: static;
+        padding: 0;
+        -ms-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+    .container .webzine .webzine_content:hover .wz_txt{
+        -ms-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+    /* SNS */
+    .container .main_sns {
+        margin-bottom: 100px;
+    }
+    /* footer background */
+    .background {
+        display: none;
+    }
+/* 768px END */
+}
+@media (max-width: 480px) {
+    
+    main video {
+        margin: 0 auto;
+        width: 100vw;
+    }
+    .container .prod figure a img {
+        height: 200px;
+    }
+    .container .prod .control,
+    .container .prod figure a:nth-of-type(4),
+    .container .prod figure a:nth-of-type(5),
+    .container .prod .prod-title a:nth-of-type(4),
+    .container .prod .prod-title a:nth-of-type(5)     {
+        display: none;
+    }
+/* 480px END */
+}

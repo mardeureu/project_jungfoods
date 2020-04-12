@@ -6,12 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>정식품 제품 | 베지밀 블랙</title>
+        <!-- favicon -->
         <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
         <!-- CSS -->
-        <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" href="../css/sub.css">
         <link rel="stylesheet" href="../css/product-begemil.css">
+        <link rel="stylesheet" href="../css/sub.css">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/mediaquery.css">
         <!-- Javascript -->
         <script type="text/javascript" src="../js/index.js"></script>
     </head>
@@ -45,24 +47,24 @@
                             </ul>
                         </li>
                         <li role="listitem">
-                            <a href="../cp/cp-news.html">공정거래</a>
+                            <a href="../cp/cp.html">공정거래</a>
                             <ul class="sub-menu" role="list">
-                                <li role="listitem"><a href="../cp/cp-news.html">CP도입</a></li>
-                                <li role="listitem"><a href="../cp/cp-institution.html">자율준수 프로그램</a></li>
+                                <li role="listitem"><a href="../cp/cp.html">공정거래 도입</a></li>
+                                <li role="listitem"><a href="../cp/cp-institution.html">공정거래 프로그램</a></li>
                             </ul>
                         </li>
                         <li role="listitem">
                             <a href="#">고객지원</a>
                             <ul class="sub-menu" role="list">
-                                <li role="listitem"><a href="">FAQ</a></li>
-                                <li role="listitem"><a href="">1:1 문의</a></li>
+                                <li role="listitem"><a href="../customer/faq.html">FAQ</a></li>
+                                <li role="listitem"><a href="../customer/cs.html">1:1 문의</a></li>
                             </ul>
                         </li>
                         <li role="listitem">
-                            <a href="#">Login</a>
+                            <a href="#">회원전용</a>
                             <ul class="sub-menu" role="list">
-                                <li role="listitem"><a href="">login</a></li>
-                                <li role="listitem"><a href="">join us</a></li>
+                                <li role="listitem"><a href="">로그인</a></li>
+                                <li role="listitem"><a href="../members/join.html">회원가입</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -94,7 +96,8 @@
             <section class="product-bgm ">
                 <article>
                     <figure>
-                        <a href=""><img src="../img/sub-product/01-logo.png" alt="Vegemil logo"></a>
+                        <video src="../video/sub_prod/vgm_black.mp4" poster="../img/sub-product/01-logo.png" autoplay playsinline muted loop type="video/mp4" alt="베지밀 초코 동영상">
+                        </video>
                         <figcaption>
                             <span>Vegemil</span>
                             <a href="">베지밀 플레인</a>
@@ -234,41 +237,39 @@
         <footer role="contentinfo">
             <!-- sns -->
             <section class="sns">
-                <a href="https://www.facebook.com/vegemilgood"></a>
-                <a href="https://www.instagram.com/vegemil.official/"></a>
-                <a href="https://www.youtube.com/user/vegemilgood"></a>
+                <a href="https://www.facebook.com/vegemilgood" target="_blank" rel="me external noopener"></a>
+                <a href="https://www.instagram.com/vegemil.official/" target="_blank" rel="me external noopener"></a>
+                <a href="https://www.youtube.com/user/vegemilgood" target="_blank" rel="me external noopener"></a>
             </section>
+            
             <!-- family-site -->
             <section class="family-site">
                 <div></div>
             </section>
-            <ul>
-                <li><a href="https://www.vegemil.co.kr:10001/main/member/login.aspx?r=http://www.vegemil.co.kr/main/community/agencyNotify.aspx">대리점장 게시판</a></li>
-                <li><a href="http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02">사이트 맵</a></li>
-                <li><a href="http://www.vegemil.co.kr/main/member/privacy.aspx">개인정보처리방침</a></li>
-                <li><a href="http://www.vegemil.co.kr/main/member/terms.aspx">이용약관</a></li>
+            <ul role="list" role="list">
+                <li role="listitem"><a href="https://www.vegemil.co.kr:10001/main/member/login.aspx?r=http://www.vegemil.co.kr/main/community/agencyNotify.aspx">대리점장 게시판</a></li>
+                <li role="listitem"><a href="http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02">사이트 맵</a></li>
+                <li role="listitem"><a href="http://www.vegemil.co.kr/main/member/privacy.aspx">개인정보처리방침</a></li>
+                <li role="listitem"><a href="http://www.vegemil.co.kr/main/member/terms.aspx">이용약관</a></li>
             </ul>
             <div class="company-info">
                 <dl>
-                    <dt>주소</dt>
-                    <dd>(주)정식품 충청북도 청주시 흥덕구 산단로 124 (우)28446</dd>
-                    
-                </dl>
-                <dl>
+                    <dt>(주)정식품</dt>
+                    <dd>충청북도 청주시 흥덕구 산단로 124 주식회사 정식품 (우)28446</dd>
                     <dt>사업자등록번호</dt>
                     <dd>315-81-19977</dd>
                     <dt>업태</dt>
                     <dd>제조(기타 비알콜성 음료)</dd>
-                    <dt>대표이사</dt>
-                    <dd>이순구</dd>
                 </dl>
                 <dl>
+                    <dt>대표이사</dt>
+                    <dd>이순구</dd>
                     <dt>대표전화</dt>
-                    <dd>02-3484-9300</dd>
+                    <dd><a rel="author" href="tel:02-3484-9300" title="정식품 대표 전화 02-3484-9300">02-3484-9300</a></dd>
                     <dt>고객상담</dt>
-                    <dd>080-930-8888</dd>
+                    <dd><a rel="author" href="tel:080-930-8888" title="정식품 고객상담 전화 080-930-8888">080-930-8888</a></dd>
                     <dt>상담메일</dt>
-                    <dd>cs@vegemil.co.kr</dd>
+                    <dd><a rel="author" href="mailto:cs@vegemil.co.kr" title="정식품 이메일 상담 cs@vegemil.co.kr">cs@vegemil.co.kr</a></dd>
                 </dl>
             </div>
             <p>Copyright(c)2008 Dr.CHUNG'S FOOD Co., Ltd. All Right Reserved.</p>
