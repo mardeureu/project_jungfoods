@@ -1,3 +1,7 @@
+/*
+    작성자 : 정선희
+    작성기간 : 2월 ~ 4월 12일
+*/
 /* 배너 이미지 */
 .top-banner-cp-institution {
     width: 100%;
@@ -24,9 +28,10 @@
     margin: 0 auto;
 }
 .fair-trade .cp-introduce .co-txt h4 {
-    color: #333;
+    color: #d97234;
     font-size: 1.25em;
     margin-bottom: 1.5em;
+    font-weight: 600;
 }
 .fair-trade .cp-introduce .co-txt p {
     color: #fff;
@@ -37,6 +42,7 @@
 /* 공정거래 관련법규 */
 .cp-laws {
     width: 80%;
+    height: 350px;
     margin: 0 auto;
 }
 .cp-laws h4 {
@@ -44,59 +50,63 @@
     margin: 0 auto;
 }
 .cp-laws p {
-    margin: 0 auto;
+    margin: 0 auto 10px;
     font-size: 1em;
     text-align: center;
     color: #063;
 }
-.cp-laws div {
-    margin: 0 auto;
-}
 .cp-laws ul {
     width: 100%;
     margin: 0 auto;
-}
-.cp-laws ul li {
-    width: 100%;
-    font-size: 1.25em;
-    color: #777;
-    margin: 10px 0;
     position: relative;
-    text-align: center;
 }
-.cp-laws ul li::before {
+.cp-laws ul::after {
     content: "";
     display: inline-block;
-    width: 100% ;
-    height: 100%;
-    margin-right: .5em;
-    vertical-align: .05em;
-    background-color: rgba(0, 102, 51, .65);
-    /*background-image: linear-gradient(-10deg,  rgba(208, 230, 165, .95) 10%, rgba(255, 221, 148, .8));*/
+    width: 2px;
+    height: 205px;
+    background-color: #063;
+    background-image: linear-gradient(185deg, rgba(134, 227, 206, 1), rgba(208, 230, 165, 1) 35%, rgba(255, 221, 148, .8) 50%);
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: -1;
+    left: 50%;
+}
+.cp-laws ul li {
+    font-size: 1.15em;
+    color: #333;
+    margin: 0 auto;
+    position: absolute;
 }
 .cp-laws ul li:nth-of-type(odd) {
-    
+    left: 51%;
 }
 .cp-laws ul li:nth-of-type(even) {
-    
+    right: 51%;
 }
-.cp-laws ul li:nth-of-type(4n-1) {
-    
+.cp-laws ul li:nth-of-type(1) {
+    top: 0em;
 }
-.cp-laws ul li:nth-of-type(4n-2) {
-    
+.cp-laws ul li:nth-of-type(2) {
+    top: 1.5em;
 }
-.cp-laws ul li:nth-of-type(4n-3) {
-    
+.cp-laws ul li:nth-of-type(3) {
+    top: 3em;
 }
-.cp-laws ul li:nth-of-type(4n-) {
-    
+.cp-laws ul li:nth-of-type(4) {
+    top: 4.5em;
 }
-
+.cp-laws ul li:nth-of-type(5) {
+    top: 6em;
+}
+.cp-laws ul li:nth-of-type(6) {
+    top: 7.5em;
+}
+.cp-laws ul li:nth-of-type(7) {
+    top: 9em;
+}
+.cp-laws ul li:nth-of-type(8) {
+    top: 10.5em;
+}
 /* 도입의 필요성 */
 .necessity-of-cp {
     width: 80%;
@@ -129,7 +139,7 @@
     margin: 0 auto;
     padding: 30px;
     position: relative;
-    animation: cheveron-ani .6s .3s cubic-bezier(0.26, 0.66, 0.65, 0.95) infinite both alternate;
+    animation: cheveron-ani .4s .3s cubic-bezier(0.26, 0.66, 0.65, 0.95) infinite both alternate;
 }
 .necessity-of-cp ul li .chevron span {
     display: inline-block;
@@ -155,8 +165,6 @@
     font-weight: 700;
     color: #333;
 }
-
-
 /* 운영 핵심 7대 요소 */
 .seven-elemt {
     width: 80%;
@@ -203,8 +211,6 @@
 .seven-elemt div dl:nth-of-type(2) {
     float: left;
 }
-
-
 /* Benefits of Compliance Program */
 .cp-benefit {
     width: 80%;
@@ -230,7 +236,7 @@
     display: block;
     width: 40vh;
     height: 40vh;
-    border: 5px solid rgba(217, 114, 52, .75);
+    border: 5px solid rgba(217, 114, 52, .95);
     border-top-color: rgba(0, 102, 51, .85);
     border-bottom-color: rgba(0, 102, 51, 75);
     border-left: 5px solid transparent;
@@ -286,12 +292,10 @@
     margin-right: 0;
 }
 .cp-benefit .cp-benefit-container ul li:nth-child(even)::before {
-    background-color: rgba(208, 230, 165);
-    mix-blend-mode: overlay;
+    background-color: rgba(208, 230, 165, .6);
 }
 .cp-benefit .cp-benefit-container ul li:nth-child(odd)::before {
-    background-color: rgba(255, 221, 148);
-    mix-blend-mode: overlay;
+    background-color: rgba(255, 221, 148, .6);
 }
 .cp-benefit::after {
     content: "";

@@ -1,11 +1,3 @@
-/* 버거메뉴 */
-function burgerMenuBtn() {
-    if (globalNav.className == "menuVisible") {
-        globalNav.className = ""
-    } else {
-        globalNav.className = "menuVisible"
-    }
-}
 window.onload = function(){
     //burgerMenuBtn function END 
 

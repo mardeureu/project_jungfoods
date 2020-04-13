@@ -1,3 +1,7 @@
+/*
+    작성자 : 정선희
+    작성기간 : 2월 ~ 4월 12일
+*/
 /* 배너 이미지 */
 .faq-banner {
     width: 100%;
@@ -53,31 +57,13 @@
     font-size: 1.05em;
     line-height: 35px;
     border-bottom: 1px solid rgba(255, 255, 255, .7);
+    position: relative;
 }
 .faq .faq-table tbody tr td:nth-of-type(1) {
     text-align: center;
-    font-size: 1em;
-}
-.faq .faq-table tbody tr td:nth-of-type(2) {
-    padding-left: 30px;
-    font-weight: 500;
-    color: #333;
-    cursor: pointer;
+    font-size: .90em;
 }
 /* 내용 영역 */
-.faq .faq-table tbody tr td span {
-    margin-top: 5px;
-    padding-right: 5px;
-    color: #063;
-    font-size: .95em;
-    cursor: default;
-    white-space: pre-line;
-    display: none;
-}
-.faq .faq-table tbody tr:last-child td span {
-    white-space: normal;
-    font-weight: 500;
-}
 .faq .faq-table tbody tr td span dl {}
 .faq .faq-table tbody tr td span dl dt {
     font-size: 1em;
@@ -100,4 +86,34 @@
 }
 .faq .faq-table tbody tr td span dl:first-child {
     margin-bottom: 15px;
+}
+.faq .faq-table tbody tr td label {
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.faq .faq-table tbody tr td input {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+.faq .faq-table tbody tr td span {
+    display: none;
+}
+.faq .faq-table tbody tr td [type="checkbox"]:checked ~ span {
+    display: block;
+    width: 95%;
+    padding-left: 10px;
+    color: #063;
+    font-size: .95em;
+    cursor: default;
+    white-space: pre-line;
+    background-color: #eee;
+}
+.faq .faq-table tbody tr:last-child td span {
+    font-weight: 500;
 }
