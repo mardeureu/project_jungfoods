@@ -8,6 +8,14 @@
     header .menu button {
         display: none;
     }
+    header .menu nav.menuVisible {
+        height: auto;
+    }
+    /* header */
+    header .menu nav > ul:hover > li .sub-menu {
+        height: auto;
+        overflow: visible;
+    }
 }
 /* 1024px 이하 */
 @media (max-width: 1024px) {
@@ -50,9 +58,7 @@
     header .menu nav > ul > li > a:hover {
         color: #d97234;
     }
-    
     /*sub-menu*/
-    
     header .menu nav .sub-menu {
         height: 0;
     }
@@ -62,16 +68,17 @@
     header .menu nav ul li:nth-of-type(1) ul li:nth-of-type(5) {
         margin-bottom: 0px;
     }
-    header .menu nav > ul > li:hover .sub-menu {
+    header .menu nav ul li a.subMenuVisivble + ul {
         height: auto;
         overflow: visible;
     }
     /* Event */
 
-    /* 웹진 */
+    /* webzine */
 
-/* 1024px END */
-}
+
+}/* 1024px END */
+
 @media (max-width: 768px) {
     header .menu .logo {
         height: 30px;
@@ -228,5 +235,5 @@
     .container .prod .prod-title a:nth-of-type(5)     {
         display: none;
     }
-/* 480px END */
-}
+
+}/* 480px END */

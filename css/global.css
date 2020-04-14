@@ -3,7 +3,7 @@
 */
 @import url("common.css");
 
-/*header*/
+/*---------- header ----------*/
 header {
     width: 100%;
     margin: 0 auto;
@@ -29,10 +29,6 @@ header .menu .logo {
     background-size: contain;
 }
 /* sub-menu hover */
-header .menu nav > ul:hover > li .sub-menu {
-    height: auto;
-    overflow: visible;
-}
 header .menu nav > ul > li > a {
     width: 100%;
     line-height: 70px;
@@ -80,8 +76,8 @@ header .menu nav .sub-menu li {
 header .menu nav .sub-menu li:hover a {
     width: 100%;
     color: #063;
-    font-weight: 500;
-    animation: nav-font-animations 2s .5s infinite both alternate;
+    font-weight: 600;
+    animation: nav-font-animations .5s .3s infinite both alternate;
 }
 header .menu nav .sub-menu li a {
     width: 100%;
@@ -135,6 +131,12 @@ header .menu nav > ul > li {
     float: left;
     vertical-align: top;
 }
+/* sub menu javascript 
+header .menu nav ul li a.subMenuVisivble + ul {
+    height: auto;
+    overflow: visible;
+}
+*/
 /*---------- footer ----------*/
 footer {
     width: 100%;
