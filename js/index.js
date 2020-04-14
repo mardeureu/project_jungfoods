@@ -1,7 +1,9 @@
+// 작성자 : 정선희
+
 window.onload = function(){
     //burgerMenuBtn function END 
 
-    /* 제품 소개  다시다시!!*/
+    /* 제품 다시!!*/
     var mainProd = document.getElementById('mainProd');
     //제품 사진
     var vgmPlain = document.getElementById('vgmPlain');
