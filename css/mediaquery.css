@@ -4,17 +4,17 @@
 /*---------- media query ----------*/
 /* 1024px 이상 */
 @media (min-width: 1024px) {
+    /* header */
+    header .menu nav > ul:hover > li .sub-menu {
+        height: auto;
+        overflow: visible;
+    }
     /*burger menu*/
     header .menu button {
         display: none;
     }
     header .menu nav.menuVisible {
         height: auto;
-    }
-    /* header */
-    header .menu nav > ul:hover > li .sub-menu {
-        height: auto;
-        overflow: visible;
     }
 }
 /* 1024px 이하 */
@@ -77,6 +77,12 @@
     /* webzine */
 
 
+    /* sub join */
+    #join_form fieldset label[for="agree"] {
+        font-size: .85em;
+        vertical-align: .25em;
+    }
+
 }/* 1024px END */
 
 @media (max-width: 768px) {
@@ -90,7 +96,6 @@
     .main-visual {
         transform: translateY(30px);
     }
-
     /* burger menu */
     header .menu button {
         width: 30px;
@@ -216,6 +221,37 @@
     /* footer background */
     .background {
         display: none;
+    }
+
+    /* subpage tab */
+    .local-nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    .local-nav ul li {
+        display: block;
+        font-size: .95rem;
+        margin-right: 10px;
+        line-height: 30px;
+        min-height: 30px;
+    }
+    .local-nav ul li a {
+        letter-spacing: 0px;
+        
+    }
+    .local-nav ul li:last-child{
+        margin-right: 0;
+    }
+
+    /* subpage - prod */
+    .prod {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5em;
+    }
+    .product-bgm {
+        width: 90%;
+        margin: 0 auto;
     }
 /* 768px END */
 }

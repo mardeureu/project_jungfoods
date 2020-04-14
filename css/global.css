@@ -28,7 +28,6 @@ header .menu .logo {
     background: url("../img/logo.png") no-repeat center;
     background-size: contain;
 }
-/* sub-menu hover */
 header .menu nav > ul > li > a {
     width: 100%;
     line-height: 70px;
@@ -131,12 +130,11 @@ header .menu nav > ul > li {
     float: left;
     vertical-align: top;
 }
-/* sub menu javascript 
+/* sub menu javascript */
 header .menu nav ul li a.subMenuVisivble + ul {
     height: auto;
     overflow: visible;
 }
-*/
 /*---------- footer ----------*/
 footer {
     width: 100%;

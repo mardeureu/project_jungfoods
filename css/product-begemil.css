@@ -3,7 +3,6 @@
 */
 
 /* 배너 이미지 */
-
 /* 베지밀 일반 */
 .top-banner-plain {
     width: 100%;
@@ -35,39 +34,26 @@
     background-attachment: fixed;
 }
 
-
-
 /* contents */
-
 .sub-container {
     width: 100%;
 }
 
 /* 제품 */
-
+.prod {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5em;
+}
 .product-bgm {
     width: 80%;
     margin: 0 auto;
 }
-.product-bgm::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 .product-bgm article {
-    display: inline-block;
-    width: 22%;
-    margin-right: calc(3% - 10px - 0.1px);
     vertical-align: top;
 }
 .product-bgm article:nth-of-type(4n) {
-    margin-right: calc(3% - 10px - 0.1px);
-}
-.product-bgm article:nth-of-type(1),
-.product-bgm article:nth-of-type(2),
-.product-bgm article:nth-of-type(3),
-.product-bgm article:nth-of-type(4) {
-    margin-top: 50px;
+    /* margin-right: calc(3% - 10px - 0.1px); */
 }
 .product-bgm article figure {
     width: 100%;
@@ -79,12 +65,6 @@
     font-size: 0;
     border-radius: 10px;
     overflow: hidden;
-}
-.product-bgm article:nth-of-type(1) figure > a:hover {
-    box-shadow: 0 0 0 0;
-}
-.product-bgm article figure > a:hover {
-    /*box-shadow: 10px 10px 25px -10px rgba(125, 125, 125, 0.8);*/
 }
 .product-bgm article figure a img {
     width: 100%;
@@ -112,7 +92,6 @@
     color: #d97234;
     font-size: .75em;
     font-weight: 300;
-    letter-spacing: 2px;
 }
 .product-bgm article figure figcaption a {
     display: block;
@@ -126,4 +105,11 @@
     color: #063;
     font-weight: 700;
 }
-
+.product-bgm article:nth-of-type(1) figure figcaption {
+    text-align: center;
+}
+.product-bgm article:nth-of-type(1) figure figcaption span {
+    font-size: .95em;
+    color: #063;
+    font-weight: 700;
+}
