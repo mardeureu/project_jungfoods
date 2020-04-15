@@ -109,6 +109,51 @@
         width: 95%;
         margin: 0 auto;
     }
+    /* subpage - Cp-institution */
+    .fair-trade .cp-introduce .co-txt {
+        width: 80%;
+    }
+    .cp-laws {
+        width: 100%;
+    }
+    .cp-laws ul {
+        padding: 60px 30px 10px;
+     }
+    .cp-laws ul li {
+        width: 100%;
+        line-height: 30px;
+    }
+    .cp-laws ul li:nth-of-type(odd) {
+        float: none;
+    }
+    .necessity-of-cp {
+        width: 90%;
+    }
+    .seven-elemt {
+        width: 90%;
+    }
+    .seven-elemt div dl {
+        width:100%;
+    }
+    .seven-elemt div dl:nth-of-type(1) {
+        float: none;
+    }
+    .seven-elemt div dl:nth-of-type(2) {
+        float: none;
+    }
+    .cp-benefit .cp-benefit-container ul li {
+        display: block;
+        margin: 0 auto;
+        margin-top: -35px;
+    }
+    .cp-benefit .cp-benefit-container ul li:last-child {
+        margin: 0 auto;
+        margin-top: -35px;
+    }
+    
+    .cp-benefit .cp-benefit-container ul li:first-child {
+        margin-top: 0;
+    }
 
 }/* 1024px END */
 
@@ -256,7 +301,69 @@
     .local-nav ul {
         display: none;
     }
+    /* subpage cp */
+    .explain-cp .about-cp {
+        width: 80%;
+        height: auto;
+        display: block;
+    }
+    .explain-cp .about-cp .box-cp span {
+        display: none;
+    }
+    .explain-cp .about-cp .text-cp h4 {
+        margin-top: 15px;
+    }
+    .cp-article .cp-article-link {
+        margin: 30px auto 10px;
+        text-align: left;
+    }
+    .cp-article .cp-article-link a {
+        width: 100%;
+        line-height: 25px;
+    }
+    .cp-article .cp-article-link a span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 35% 15% 55% 5%;
+        background: linear-gradient(-200deg,  rgba(208, 230, 165, .95), rgba(255, 221, 148, .8));
+        -ms-transform: translateX(.005em) translateY(0) rotateZ(90deg);
+        transform: translateX(.005em) translateY(0) rotateZ(90deg);
+        opacity: 0;
+        -ms-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+    .news-briefing {
+        width: 100%;
+    }
+    .news-briefing ul {
+        display: block;
+    }
+    .news-briefing ul li {
+        width: 90%;
+        margin: 0 auto 10px;
+    }
+    .news-briefing ul li::after {
+        content: "";
+        display: inline;
+        border: 0px none #d97234;
+        position: static;
+    }
     /* subpage cp-institution */
+    .necessity-of-cp ul {
+        display: block;
+    }
+    .necessity-of-cp ul li {
+        width: 80%;
+        margin: 0 auto 5px;
+    }
+    .necessity-of-cp ul li:last-child {
+        margin: 0 auto;
+    }
+    /* faq */
+    .faq .faq-table {
+        width: 90%;
+    }
 
     
 /* 768px END */

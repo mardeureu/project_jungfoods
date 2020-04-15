@@ -15,7 +15,7 @@
 .faq .faq-table {
     margin: 0 auto;
     width: 80%;
-    min-width: 700px;
+    min-width: 480px;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, .8);
     /*background-image: linear-gradient(40deg, rgba(255, 221, 148, .65), rgba(208, 230, 165, .5));*/
@@ -33,7 +33,6 @@
 }
 .faq .faq-table .faq_col_2 {
     width: 85%;
-
 }
 .faq .faq-table thead {}
 .faq .faq-table thead tr {}
@@ -63,29 +62,7 @@
     font-size: .90em;
 }
 /* 내용 영역 */
-.faq .faq-table tbody tr td span dl {}
-.faq .faq-table tbody tr td span dl dt {
-    font-size: 1em;
-    font-weight: 500;
-    color: #063;
-}
-.faq .faq-table tbody tr td span dl dt::before {
-    content: "";
-    display: inline-block;
-    width: .6em;
-    height: .6em;
-    background-color: #d97234;
-    border-radius: 50% 50%;
-    vertical-align: .05em;
-    margin-right: .5em;
-}
-.faq .faq-table tbody tr td span dl dd {
-    font-size: .95em;
-    color: #333;
-}
-.faq .faq-table tbody tr td span dl:first-child {
-    margin-bottom: 15px;
-}
+
 .faq .faq-table tbody tr td label {
     font-weight: 600;
     color: #333;
@@ -115,4 +92,27 @@
 }
 .faq .faq-table tbody tr:last-child td span {
     font-weight: 500;
+}
+.faq .faq-table tbody tr td span dl {}
+.faq .faq-table tbody tr td span dl dt {
+    font-size: 1em;
+    font-weight: 500;
+    color: #063;
+}
+.faq .faq-table tbody tr td span dl dt::before {
+    content: "";
+    display: inline-block;
+    width: .6em;
+    height: .6em;
+    background-color: #d97234;
+    border-radius: 50% 50%;
+    vertical-align: .05em;
+    margin-right: .5em;
+}
+.faq .faq-table tbody tr td span dl dd {
+    font-size: .95em;
+    color: #333;
+}
+.faq .faq-table tbody tr td span dl:first-child {
+    margin-bottom: 15px;
 }

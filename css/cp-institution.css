@@ -19,18 +19,16 @@
 /* 자율준수 프로그램이란? */
 .fair-trade .cp-introduce {
     width: 100%;
-    padding: 80px 50px;
-    /* background-color: #063; */
 }
 .fair-trade .cp-introduce .co-txt {
     width: 60%;
     margin: 0 auto;
     border: 1px solid #063;
-    padding: 100px 50px; 
+    padding: 110px 50px; 
 }
 .fair-trade .cp-introduce .co-txt h4 {
     color: #333;
-    font-size: 1.25em;
+    font-size: 1.45em;
     margin-bottom: 1.5em;
     font-weight: 600;
 }
@@ -43,7 +41,6 @@
 /* 공정거래 관련법규 */
 .cp-laws {
     width: 80%;
-    height: 350px;
     margin: 0 auto;
 }
 .cp-laws h4 {
@@ -51,62 +48,46 @@
     margin: 0 auto;
 }
 .cp-laws p {
-    margin: 0 auto 10px;
     font-size: 1em;
-    text-align: center;
+    text-align: right;
     color: #063;
 }
 .cp-laws ul {
     width: 100%;
-    margin: 0 auto;
+    background-color: #f2f1ef;
+    padding: 60px 30px 20px 80px;
     position: relative;
-}
+    top: -40px;
+    z-index: -1;
+ }
 .cp-laws ul::after {
     content: "";
-    display: inline-block;
-    width: 2px;
-    height: 205px;
-    background-color: #063;
-    background-image: linear-gradient(185deg, rgba(134, 227, 206, 1), rgba(208, 230, 165, 1) 35%, rgba(255, 221, 148, .8) 50%);
-    position: absolute;
-    top: 0;
-    left: 50%;
+    display: table;
+    clear: both;
 }
+.cp-laws figure {
+    width: 94%;
+    margin: 0 auto;
+}
+.cp-laws figure img {}
 .cp-laws ul li {
+    width: 50%;
     font-size: 1.15em;
     color: #333;
-    margin: 0 auto;
-    position: absolute;
+    line-height: 35px;
+}
+.cp-laws ul li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #67809f;
+    vertical-align: .25em;
+    margin-right: 5px;
+    border-radius: 50%;
 }
 .cp-laws ul li:nth-of-type(odd) {
-    left: 51%;
-}
-.cp-laws ul li:nth-of-type(even) {
-    right: 51%;
-}
-.cp-laws ul li:nth-of-type(1) {
-    top: 0em;
-}
-.cp-laws ul li:nth-of-type(2) {
-    top: 1.5em;
-}
-.cp-laws ul li:nth-of-type(3) {
-    top: 3em;
-}
-.cp-laws ul li:nth-of-type(4) {
-    top: 4.5em;
-}
-.cp-laws ul li:nth-of-type(5) {
-    top: 6em;
-}
-.cp-laws ul li:nth-of-type(6) {
-    top: 7.5em;
-}
-.cp-laws ul li:nth-of-type(7) {
-    top: 9em;
-}
-.cp-laws ul li:nth-of-type(8) {
-    top: 10.5em;
+    float: right;
 }
 /* 도입의 필요성 */
 .necessity-of-cp {
@@ -124,11 +105,10 @@
     padding: 50px 30px;
     text-align: center;
     background-image: linear-gradient(40deg, rgba(208, 230, 165, .85) , rgba(255, 221, 148, .8));
-    border-radius: 15px 0 15px 0; 
+    border-radius: 15px 0 15px 0;
 }
 .necessity-of-cp ul li > span:nth-of-type(1) {
     width: 90%;
-    height: 50px;
 }
 .necessity-of-cp ul li > span:nth-of-type(3) {
     width: 90%;
@@ -273,7 +253,6 @@
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    min-width: 750px;
 }
 .cp-benefit .cp-benefit-container ul li {
     width: 150px;

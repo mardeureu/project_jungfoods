@@ -11,8 +11,6 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
-
 /* CP(Compliance Program)란? */
 .explain-cp {
     width: 100%;
@@ -187,7 +185,6 @@
     width: 80%;
     margin: 0 auto;
 }
-
 .news-briefing ul {
     width: 100%;
     display: flex;
