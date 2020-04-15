@@ -42,7 +42,7 @@
     font-weight: 500;
     font-size: 1.07em;
     line-height: 45px;
-    background-color: #e3ff73;
+    background-color: rgba(227, 255, 115, .5);
     color: #333;
 }
 .faq .faq-table thead tr th:nth-of-type(1) {
@@ -105,13 +105,13 @@
 }
 .faq .faq-table tbody tr td [type="checkbox"]:checked ~ span {
     display: block;
-    width: 95%;
+    width: 100%;
     padding-left: 10px;
     color: #063;
     font-size: .95em;
     cursor: default;
     white-space: pre-line;
-    background-color: #eee;
+    background-color: rgba(227, 255, 115, .05);
 }
 .faq .faq-table tbody tr:last-child td span {
     font-weight: 500;

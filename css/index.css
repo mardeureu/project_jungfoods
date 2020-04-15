@@ -366,7 +366,7 @@
 .container .main_sns .gridrwrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: .35em;
     align-content: center;
     justify-content: center;
 }

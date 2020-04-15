@@ -1,6 +1,10 @@
 /*
     작성자 : 정선희
 */
+/*
+1024px부터 width 100%
+768px부터 tab menu display none
+*/
 /*---------- media query ----------*/
 /* 1024px 이상 */
 @media (min-width: 1024px) {
@@ -19,9 +23,6 @@
 }
 /* 1024px 이하 */
 @media (max-width: 1024px) {
-    header .menu {
-        width: 80%;
-    }
     header .menu .logo {
         height: 50px;
     }
@@ -58,6 +59,28 @@
     header .menu nav > ul > li > a:hover {
         color: #d97234;
     }
+    /* main */
+    /* main product */
+    .container .prod figure {
+        width: 100%;
+    }
+    /* main event */
+    .container .event {
+        width: 100%;
+    }
+    /* main webzine */
+    .container .webzine {
+        width: 100%;
+    }
+    /* main SNS */
+    .container .main_sns {
+        width: 100%;
+    }
+
+    /* cooperative company */
+    .Rel {
+        width: 100%;
+    }
     /*sub-menu*/
     header .menu nav .sub-menu {
         height: 0;
@@ -72,15 +95,19 @@
         height: auto;
         overflow: visible;
     }
-    /* Event */
-
-    /* webzine */
-
-
     /* sub join */
     #join_form fieldset label[for="agree"] {
         font-size: .85em;
         vertical-align: .25em;
+    }
+    /* subpage - subProd */
+    .subProd {
+        grid-template-columns: repeat(3, 1fr);
+        gap: .25em;
+    }
+    .product-bgm {
+        width: 95%;
+        margin: 0 auto;
     }
 
 }/* 1024px END */
@@ -103,7 +130,7 @@
     }
     /* event */
     .container .event {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         position: relative;
         text-align: center;
@@ -218,41 +245,20 @@
     .container .main_sns {
         margin-bottom: 100px;
     }
+    .container .main_sns .gridrwrapper {
+        gap: .25em;
+    }
     /* footer background */
     .background {
         display: none;
     }
-
     /* subpage tab */
     .local-nav ul {
-        display: flex;
-        justify-content: center;
+        display: none;
     }
-    .local-nav ul li {
-        display: block;
-        font-size: .95rem;
-        margin-right: 10px;
-        line-height: 30px;
-        min-height: 30px;
-    }
-    .local-nav ul li a {
-        letter-spacing: 0px;
-        
-    }
-    .local-nav ul li:last-child{
-        margin-right: 0;
-    }
+    /* subpage cp-institution */
 
-    /* subpage - prod */
-    .prod {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: .5em;
-    }
-    .product-bgm {
-        width: 90%;
-        margin: 0 auto;
-    }
+    
 /* 768px END */
 }
 @media (max-width: 480px) {
@@ -261,14 +267,14 @@
         margin: 0 auto;
         width: 100vw;
     }
-    .container .prod figure a img {
+    .container .subProd figure a img {
         height: 200px;
     }
-    .container .prod .control,
-    .container .prod figure a:nth-of-type(4),
-    .container .prod figure a:nth-of-type(5),
-    .container .prod .prod-title a:nth-of-type(4),
-    .container .prod .prod-title a:nth-of-type(5)     {
+    .container .subProd .control,
+    .container .subProd figure a:nth-of-type(4),
+    .container .subProd figure a:nth-of-type(5),
+    .container .subProd .prod-title a:nth-of-type(4),
+    .container .subProd .prod-title a:nth-of-type(5)     {
         display: none;
     }
 

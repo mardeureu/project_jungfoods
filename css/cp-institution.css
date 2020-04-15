@@ -20,20 +20,22 @@
 .fair-trade .cp-introduce {
     width: 100%;
     padding: 80px 50px;
-    background-color: #063;
+    /* background-color: #063; */
 }
 .fair-trade .cp-introduce .co-txt {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+    border: 1px solid #063;
+    padding: 100px 50px; 
 }
 .fair-trade .cp-introduce .co-txt h4 {
-    color: #d97234;
+    color: #333;
     font-size: 1.25em;
     margin-bottom: 1.5em;
     font-weight: 600;
 }
 .fair-trade .cp-introduce .co-txt p {
-    color: #fff;
+    color: #333;
     font-size: 1.05em;
     font-weight: 300;
 }
@@ -124,6 +126,13 @@
     background-image: linear-gradient(40deg, rgba(208, 230, 165, .85) , rgba(255, 221, 148, .8));
     border-radius: 15px 0 15px 0; 
 }
+.necessity-of-cp ul li > span:nth-of-type(1) {
+    width: 90%;
+    height: 50px;
+}
+.necessity-of-cp ul li > span:nth-of-type(3) {
+    width: 90%;
+}
 .necessity-of-cp ul li:last-child {
     margin-right: 0;
 }
@@ -132,27 +141,27 @@
     color: #333;
     font-size: 1.15em;
 }
-/* chevron */
-.necessity-of-cp ul li .chevron {
+/* cp-chevron */
+.necessity-of-cp ul li .cp-chevron {
     display: table;
     margin: 0 auto;
     padding: 30px;
     position: relative;
     animation: cheveron-ani .4s .3s cubic-bezier(0.26, 0.66, 0.65, 0.95) infinite both alternate;
 }
-.necessity-of-cp ul li .chevron span {
+.necessity-of-cp ul li .cp-chevron span {
     display: inline-block;
     width: 1em;
     height: 2px;
     background-color: #063;
 }
-.necessity-of-cp ul li .chevron span:nth-of-type(1) {
+.necessity-of-cp ul li .cp-chevron span:nth-of-type(1) {
     -ms-transform: rotateZ(40deg);
     -ms-transform-origin: right bottom;
     transform: rotateZ(40deg);
     transform-origin: right bottom;
 }
-.necessity-of-cp ul li .chevron span:nth-of-type(2) {
+.necessity-of-cp ul li .cp-chevron span:nth-of-type(2) {
     -ms-transform: rotateZ(-40deg);
     -ms-transform-origin: left bottom;
     transform: rotateZ(-40deg);

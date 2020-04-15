@@ -40,10 +40,10 @@
 }
 
 /* 제품 */
-.prod {
+.subProd {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: .5em;
+    gap: .35em;
 }
 .product-bgm {
     width: 80%;
