@@ -1,19 +1,19 @@
-// 작성자 : 정선희
 
 window.onload = function(){
-    //burgerMenuBtn function END 
 
-    /* 제품 다시!!*/
     var mainProd = document.getElementById('mainProd');
     //제품 사진
     var vgmPlain = document.getElementById('vgmPlain');
     var vgmBk = document.getElementById('vgmBk');
     var vgmOther = document.getElementById('vgmOther');
     //버튼
+    var prodBtn = document.getElementById('prodBtn');
+    var mainprodbtn = document.getElementsByClassName('mainprodbtn');
     var vgmPlainbtn = document.getElementById('vgmPlainbtn');
     var vgmBkbtn = document.getElementById('vgmBkbtn');
     var vgmOtherBtn = document.getElementById('vgmOtherBtn');
-
+    
+    /*
     vgmPlainbtn.onclick = function (){
         if (vgmPlain.className == "") {
             vgmPlain.className = "active";
@@ -35,8 +35,13 @@ window.onload = function(){
             vgmOther.className = "";
         }
     }//vgmBkbtn Event END
+    */
 
-
-//window.load END 
-}
-// 스크롤, top 버튼, 메인 제품, 헤더 커졌을 때 감지 못하는것, height 스크롤 하단 못찾는것. 
+    for(var i = 0; i < mainprodbtn.length; i++) {
+        mainprodbtn[i].onclick = function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace("active","");
+            this.className += "active";
+        }
+    }
+}//window onload END

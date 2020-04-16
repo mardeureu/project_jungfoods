@@ -69,6 +69,7 @@ textarea {
     color: inherit;
     font-family: inherit;
     direction: ltr;
+    outline: 1px solid #063;
 }
 img,
 input,

@@ -2,7 +2,6 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="우리나라 두유의 첫 장을 연 베지밀을 만든 정식품">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>정식품</title>
@@ -10,13 +9,21 @@
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <!-- CSS -->
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/mediaquery.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/mediaquery.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Javascript -->
-        <script type="text/javascript" src="js/header.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/header.js"></script>
+        <!-- meta og -->
+        <meta name="description" content="우리나라 두유의 첫 장을 연 베지밀을 만든 정식품">
+        <meta property="og:url" content="">
+        <meta property="og:title" content="정식품 Dr.chung'sFood">
+        <meta property="og:description" content="우리나라 두유의 첫 장을 연 베지밀을 만든 정식품">
+        <meta property="og:site_name" content="정식품 Dr.chung'sFood">
+        <meta property="og:image" content="img/logo.png">
+        <meta property="og:type" content="website">
     </head>
     <body>
         <!--
@@ -34,7 +41,7 @@
                 <nav role="navigation" aria-label="글로벌 네비게이션" id="globalNav">
                     <ul class="main-menu" role="list">
                         <li role="listitem">
-                            <a href="">기업소개</a>
+                            <a href="#">기업소개</a>
                             <ul class="sub-menu" role="list">
                                 <li role="listitem"><a href="">CEO 인사말</a></li>
                                 <li role="listitem"><a href="">기업정보</a></li>
@@ -44,7 +51,7 @@
                             </ul>
                         </li>
                         <li role="listitem">
-                            <a href="">제품소개</a>
+                            <a href="#">제품소개</a>
                             <ul class="sub-menu" role="list">
                                 <li role="listitem"><a href="product/product-begemil.html">베지밀</a></li>
                                 <li role="listitem"><a href="product/product-begemil-black.html">베지밀 블랙</a></li>
@@ -52,23 +59,23 @@
                             </ul>
                         </li>
                         <li role="listitem">
-                            <a href="">공정거래</a>
+                            <a href="#">공정거래</a>
                             <ul class="sub-menu" role="list">
                                 <li role="listitem"><a href="cp/cp.html">공정거래 도입</a></li>
                                 <li role="listitem"><a href="cp/cp-institution.html">공정거래 프로그램</a></li>
                             </ul>
                         </li>
                         <li role="listitem">
-                            <a href="">고객지원</a>
+                            <a href="#">고객지원</a>
                             <ul class="sub-menu" role="list">
                                 <li role="listitem"><a href="customer/faq.html">FAQ</a></li>
                                 <li role="listitem"><a href="customer/cs.html">1:1 문의</a></li>
                             </ul>
                         </li>
                         <li role="listitem">
-                            <a href="">회원전용</a>
+                            <a href="#">회원전용</a>
                             <ul class="sub-menu" role="list">
-                                <li role="listitem"><a href="">로그인</a></li>
+                                <li role="listitem"><a href="members/login.html">로그인</a></li>
                                 <li role="listitem"><a href="members/join.html">회원가입</a></li>
                             </ul>
                         </li>
@@ -90,31 +97,30 @@
             <section id="mainProd" class="prod">
                 <section class="prod_Vegemil">
                     <!-- 베지밀 두유 플레인 -->
-                    <figure id="vgmPlain">
+                    <figure id="vgmPlain" class="mianprod">
                         <a href=""><img src="img/begemil-a.png" alt="베지밀 에이" title="베지밀 에이"></a>
                         <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
                         <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
                         <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
                         <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
                     </figure>
-                    <!--
-                        베지밀 두유 블랙 
-                    <figure id="vgmBk">
+                    <!-- 베지밀 두유 블랙 -->
+                    <figure id="vgmBk" class="mianprod prodhdn">
                         <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
                         <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
                         <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
                         <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
                         <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
                     </figure>
-                        베지밀 그 외 제품 
-                    <figure id="vgmOther">
+                    <!-- 베지밀 그 외 제품 -->
+                    <figure id="vgmOther" class="mianprod prodhdn">
                         <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
                         <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
                         <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
                         <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
                         <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
                     </figure>
-                    -->
+                    
                 </section>
                 <!-- indicator -->
                 <div class="control">
@@ -125,14 +131,14 @@
                 </div>
 
                 <!-- prod tab -->
-                <div class="prod-title">
-                    <button type="button" name="vgmPlainbtn" id="vgmPlainbtn">
+                <div id="prodBtn" class="prod-title">
+                    <button type="button" name="vgmPlainbtn" id="vgmPlainbtn" class="mainprodbtn active">
                         베지밀 두유
                     </button>
-                    <button type="button" name="vgmBkbtn" id="vgmBkbtn">
+                    <button type="button" name="vgmBkbtn" id="vgmBkbtn" class="mainprodbtn">
                         베지밀 블랙
                     </button>
-                    <button type="button" name="vgmOtherBtn" id="vgmOtherBtn">
+                    <button type="button" name="vgmOtherBtn" id="vgmOtherBtn" class="mainprodbtn">
                         그 외 제품
                     </button>
                 </div>
@@ -317,7 +323,7 @@
                     <dd><a rel="author" href="mailto:cs@vegemil.co.kr" title="정식품 이메일 상담 cs@vegemil.co.kr">cs@vegemil.co.kr</a></dd>
                 </dl>
             </div>
-            <p>Copyright(c)2008 Dr.CHUNG'S FOOD Co., Ltd. All Right Reserved.</p>
+            <p>Copyright&copy;2008 Dr.CHUNG'S FOOD Co., Ltd. All Right Reserved.</p>
         </footer>
         <!-- footer END -->
         <section class="Rel">

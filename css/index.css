@@ -34,11 +34,10 @@
 .container .prod figure {
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5em;
     position: relative;
-    
     padding: 50px 0;
     opacity: 1;
     transition: opacity .7s ;
@@ -46,14 +45,20 @@
 .container .prod figure.active {
     opacity: 0;
 }
+.container .prod figure.prodhdn{
+    display: none;
+}
+.container .prod figure
 .container .prod .prod_vgm_bk,
 .container .prod .prod-oth {}
 
 .container .prod figure a {
+    width: 100%;
     display: inline-block;
+    text-align: center;
 }
 .container .prod figure a img {
-    height: 250px;
+    max-height: 300px;
     transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1) both;
 }
 .container .prod figure a:hover img {
