@@ -86,42 +86,41 @@
         <!-- header END -->
 
         <!-- main visual -->
-        <section class="main-visual">
-            <video src="video/main_drjung_history.mp4" poster="video/main_visual.gif" autoplay playsinline muted loop type="video/mp4" alt="베지밀 2018 tv 광고">
+        <div class="main-visual">
+            <video src="video/main_drjung_history.mp4" poster="video/main_visual.gif" autoplay playsinline muted loop type="video/mp4" title="메인 비디오 베지밀 2018 tv 광고">
             </video>
-        </section>
+        </div>
         
         <!-- contents -->
-        <section class="container">
+        <div class="container">
             <!-- product -->
             <section id="mainProd" class="prod">
-                <section class="prod_Vegemil">
+                <div class="prod_Vegemil">
                     <!-- 베지밀 두유 플레인 -->
                     <figure id="vgmPlain" class="mianprod">
-                        <a href=""><img src="img/begemil-a.png" alt="베지밀 에이" title="베지밀 에이"></a>
-                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                        <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
-                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
+                        <a href=""><img src="img/begemil-a.png" alt="베지밀에이 두유 제품"></a>
+                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러 우리콩"></a>
+                        <a href=""><img src="img/greenbia.png" alt="그린비아 디엠 당뇨환자용 제품"></a>
+                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유 아몬드와 호두맛"></a>
                         <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
                     </figure>
-                    <!-- 베지밀 두유 블랙 -->
+                    <!-- 베지밀 두유 블랙 
                     <figure id="vgmBk" class="mianprod prodhdn">
-                        <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
-                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                        <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
-                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
+                        <a href=""><img src="img/begemil-a.png" alt="베지밀에이 두유 제품"></a>
+                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러 우리콩"></a>
+                        <a href=""><img src="img/greenbia.png" alt="그린비아 디엠 당뇨환자용 제품"></a>
+                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유 아몬드와 호두맛"></a>
                         <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-                    </figure>
-                    <!-- 베지밀 그 외 제품 -->
+                    </figure>-->
+                    <!-- 베지밀 그 외 제품 
                     <figure id="vgmOther" class="mianprod prodhdn">
-                        <a href=""><img src="img/begemil-a.png" alt="베지밀두유"></a>
-                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                        <a href=""><img src="img/greenbia.png" alt="그린비아"></a>
-                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
+                        <a href=""><img src="img/begemil-a.png" alt="베지밀에이 두유 제품"></a>
+                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러 우리콩"></a>
+                        <a href=""><img src="img/greenbia.png" alt="그린비아 디엠 당뇨환자용 제품"></a>
+                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유 아몬드와 호두맛"></a>
                         <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-                    </figure>
-                    
-                </section>
+                    </figure>-->
+                </div>
                 <!-- indicator -->
                 <div class="control">
                     <div class="indicator">
@@ -129,16 +128,15 @@
                         <span></span>
                     </div>
                 </div>
-
                 <!-- prod tab -->
-                <div id="prodBtn" class="prod-title">
-                    <button type="button" name="vgmPlainbtn" id="vgmPlainbtn" class="mainprodbtn active">
+                <div class="prod-title">
+                    <button type="button" name="vgmPlainbtn" id="vgmPlainbtn" class="mainprodbtn" onclick="openPage(this)">
                         베지밀 두유
                     </button>
-                    <button type="button" name="vgmBkbtn" id="vgmBkbtn" class="mainprodbtn">
+                    <button type="button" name="vgmBkbtn" id="vgmBkbtn" class="mainprodbtn" onclick="openPage(this)">
                         베지밀 블랙
                     </button>
-                    <button type="button" name="vgmOtherBtn" id="vgmOtherBtn" class="mainprodbtn">
+                    <button type="button" name="vgmOtherBtn" id="vgmOtherBtn" class="mainprodbtn" onclick="openPage(this)">
                         그 외 제품
                     </button>
                 </div>
@@ -279,7 +277,7 @@
                     </article>
                 </div>
             </section>
-        </section>
+        </div>
         <div class="background"></div>
         <!-- container end -->
         
@@ -287,16 +285,11 @@
         <!-- footer -->
         <footer role="contentinfo">
             <!-- sns -->
-            <section class="sns">
+            <div class="sns">
                 <a href="https://www.facebook.com/vegemilgood" target="_blank" rel="me external noopener"></a>
                 <a href="https://www.instagram.com/vegemil.official/" target="_blank" rel="me external noopener"></a>
                 <a href="https://www.youtube.com/user/vegemilgood" target="_blank" rel="me external noopener"></a>
-            </section>
-            
-            <!-- family-site -->
-            <section class="family-site">
-                <div></div>
-            </section>
+            </div>
             <ul role="list" role="list">
                 <li role="listitem"><a href="https://www.vegemil.co.kr:10001/main/member/login.aspx?r=http://www.vegemil.co.kr/main/community/agencyNotify.aspx">대리점장 게시판</a></li>
                 <li role="listitem"><a href="http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02">사이트 맵</a></li>
@@ -326,7 +319,7 @@
             <p>Copyright&copy;2008 Dr.CHUNG'S FOOD Co., Ltd. All Right Reserved.</p>
         </footer>
         <!-- footer END -->
-        <section class="Rel">
+        <div class="Rel">
             <ul  role="list" role="list">
                 <li role="listitem"><a href="http://www.heart.or.kr/" target="_blank" rel="noopener"></a></li>
                 <li role="listitem"><a href="http://www.goodneighbors.kr/" target="_blank" rel="noopener"></a></li>
@@ -338,7 +331,7 @@
                 <li role="listitem"><a href="https://www.ffsb.kr/" target="_blank" rel="noopener"></a></li>
                 <li role="listitem"><a href="http://www.soyworld.or.kr/" target="_blank" rel="noopener"></a></li>
             </ul>
-        </section>
+        </div>
     </body>
     
 </html>

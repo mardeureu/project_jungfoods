@@ -411,6 +411,10 @@
     .container .subProd .prod-title a:nth-of-type(5)     {
         display: none;
     }
+    /* main prod */
+    .container .prod figure a img {
+        max-height: 150px;
+    }
     /* subpage - join*/
     #join_form {
         width:450px;

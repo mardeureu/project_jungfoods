@@ -1,6 +1,5 @@
 
 window.onload = function(){
-
     var mainProd = document.getElementById('mainProd');
     //제품 사진
     var vgmPlain = document.getElementById('vgmPlain');
@@ -12,36 +11,44 @@ window.onload = function(){
     var vgmPlainbtn = document.getElementById('vgmPlainbtn');
     var vgmBkbtn = document.getElementById('vgmBkbtn');
     var vgmOtherBtn = document.getElementById('vgmOtherBtn');
-    
-    /*
     vgmPlainbtn.onclick = function (){
         if (vgmPlain.className == "") {
-            vgmPlain.className = "active";
+            vgmPlain.className = "prodhdn";
         } else {
             vgmPlain.className = "";
         }
     }//vgmPlainbtn Event END
     vgmBkbtn.onclick = function (){
         if (vgmBk.className == "") {
-            vgmBk.className = "active";
+            vgmBk.className = "prodhdn";
         } else {
             vgmBk.className = "";
         }
     }//vgmBkbtn Event END
     vgmOtherBtn.onclick = function (){
         if (vgmOther.className == "") {
-            vgmOther.className = "active";
+            vgmOther.className = "prodhdn";
         } else {
             vgmOther.className = "";
         }
     }//vgmBkbtn Event END
-    */
-
-    for(var i = 0; i < mainprodbtn.length; i++) {
-        mainprodbtn[i].onclick = function(){
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace("active","");
-            this.className += "active";
+}//onload END
+    /*
+    function openPage(pageName){
+        //hide
+        var i, tabContents, tabLinks;
+        tabContents = document.getElementsByClassName('mianprod');
+        for(i = 0; i < tabContents.length; i++){
+            tabContents[i].style.display = "none";
         }
+        //remove
+        tabLinks = document.getElementsByClassName('mainprodbtn');
+        for(i = 0; i < tabLinks.length; i++){
+            tabLinks[i].style.display = "none";
+        }
+        //show
+        document.getElementById(pageName).style.display = 'block';
     }
-}//window onload END
+    //get
+    document.getElementById('vgmPlainbtn').click();
+    */
