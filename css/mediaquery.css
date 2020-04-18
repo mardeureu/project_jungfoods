@@ -23,6 +23,14 @@
 }
 /* 1024px 이하 */
 @media (max-width: 1024px) {
+    header .menu {
+        
+        /*
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        */
+    }
     header .menu .logo {
         height: 50px;
     }

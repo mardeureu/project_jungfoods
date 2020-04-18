@@ -17,7 +17,6 @@ header .menu {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: top;
     position: relative;
 }
 header .menu .logo {
@@ -53,14 +52,6 @@ header .menu nav > ul > li > a:hover::before {
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
-header .menu nav .login {
-    display: none;
-    text-align: right;
-}
-header .menu nav .login a {
-    font-size: .85em;
-    color: #444;
-}
 /* sub menu */
 header .menu nav .sub-menu {
     width: 100%;
@@ -87,27 +78,38 @@ header .menu nav ul li:nth-of-type(1) ul li:nth-of-type(5) {
 }
 /* burger menu */
 header .menu button {
-    display: block;
+    display: inline-block;
     cursor: pointer;
+    /*
     position: absolute;
     top: 0;
     right: 0;
+    */
+    position: relative;
     width: 50px;
     height: 50px;
 }
-header .menu button span {
+header .menu button > span {
     display: block;
-    width: 26px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .menu button span span {
+    display: inline-block;
+    width: 24px;
     height: 1px;
     background: #333;
     position: absolute;
     top: 50%;
-    left: calc(50% - 13px);
+    left: calc(50% - 12px);
 }
-header .menu button span:nth-of-type(1) {
+header .menu button > span:nth-of-type(1) span {
     top: calc(50% - 5px);
 }
-header .menu button span:nth-of-type(2) {
+header .menu button > span:nth-of-type(2) span {
     top: calc(50% + 5px);
 }
 
@@ -129,6 +131,14 @@ header .menu nav > ul::after {
 header .menu nav > ul > li {
     float: left;
     vertical-align: top;
+}
+header .menu button > span:nth-of-type(1).bread-crust-top {
+    -ms-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+header .menu button > span:nth-of-type(2).bread-crust-bottom {
+    -ms-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
 }
 /* sub menu javascript */
 header .menu nav ul li a.subMenuVisivble + ul {
