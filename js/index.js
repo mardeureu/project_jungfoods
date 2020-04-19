@@ -33,11 +33,14 @@ window.onload = function(){
         }
     }//vgmBkbtn Event END
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 //window.load END 
 }
 =======
+=======
+>>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
 }//onload END
     /*
     function openPage(pageName){
@@ -57,5 +60,9 @@ window.onload = function(){
     }
     //get
     document.getElementById('vgmPlainbtn').click();
+<<<<<<< HEAD
+    */
+>>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
+=======
     */
 >>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd

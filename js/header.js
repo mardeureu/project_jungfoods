@@ -6,7 +6,10 @@ function MenuBtn(breadCrust) {
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
 /*
 window.onload = function(){
     var idx = 0;
@@ -54,6 +57,9 @@ window.addEventListener('load',function(){
 });
 */
 /*
+<<<<<<< HEAD
+>>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
+=======
 >>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
 window.addEventListener('load',function(){
     //bread_crust animate
@@ -104,7 +110,13 @@ window.addEventListener('load',function(){
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
+=======
+    console.log(mainMenu[idx]);
+});
+*/
+>>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
 =======
     console.log(mainMenu[idx]);
 });
