@@ -13,11 +13,12 @@
 }
 /* form */
 #cs_form {
-    width: 100%;
+    width: 800px;
+    margin: auto;
 }
 #cs_form fieldset {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     border: 0px;
     text-align: center;
 }
@@ -74,7 +75,8 @@
     width: 100%;
     padding: 7px 5px;
     height: 120px;
-    max-height: 120px;
+    max-height: 180px;
+    min-height: 180px;
 }
 #cs_form fieldset [for="cs_file"] {}
 #cs_form fieldset [id="cs_file"] {}
@@ -85,7 +87,10 @@
     margin-top: 30px;
     padding: 5px 50px;
     border: 1px solid #063;
+    border-radius: 3.5px;
+    transition: all .15s linear; 
 }
 #cs_form fieldset button:hover {
-    border: 1px solid #d97234;
+    color: #fff;
+    background-color: #063;
 }

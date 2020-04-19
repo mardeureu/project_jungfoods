@@ -2,7 +2,6 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="우리나라 두유의 첫 장을 연 베지밀을 만든 정식품">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         <title>정식품 | 회원가입</title>
@@ -17,6 +16,14 @@
         <!-- Javascript -->
         <script type="text/javascript" src="../js/header.js"></script>
         <script type="text/javascript" src="../js/join.js"></script>
+        <!-- meta og -->
+        <meta name="description" content="우리나라 두유의 첫 장을 연 베지밀을 만든 정식품">
+        <meta property="og:url" content="">
+        <meta property="og:title" content="정식품 Dr.chung'sFood">
+        <meta property="og:description" content="우리나라 두유의 첫 장을 연 베지밀을 만든 정식품">
+        <meta property="og:site_name" content="정식품 Dr.chung'sFood">
+        <meta property="og:image" content="../img/logo.png">
+        <meta property="og:type" content="website">
     </head>
     <body>
         <!--
@@ -67,7 +74,7 @@
                         <li role="listitem">
                             <a href="#">회원전용</a>
                             <ul class="sub-menu" role="list">
-                                <li role="listitem"><a href="">로그인</a></li>
+                                <li role="listitem"><a href="login.html">로그인</a></li>
                                 <li role="listitem"><a href="join.html">회원가입</a></li>
                             </ul>
                         </li>
@@ -75,7 +82,7 @@
                 </nav>
             </div>
         </header><!-- header END -->
-
+        
         <!-- banner image  -->
         <div class="join-banner"></div>
 
@@ -83,12 +90,13 @@
         <nav class="local-nav" aria-label="local-menu">
             <ul role="list">
                 <li role="listitem"><a href="../index.html">HOME</a></li>
+                <li role="listitem"><a href="login.html">로그인</a></li>
                 <li role="listitem"><a href="join.html">회원가입</a></li>
             </ul>
         </nav>
 
         <!-- contents -->
-        <section class="sub-container join">
+        <div class="sub-container join">
             <form name="join" action="join.php" method="post" id="join_form">
                 <fieldset>
                     <legend>회원가입</legend>
@@ -112,22 +120,17 @@
                     <button type="button" onclick="joinUs(this.form)">회원가입</button>
                 </fieldset>
             </form>
-        </section>
+        </div>
         <!-- contents END -->
 
         <!-- footer -->
         <footer role="contentinfo">
             <!-- sns -->
-            <section class="sns">
+            <div class="sns">
                 <a href="https://www.facebook.com/vegemilgood" target="_blank" rel="me external noopener"></a>
                 <a href="https://www.instagram.com/vegemil.official/" target="_blank" rel="me external noopener"></a>
                 <a href="https://www.youtube.com/user/vegemilgood" target="_blank" rel="me external noopener"></a>
-            </section>
-            
-            <!-- family-site -->
-            <section class="family-site">
-                <div></div>
-            </section>
+            </div>
             <ul role="list" role="list">
                 <li role="listitem"><a href="https://www.vegemil.co.kr:10001/main/member/login.aspx?r=http://www.vegemil.co.kr/main/community/agencyNotify.aspx">대리점장 게시판</a></li>
                 <li role="listitem"><a href="http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02">사이트 맵</a></li>

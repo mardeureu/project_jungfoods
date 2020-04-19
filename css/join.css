@@ -13,11 +13,12 @@
 }
 /* form */
 #join_form {
-    width: 100%;
+    width:500px;
+    margin: auto;
 }
 #join_form fieldset {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     border: 0px;
     text-align: center;
 }
@@ -64,8 +65,12 @@
     color: #063;
     margin-top: 30px;
     padding: 5px 50px;
+    letter-spacing: 1px;
     border: 1px solid #063;
+    border-radius: 3.5px;
+    transition: all .15s linear; 
 }
 #join_form fieldset button:hover {
-    border: 1px solid #d97234;
+    color: #fff;
+    background-color: #063;
 }

@@ -69,6 +69,11 @@ textarea {
     color: inherit;
     font-family: inherit;
     direction: ltr;
+    outline: 1px solid #063;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    outline: none;
 }
 img,
 input,

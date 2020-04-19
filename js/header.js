@@ -5,6 +5,56 @@ function MenuBtn(breadCrust) {
         globalNav.className = "menuVisible";
     }
 }
+<<<<<<< HEAD
+=======
+/*
+window.onload = function(){
+    var idx = 0;
+    var mainMenu = document.querySelectorAll('.main-menu > li > a');
+    for(let i = 0; i < mainMenu.length; i++){
+        mainMenu[i].onclick = function(e){
+            e.preventDefault;
+            mainMenu[idx].className = "";
+            this.className = "subMenuVisivble";
+            idx = i;
+        }
+    }
+    console.log(mainMenu[idx])
+}
+*/
+window.addEventListener('load',function(){
+    var idx = 0;
+    var mainMenu = document.querySelectorAll('.main-menu > li > a');
+    for(let i = 0; i < mainMenu.length; i++){
+        mainMenu[i].onclick = function(e){
+            e.preventDefault;
+            mainMenu[idx].className = "";
+            this.className = "subMenuVisivble";
+            idx = i;
+        }
+    }
+});
+/*
+window.addEventListener('load',function(){
+    var mainMenu = document.querySelectorAll('.main-menu > li > a');
+    var i;
+    for(i = 0; i < mainMenu.length; i++){
+        mainMenu[i].addEventListener('click',function(e){
+            e.preventDefault;
+            this.classList.toggle("active");
+            var subMenu = this.nextElementSibling;
+            console.log(subMenu)
+            if(subMenu.className == ""){
+                subMenu.className = "subMenuVisivble";
+            }else {
+                subMenu.className = "";
+            }
+        })
+    }
+});
+*/
+/*
+>>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
 window.addEventListener('load',function(){
     //bread_crust animate
     var burgerMenuBtn = document.getElementById('burgerMenuBtn');
@@ -44,7 +94,7 @@ window.addEventListener('load',function(){
 
     //sub menu
     var idx = 0;    
-    var mainMenu = document.querySelectorAll('.main-menu > li a');
+    var mainMenu = document.querySelectorAll('.main-menu > li > a');
     
     for(let i = 0; i <= mainMenu.length-1; i++){
         mainMenu[i].onclick = function (){
@@ -53,4 +103,10 @@ window.addEventListener('load',function(){
             idx = i;
         }
     }
+<<<<<<< HEAD
 });
+=======
+    console.log(mainMenu[idx]);
+});
+*/
+>>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd

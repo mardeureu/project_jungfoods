@@ -28,17 +28,22 @@
 }
 /*---------- main product ----------*/
 .container .prod {
-    width: 100%;
-    margin: 100px auto;
+    width: 80%;
+    margin: 100px auto 60px;
+    position: relative;
+    /* height: 400px; */
 }
 .container .prod figure {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5em;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
-    
+    /*
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    */
     padding: 50px 0;
     opacity: 1;
     transition: opacity .7s ;
@@ -46,13 +51,20 @@
 .container .prod figure.active {
     opacity: 0;
 }
+.container .prod figure.prodhdn{
+    display: none;
+}
+.container .prod figure
 .container .prod .prod_vgm_bk,
 .container .prod .prod-oth {}
 
 .container .prod figure a {
+    width: 100%;
     display: inline-block;
+    text-align: center;
 }
 .container .prod figure a img {
+    max-height: 250px;
     height: 250px;
     transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1) both;
 }
