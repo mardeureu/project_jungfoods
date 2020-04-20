@@ -5,11 +5,6 @@ function MenuBtn(breadCrust) {
         globalNav.className = "menuVisible";
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
 /*
 window.onload = function(){
     var idx = 0;
@@ -56,11 +51,6 @@ window.addEventListener('load',function(){
     }
 });
 */
-/*
-<<<<<<< HEAD
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
-=======
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
 window.addEventListener('load',function(){
     //bread_crust animate
     var burgerMenuBtn = document.getElementById('burgerMenuBtn');
@@ -69,34 +59,14 @@ window.addEventListener('load',function(){
     var bread_crust_top_span = bread_crust_top.children[0];
     var bread_crust_bottom_span = bread_crust_bottom.children[0];
     burgerMenuBtn.addEventListener('click',function(){
-        if (bread_crust_top.className == "bread-crust-top") {
-            bread_crust_top.className = "";
+        if (burgerMenuBtn.className == "bread-crust") {
+            burgerMenuBtn.className = "";
         } else {
-            bread_crust_top.className = "bread-crust-top";
+            burgerMenuBtn.className = "bread-crust";
         }
     });
-    burgerMenuBtn.addEventListener('click',function(){
-        if (bread_crust_bottom.className == "bread-crust-bottom") {
-            bread_crust_bottom.className = "";
-        } else {
-            bread_crust_bottom.className = "bread-crust-bottom";
-        }
-    });
-    //X
-    burgerMenuBtn.addEventListener('click',function(){
-        if (bread_crust_top.className == "bread-crust-top"){
-            bread_crust_top_span.style.top = "50%";
-        } else {
-            bread_crust_top_span.style.top =  "calc(50% - 5px)";
-        }
-    });
-    burgerMenuBtn.addEventListener('click',function(){
-        if (bread_crust_bottom.className == "bread-crust-bottom"){
-            bread_crust_bottom_span.style.top = "50%";
-        } else {
-            bread_crust_bottom_span.style.top =  "calc(50% + 5px)";
-        }
-    });
+    
+    
 
     //sub menu
     var idx = 0;    
@@ -109,16 +79,4 @@ window.addEventListener('load',function(){
             idx = i;
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 });
-=======
-    console.log(mainMenu[idx]);
-});
-*/
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
-=======
-    console.log(mainMenu[idx]);
-});
-*/
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd

@@ -36,10 +36,10 @@
                 <a href="index.html" rel="home" class="logo"></a>
                 <button id="burgerMenuBtn" onclick="MenuBtn()" aria-label="memubutton">
                     <span>
-                        <span></span>
+                      
                     </span>
                     <span>
-                        <span></span>
+                       
                     </span>
                 </button>
                 <nav role="navigation" aria-label="글로벌 네비게이션" id="globalNav">
@@ -101,69 +101,54 @@
             <section id="mainProd" class="prod">
                 <div class="prod_Vegemil">
                     <!-- 베지밀 두유 플레인 -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <figure id="vgmPlain">
-                        <a href="product/product-begemil.html"><img src="img/begemil-a.png" alt="베지밀 에이" title="베지밀 에이"></a>
-                        <a href="product/product-begemil.html"><img src="img/begemil-toddler.png" alt="베지밀 토들러"></a>
-                        <a href="product/product-begemil.html"><img src="img/greenbia.png" alt="그린비아"></a>
-                        <a href="product/product-begemil.html"><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유"></a>
-                        <a href="product/product-begemil.html"><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-=======
-=======
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
-                    <figure id="vgmPlain" class="mianprod">
+                    <figure id="vgmPlain" class="mianprod fade">
+                        <figcaption>베지밀 플레인</figcaption>
                         <a href=""><img src="img/begemil-a.png" alt="베지밀에이 두유 제품"></a>
                         <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러 우리콩"></a>
                         <a href=""><img src="img/greenbia.png" alt="그린비아 디엠 당뇨환자용 제품"></a>
                         <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유 아몬드와 호두맛"></a>
                         <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
                     </figure>
-                    <!-- 베지밀 두유 블랙 
-                    <figure id="vgmBk" class="mianprod prodhdn">
-                        <a href=""><img src="img/begemil-a.png" alt="베지밀에이 두유 제품"></a>
+                    <!-- 베지밀 두유 블랙 -->
+                    <figure id="vgmBk" class="mianprod fade">
+                        <figcaption>베지밀 블랙</figcaption>
+                        <a href=""><img src="img/greenbia.png" alt="베지밀에이 두유 제품"></a>
                         <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러 우리콩"></a>
                         <a href=""><img src="img/greenbia.png" alt="그린비아 디엠 당뇨환자용 제품"></a>
                         <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유 아몬드와 호두맛"></a>
                         <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-                    </figure>-->
-                    <!-- 베지밀 그 외 제품 
-                    <figure id="vgmOther" class="mianprod prodhdn">
-                        <a href=""><img src="img/begemil-a.png" alt="베지밀에이 두유 제품"></a>
-                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러 우리콩"></a>
-                        <a href=""><img src="img/greenbia.png" alt="그린비아 디엠 당뇨환자용 제품"></a>
-                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유 아몬드와 호두맛"></a>
-                        <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
-<<<<<<< HEAD
-<<<<<<< HEAD
                     </figure>
-                    -->
-=======
-                    </figure>-->
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
-=======
-                    </figure>-->
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
+                    <!-- 베지밀 그 외 제품 -->
+                    <figure id="vgmOther" class="mianprod fade">
+                        <figcaption>그 외 제품</figcaption>
+                        <a href=""><img src="img/greentea-vegemil.png" alt="베지밀에이 두유 제품"></a>
+                        <a href=""><img src="img/begemil-toddler.png" alt="베지밀 토들러 우리콩"></a>
+                        <a href=""><img src="img/greenbia.png" alt="그린비아 디엠 당뇨환자용 제품"></a>
+                        <a href=""><img src="img/domestic-soy.png" alt="베지밀 국산 콩 두유 아몬드와 호두맛"></a>
+                        <a href=""><img src="img/greentea-vegemil.png" alt="녹차 베지밀"></a>
+                    </figure>
                 </div>
-                <!-- indicator -->
+                <!-- indicator 
                 <div class="control">
                     <div class="indicator">
                         <span></span>
                         <span></span>
                     </div>
-                </div>
-                <!-- prod tab -->
-                <div class="prod-title">
-                    <button type="button" name="vgmPlainbtn" id="vgmPlainbtn" class="mainprodbtn" onclick="openPage(this)">
-                        베지밀 두유
+                </div>-->
+                <!-- prod slide btn -->
+                <div class="prod-slide-btn">
+                    <button type="button" id="main-prod-prev" onclick="plusSlides(-1)">
+                        <span>&#10094;</span>
+                        <!-- <svg>
+                            <polygon points="25,31.3 4.2,10.5 0.1,14.6 25,39.5 50,14.6 45.9,10.5 " style="fill:rgba(255, 255, 255, .8);stroke:trnasparant;stroke-width:1" />
+                        </svg> -->
                     </button>
-                    <button type="button" name="vgmBkbtn" id="vgmBkbtn" class="mainprodbtn" onclick="openPage(this)">
-                        베지밀 블랙
-                    </button>
-                    <button type="button" name="vgmOtherBtn" id="vgmOtherBtn" class="mainprodbtn" onclick="openPage(this)">
-                        그 외 제품
-                    </button>
+                    <button type=button id="main-prod-next" onclick="plusSlides(1)">
+                        <span>&#10095;</span>
+                        <!-- <svg>
+                            <polygon points="25,31.3 4.2,10.5 0.1,14.6 25,39.5 50,14.6 45.9,10.5 " style="fill:rgba(255, 255, 255, .8);stroke:trnasparant;stroke-width:1" />
+                        </svg> -->
+                    </button>            
                 </div>
             </section>
             
@@ -241,7 +226,6 @@
                     </div>
                 </article>
             </section>
-            
             <!-- SNS -->
             <section class="main_sns">
                 <h2>SNS</h2>
@@ -315,13 +299,7 @@
                 <a href="https://www.instagram.com/vegemil.official/" target="_blank" rel="me external noopener"></a>
                 <a href="https://www.youtube.com/user/vegemilgood" target="_blank" rel="me external noopener"></a>
             </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
             <!-- company info -->
-=======
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
-=======
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
             <ul role="list" role="list">
                 <li role="listitem"><a href="https://www.vegemil.co.kr:10001/main/member/login.aspx?r=http://www.vegemil.co.kr/main/community/agencyNotify.aspx">대리점장 게시판</a></li>
                 <li role="listitem"><a href="http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02http://www.vegemil.co.kr/Main/webzine/Q4_2017/sub02.aspx?time=2019&newsCode=sub02">사이트 맵</a></li>

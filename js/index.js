@@ -32,16 +32,8 @@ window.onload = function(){
             vgmOther.className = "";
         }
     }//vgmBkbtn Event END
-<<<<<<< HEAD
-<<<<<<< HEAD
+}//window.onload END
 
-
-//window.load END 
-}
-=======
-=======
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
-}//onload END
     /*
     function openPage(pageName){
         //hide
@@ -60,9 +52,29 @@ window.onload = function(){
     }
     //get
     document.getElementById('vgmPlainbtn').click();
-<<<<<<< HEAD
+
     */
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
-=======
-    */
->>>>>>> 81bf8394f7f3f047e93c44e6b59fbd2d273b04cd
+
+   var slideIndex = 1;
+   showSlide(slideIndex);
+   
+   //next/prev controls
+   function plusSlides(n) {
+       showSlide(slideIndex += n);
+   }
+   
+   function showSlide(n) {
+       var i;
+       var slide = document.getElementsByClassName('mianprod');
+       if (n > slide.length) {
+           slideIndex = 1;
+       }
+       if (n < 1) {
+           slideIndex = slide.length;
+       }
+       for (i = 0; i < slide.length; i++) {
+           slide[i].style.display = "none";
+       }
+       slide[slideIndex-1].style.display = "block";
+   
+   }

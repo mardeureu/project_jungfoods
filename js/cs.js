@@ -1,5 +1,3 @@
-// 작성자 : 정선희
-
 function cs_sbm(cs_form) {
     //1 객체생성
     var cs_form = document.getElementById('cs_form');

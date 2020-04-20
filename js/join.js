@@ -1,5 +1,3 @@
-// 작성자 : 정선희
-
 function joinUs(frm) {
     //1 객체생성
     var member_id = document.getElementById('member_id');
