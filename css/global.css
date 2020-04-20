@@ -117,7 +117,6 @@ header .menu nav.menuVisible {
     min-height: 0;
     height: 100vh;
     transition: height .5s cubic-bezier(0.14, 0.12, 0.38, 1.22);
-    overflow: auto;
 }
 header .menu nav > ul {
     text-align: center;

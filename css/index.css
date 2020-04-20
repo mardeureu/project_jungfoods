@@ -29,7 +29,7 @@
 /*---------- main product ----------*/
 .container .prod {
     width: 80%;
-    margin: 90px auto 90px;
+    margin: 90px auto;
 }
 .container .prod .prod_Vegemil {
     position: relative;
@@ -138,6 +138,7 @@
 /* prod slide btn */
 .prod .prod-slide-btn {
     position: relative;
+    top: 200px;
     width: 100%;
 }
 .prod .prod-slide-btn button {
@@ -146,7 +147,7 @@
     background-color: #063;
     opacity: .2;
     position: absolute;
-    top: -150px;
+    top: 50%;
     transition: opacity .3s;
 }
 .prod .prod-slide-btn button:hover {

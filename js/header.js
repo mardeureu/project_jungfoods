@@ -1,4 +1,4 @@
-function MenuBtn(breadCrust) {
+function MenuBtn() {
     if (globalNav.className == "menuVisible") {
         globalNav.className = "";
     } else {
