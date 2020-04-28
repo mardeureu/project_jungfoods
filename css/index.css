@@ -34,6 +34,7 @@
 .container .prod .prod_Vegemil {
     position: relative;
     height: 400px;
+    z-index: 0;
 }
 .container .prod .prod_Vegemil figure {
     position: absolute;
