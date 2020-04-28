@@ -436,8 +436,33 @@
     /* main prod */
     
     .container .prod figure a img {
-        max-height: 150px;
+        min-width: 0px;
         margin: 0;
     }
-
+    /* faq */
+    /* table */
+    .faq .faq-table {
+        width: 95%;
+        min-width: 100px;
+    }
+    .faq .faq-table .faq_col_1 {
+        width: 20%;
+    }
+    .faq .faq-table .faq_col_2 {
+        width: auto;
+    }
+    .faq .faq-table thead tr th {
+        line-height: 20px;
+    }
+    .faq .faq-table tbody tr td label {
+        padding-left: 0px;
+    }
+    /* join */
+    #join_form {
+        width: 95%;
+    }
+    /* cs */
+    #cs_form {
+        width: 95%;
+    }
 }/* 480px END */
