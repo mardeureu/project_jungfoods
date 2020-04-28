@@ -79,7 +79,9 @@
     min-height: 180px;
 }
 #cs_form fieldset [for="cs_file"] {}
-#cs_form fieldset [id="cs_file"] {}
+#cs_form fieldset [id="cs_file"] {
+    outline: none;
+}
 
 #cs_form fieldset button {
     font-size: 1.15em;
